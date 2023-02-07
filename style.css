@@ -91,6 +91,7 @@ h4, .text-info, .old-price, .cart {
 .cart img{
   	float: left;
   	width: 14px;
+	text-align: right;
 }
 footer {
   	font-family: 'League Gothic';

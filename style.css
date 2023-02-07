@@ -1,0 +1,101 @@
+body {
+  	margin: 0px;
+  	background-color: hsl(30, 38%, 92%)
+}
+@font-face {
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 700;
+    src: url('https://fonts.cdnfonts.com/s/59427/frauncessoftwonkopszwght.woff') 		format('woff');
+}
+@font-face{
+  font-family:montserrat;
+  font-style:normal;
+  font-weight:400;
+  src:url(https://fonts.cdnfonts.com/s/14883/Montserrat-Regular.woff) format('woff')}
+
+@font-face {
+  font-family: 'League Gothic';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  src: url(https://fonts.gstatic.com/s/leaguegothic/v6/qFdR35CBi4tvBz81xy7WG7ep-BQAY7Krj7feObpH_9ahg9U.woff2) format('woff2');
+}
+#content-box {
+  	margin: 15% 33% 0% 33%;
+  	height: 400px;
+  	overflow: hidden; 
+  	position: relative;
+  	padding: 0;
+  	border: 0px;
+  	border-radius: 12px;
+  	display: flex;
+}
+img {
+  	display: table-row;
+    float: left;
+  	width: 50%;
+  	height: 100%;
+
+  
+}
+#item-description {
+	display: table-row;
+    width: 50%;
+  	padding-left: 5%;
+  	padding-right: 5%;
+  	background-color: white;
+  	overflow: auto;
+}
+h4{
+  	letter-spacing: 2px;
+}
+h2, .new-price {
+  	font-family: 'Fraunces', sans-serif;
+}
+h4, .text-info {
+  	color: hsl(228, 12%, 48%);
+}
+
+h4, .text-info, .old-price, .cart {
+  	font-size: 14px;
+	font-family: 'montserrat', sans-serif;
+}
+.cart {
+  	background-color: hsl(158, 36%, 37%);
+  	text-align: center;
+  	padding: 10px 0px 10px;
+  	margin: 10px 0px 20px;  
+  	color: white;
+  border-radius: 8px;
+}
+.cart:hover {
+  	color: black;
+  	cursor: pointer;
+}
+.new-price {
+  	display: inline-block;
+  	font-size: 25px;
+  	color: hsl(158, 36%, 37%);
+  	margin: 0;
+  }
+.old-price{
+  	display: inline-block;
+  	text-decoration: line-through;
+  	font-size: 12px;
+  	vertical-align: middle;
+  	margin: 0;
+  	padding: 0px 0px 10px 10px;
+  
+}
+.cart img{
+  	float: left;
+  	width: 14px;
+}
+footer {
+  	font-family: 'League Gothic';
+  	position:absolute;
+  	bottom: 0;
+  	right: 0;
+}
+          

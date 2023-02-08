@@ -1,6 +1,6 @@
 body {
   font-family: Sans-serif;
-  backgroun-color: #faebd7;
+  background-color: #faebd7;
 }
 footer {
   position: absolute;
@@ -10,9 +10,19 @@ footer {
 #content-box {
   margin: 2em;
 }
+li {
+  margin: 1em 0 1em;
+  diplay: inline-block;
+}
 a {
   text-decoration: none;
   color: black;
   font-size: 1em;
-  padding: 1em;
+  padding: 0.5em;
+}
+a:hover {
+  color: 	lemonchiffon;
+  background-color: indigo;
+  opacity: 0.8;
+  border-radius: 5px;
 }

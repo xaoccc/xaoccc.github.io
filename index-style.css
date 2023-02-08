@@ -1,9 +1,13 @@
 body {
-  font-family: verdana;
+  font-family: Sans-serif;
+  backgroun-color: #faebd7;
 }
 footer {
   position: absolute;
   bottom: 20px;
   right: 30px
+}
+#content-box {
+  margin: 2em;
 }
 

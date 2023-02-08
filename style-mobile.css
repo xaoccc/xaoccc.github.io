@@ -23,7 +23,7 @@ body {
 }
 #content-box {
   	margin: 1em 0em 0em 1em;
-  	overflow: hidden;
+  	overflow: auto;
 }
 img {
   	width: 94%;

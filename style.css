@@ -70,7 +70,9 @@ h4, .text-info, .old-price, .cart {
   	padding: 10px 0px 10px;
   	margin: 10px 0px 20px;  
   	color: white;
-  border-radius: 8px;
+  	border-radius: 8px;
+	border: 0px;
+	width: 100%;
 }
 .cart:hover {
   	color: black;

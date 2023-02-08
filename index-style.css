@@ -1,3 +1,9 @@
 body {
-  font-face: verdana;
+  font-family: verdana;
 }
+footer {
+  position: absolute;
+  bottom: 20px;
+  right: 30px
+}
+

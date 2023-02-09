@@ -2,6 +2,11 @@ body {
   	margin: 0px;
   	background-color: hsl(30, 38%, 92%)
 }
+@media screen and (max-width: 600px) {
+img {
+    display: none;
+  }
+}
 @font-face {
     font-family: 'Fraunces';
     font-style: normal;

@@ -2,11 +2,6 @@ body {
   	margin: 0px;
   	background-color: hsl(30, 38%, 92%)
 }
-@media screen and (max-width: 600px) {
-#content-box img {
-    src: url('https://raw.githubusercontent.com/xaoccc/xaoccc.github.io/main/media/image-product-mobile.jpg')
-  }
-}
 @font-face {
     font-family: 'Fraunces';
     font-style: normal;

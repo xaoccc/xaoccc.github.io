@@ -24,8 +24,6 @@ body {
 #content-box {
   	margin: 1em 0em 0em 1em;
   	overflow: auto;
-	float: none; 
-	width: auto;
 }
 img {
   	width: 94%;
@@ -103,8 +101,7 @@ h4, .text-info, .old-price, .cart {
 }
 footer {
   	font-family: 'League Gothic';
-  	float: none; 
-	width: auto;
+  	float: right; 
   	margin-right: 3em;
 }
 

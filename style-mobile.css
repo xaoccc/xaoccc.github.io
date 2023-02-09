@@ -3,8 +3,8 @@ body {
   	background-color: hsl(30, 38%, 92%)
 }
 @media screen and (max-width: 600px) {
-img {
-    display: none;
+#content-box img {
+    src: url('https://raw.githubusercontent.com/xaoccc/xaoccc.github.io/main/media/image-product-mobile.jpg')
   }
 }
 @font-face {

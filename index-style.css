@@ -35,15 +35,15 @@ li:hover {
   border-radius: 5px;
 }
           
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   body {
-    width: 600px;    
+    width: 800px;    
   }
 	h1{
-  font-size: 36px
+  font-size: 56px
 }
   li{
-  font-size: 22px
+  font-size: 32px
 	}
 	a {
   color: #f0f4fb;

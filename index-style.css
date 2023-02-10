@@ -30,7 +30,7 @@ a {
 }
 li:hover {
   color: 	#e0ffff;
-  background-color: #778899;
+  background-color: #696969;
   opacity: 0.8;
   border-radius: 5px;
 }
@@ -43,6 +43,7 @@ li:hover {
   font-size: 100px
 }
   li{
+  background-color: #696969;	  
   font-size: 70px
 	}
 	a {

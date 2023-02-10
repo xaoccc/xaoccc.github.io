@@ -1,7 +1,6 @@
 @media only screen and (max-width: 600px) {
-  #content-box {
-    width: 600px;
-    
+  body {
+    width: 600px;    
   }
 	h1{
   font-size: 36px

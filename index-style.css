@@ -1,6 +1,6 @@
 body {
-  font-family: Sans-serif;
-  background-color: #faebd7;
+  font-family: Consolas;
+  background-color: #000000;
 }
 footer {
   position: absolute;
@@ -8,15 +8,18 @@ footer {
   right: 2em;
 }
 #content-box {
-  margin: 2em;
+  margin: 6em auto;
+  width: 666px;
+  color: #778899;
 }
 li {
   margin: 1em 0 1em;
   list-style-type: none;
+  width: 390px;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: white; 
   font-size: 1em;
   padding: 0.5em;
 }

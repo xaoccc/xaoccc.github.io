@@ -3,7 +3,10 @@
     width: 600px;
     
   }
-  h1{
+	h1{
+  font-size: 36px
+}
+  li{
   font-size: 22px
 	}
 }

@@ -1,14 +1,4 @@
-@media only screen and (max-width: 600px) {
-  body {
-    width: 600px;    
-  }
-	h1{
-  font-size: 36px
-}
-  li{
-  font-size: 22px
-	}
-}
+
 @font-face {
   font-family: 'Roboto Mono';
   font-style: normal;
@@ -19,7 +9,7 @@
 }
 
 body {
-  font-family: Consolas, Roboto Mono;
+  font-family: Consolas, "Roboto Mono";
   background-color: #000000;
 }
 footer {
@@ -54,3 +44,16 @@ li:hover {
   border-radius: 5px;
 }
           
+@media only screen and (max-width: 600px) {
+  body {
+    width: 600px;    
+  }
+	h1{
+  font-size: 36px
+}
+  li{
+  font-size: 22px
+	}
+	a {
+  color: #f0f4fb;
+}

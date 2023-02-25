@@ -1,0 +1,125 @@
+body {
+    background-color: white;
+    font-family: HankenGrotesk;
+}
+#content-box{
+    margin: 238px auto;
+    height: 428px;
+    width: 614px;
+    box-shadow: 20px 40px 50px hsl(221, 100%, 96%);
+    border-radius: 1.5em;
+}
+
+#result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 1.5em;
+    text-align: center;
+}
+p, #percentage-small {
+    font-size: 18px;
+}
+h1, h2 {
+    font-size: 22px;
+}
+#percentage, #score{
+    color: white;
+}
+h1 {
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h1, p, #percentage-small{
+    color: rgba(255, 255, 255, 0.4);
+}
+#percentage{
+    font-size: 52px;
+    font-weight: 700;
+    padding: 40px;
+    width: 88px;
+    height: 88px;
+    margin: auto;
+    background-image: linear-gradient(hsl(262, 100%, 46%), hsl(241, 81%, 59%));
+    border-radius: 84px;
+}
+
+#score {
+    font-size: 30px;
+}
+
+#summary, #result {
+    display: inline-block;
+    float: left;
+    width: 226px;
+    height: 348px;
+    padding: 40px;
+
+}
+
+#summary {
+    background-color: white;
+    border-radius: 1.5em;
+}
+
+#summary div {
+    padding:10px;
+    margin: 14px auto;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#summary div span{
+    vertical-align: top;
+}
+#reaction {
+    background-color: rgba(255, 0, 0, 0.04);
+}
+#memory {
+    background-color: rgba(200, 150, 0, 0.04);
+}
+#verbal {
+    background-color: rgba(0, 255, 0, 0.04);
+}
+#visual {
+    background-color: rgba(0, 0, 255, 0.04);
+}
+
+#reaction-text {
+    color: red;
+
+}
+#memory-text {
+    color: orange;
+}
+#verbal-text {
+    color: green;
+}
+#reaction-text {
+    visual: blue;
+}
+ .percents{
+    float: right;
+}
+
+button{
+    width: 100%;
+    font-size: 14px;
+    padding: 14px;
+    background-color: hsl(224, 30%, 27%);
+    border-style: none;
+    color: white;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+@font-face {
+  font-family: HankenGrotesk;
+  font-style: normal;
+  font-weight: 400;
+  src: url(Fonts/HankenGrotesk-Medium.ttf);
+ }

@@ -54,7 +54,6 @@ h1, p, #percentage-small{
     width: 226px;
     height: 348px;
     padding: 40px;
-
 }
 
 #summary {
@@ -111,15 +110,18 @@ button{
     color: white;
     border-radius: 20px;
 }
-
-
-
-
-
-
 @font-face {
   font-family: HankenGrotesk;
   font-style: normal;
   font-weight: 400;
   src: url(Fonts/HankenGrotesk-Medium.ttf);
  }
+@media only screen and (max-width: 600px) {
+  #content-box{
+    width: 306px;
+}
+    #summary, #result {
+    float: none;
+    position: relative;
+    top: -40px;
+}

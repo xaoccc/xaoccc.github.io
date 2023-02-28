@@ -86,7 +86,6 @@ h1, p, #percentage-small{
 
 #reaction-text {
     color: red;
-
 }
 #memory-text {
     color: orange;
@@ -94,13 +93,15 @@ h1, p, #percentage-small{
 #verbal-text {
     color: green;
 }
-#reaction-text {
-    visual: blue;
+#visual-text {
+    color: blue;
 }
  .percents{
     float: right;
 }
-
+ .percents-max{
+    color: gray; 
+}
 button{
     width: 100%;
     font-size: 14px;

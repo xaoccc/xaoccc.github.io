@@ -3,7 +3,9 @@
 ### This is a list with all solutions of Frontend Mentor challenges to help me improve my coding skills by building realistic projects:
 
 <div align="center">
-    <a href="https://xaoccc.github.io/"> <img src="test.svg" width="400" height="200" alt="css-in-readme"> </a>
+    	<a href="https://xaoccc.github.io/"> 
+		<img src="test.svg" width="400" height="200" alt="css-in-readme"> 
+	</a>
 </div>
 
 ### Sample Screenshot

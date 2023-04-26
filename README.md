@@ -1,10 +1,9 @@
 # Frontend Mentor - HTML/CSS problems solved
 
 ### This is a list with all solutions of Frontend Mentor challenges to help me improve my coding skills by building realistic projects:
-<h1> https://xaoccc.github.io/ </h1>
 
 <div align="center">
-    <img src="test.svg" width="400" height="400" alt="css-in-readme">
+    <a href="https://xaoccc.github.io/"> <img src="test.svg" width="400" height="200" alt="css-in-readme"> </a>
 </div>
 
 ### Sample Screenshot

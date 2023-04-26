@@ -1,4 +1,4 @@
-# Frontend Mentor - Product preview card component solution
+# Frontend Mentor - HTML/CSS problems solved
 
 This is a list with all solutions of Frontend Mentor challenges to help me improve my coding skills by building realistic projects:
 https://xaoccc.github.io/

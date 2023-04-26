@@ -3,18 +3,17 @@
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
             h1 {
-                color: red;
+                color: blue;
                 animation: mymove 2s infinite;
                 font-family: verdana, arial;
-                horizontal-align: center;
             }
 
             @keyframes mymove {
                 from {
-                    color: red;
+                    color: blue;
                 }
                 to {
-                    color: blue;
+                    color: red;
                 }
             }
             </style>

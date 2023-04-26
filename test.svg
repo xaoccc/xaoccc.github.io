@@ -1,11 +1,12 @@
-<svg fill="none" viewBox="0 0 450 200" width="450" height="200" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 300 100" width="300" height="100" xmlns="http://www.w3.org/2000/svg">
     <foreignObject width="100%" height="100%">
         <div xmlns="http://www.w3.org/1999/xhtml">
             <style>
             h1 {
                 color: red;
                 animation: mymove 2s infinite;
-                font-family: verdana;
+                font-family: verdana, arial;
+                horizontal-align: center;
             }
 
             @keyframes mymove {
@@ -17,7 +18,7 @@
                 }
             }
             </style>
-            <h1>xaoccc.github.io</h1>
+            <h1><a href="https://xaoccc.github.io/">xaoccc.github.io</a></h1>
         </div>
     </foreignObject>
 </svg>

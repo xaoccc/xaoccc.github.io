@@ -1,34 +1,13 @@
 # Frontend Mentor - Product preview card component solution
 
-This is a solution to the [Product preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges helped me improve my coding skills by building realistic projects. 
+This is a list with all solutions of Frontend Mentor challenges to help me improve my coding skills by building realistic projects:
+https://xaoccc.github.io/
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
-
-### Screenshot
+### Sample Screenshot
 
 ![](./printscreen.jpg)
 
-Here is a screenshot of my solution, as you can see, I used the online compiler of programiz.com. 
-
-## My process
+Here is a screenshot of my first solution. As you can see, I used the online compiler of programiz.com. 
 
 ### Built with 
 

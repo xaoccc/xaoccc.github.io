@@ -1,9 +1,7 @@
 
 body {
   font-family: Consolas, Lucida Console, Courier New;
-  background-image: url("media/bg-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #000000;
 }
 footer {
   position: absolute;
@@ -13,7 +11,11 @@ footer {
 #content-box {
   margin: 6em auto;
   width: 800px;
+  height: 600px;
   color: #778899;
+  background-image: url("media/bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 h1{
   font-size: 32px

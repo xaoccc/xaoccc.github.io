@@ -1,7 +1,9 @@
 
 body {
   font-family: Consolas, Lucida Console, Courier New;
-  background-color: #000000;
+  background-image: url("media/bg-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 footer {
   position: absolute;

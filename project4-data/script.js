@@ -1,28 +1,33 @@
 document.addEventListener('DOMContentLoaded', function () {
   var ratings = document.querySelectorAll('.rating-bar .rating');
+  var selectedRating = null;
 
   ratings.forEach(function (rating) {
     rating.addEventListener('click', function () {
       // Remove the 'selected' class from all ratings
-      ratings.forEach(function (r) {
-        r.classList.remove('selected');
-      });
+      if (selectedRating) {
+        selectedRating.classList.remove('selected');
+        selectedRating.style.color = ''; // Reset the color
+        selectedRating.style.background = ''; // Reset the background
+      }
 
       // Add the 'selected' class to the clicked rating
       rating.classList.add('selected');
+      selectedRating = rating;
 
       // Change the color for the selected rating
-      rating.style.color = 'gold';
+      rating.style.color = 'hsl(0, 0%, 100%)';
+      rating.style.background = 'hsl(217, 12%, 63%)';
     });
   });
 
   function submitFeedback() {
-    var selectedRating = document.querySelector('.rating-bar .selected');
+    var selectedRating = document.querySelector('.selected');
 
     if (selectedRating) {
       var container = document.querySelector('.container');
       var result = document.querySelector('.result-message');
-      var rate = document.querySelector('.rate');
+      var rateElement = document.querySelector('.rate');
 
       // Set display property to "none" for the container
       container.style.display = 'none';
@@ -30,9 +35,8 @@ document.addEventListener('DOMContentLoaded', function () {
       // Set display property to "block" for the result
       result.style.display = 'block';
 
-      // Create and add the thank-you message to the result
-      var rating = document.getElementsByClassName('rate');
-      rating.innerHTML = selectedRating.textContent;
+      // Add the rating to the rate class
+      rateElement.innerHTML = selectedRating.textContent;
 
     } else {
       alert('Please select a rating before submitting.');

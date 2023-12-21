@@ -35,15 +35,19 @@ body {
 .submit-button {
     margin-top: 30px;
     padding: 15px;
-    background-color: hsl(25, 97%, 53%);
-    color: hsl(0, 0%, 100%);
     display: block;
     width: 100%;
     border-width: 0px;
     border-radius: 20px;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 2px
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
 }
 
 .rating, .star-rating {
@@ -55,6 +59,12 @@ body {
     height: 17px;
     text-align: center;
     display: inline-block;
+    cursor: pointer;
+}
+
+.submit-button, .rating:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
 }
 
 .rating-bar {
@@ -67,5 +77,25 @@ body {
 
 .result {
     display: none;
+}
+
+.result-message {
+    margin: 20px 0px 0px;
+    color: hsl(25, 97%, 53%);
+    padding: 0px 70px;
+}
+
+.rate {
+    display: inline-block;
+}
+
+.image-container, .text-container{
+    text-align: center;
+}
+
+.text-bg-panel {
+    background-color: hsl(213, 19%, 18%);
+    padding: 8px 0px;
+    border-radius: 20px;
 }
 

@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (selectedRating) {
       var container = document.querySelector('.container');
-      var result = document.querySelector('.result-message');
+      var result = document.querySelector('.result-container');
       var rateElement = document.querySelector('.rate');
 
       // Set display property to "none" for the container

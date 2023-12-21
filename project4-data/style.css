@@ -89,6 +89,10 @@ body {
     display: inline-block;
 }
 
+.result-container {
+    display: none;
+}
+
 .image-container, .text-container{
     text-align: center;
 }

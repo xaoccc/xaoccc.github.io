@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./project4-data/images/favicon-32x32.png">
   <link rel="stylesheet" href="./project4-data/style.css">
+  <script src="./project4-data/script.js" defer></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,27 +37,19 @@
       <div class="rating">5</div>
     </div>
 
-  <button type="submit" class="submit-button">Submit</button>
+  <button type="submit" class="submit-button" onclick="submitFeedback()">Submit</button>
 
   </div>
 
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Georgi Tashev</a>.
+  <div class="result-container">
+    <div class="result-message">
+      You selected <div class="rate"></div> out of 5
+    </div>
+    <div>
+      Thank you!\n\nWe appreciate you taking the time to give a rating. If you ever need more support,\ndon’t hesitate to get in touch!
+    </div>
   </div>
+
+
 </body>
 </html>

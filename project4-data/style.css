@@ -5,7 +5,7 @@ body {
     font-weight: 400;
 }
 
-.container {
+.container, .result-container {
     margin: 20.4% auto;
     padding: 33px;
     width: 24.6%;
@@ -13,10 +13,16 @@ body {
     border-radius: 22px;
 }
 
+.result-message {
+    color:
+}
+
 .title {
     color: hsl(0, 0%, 100%);
-    font-size: 25px;
+    font-size: 27px;
     margin: 33px 0 15px;
+    letter-spacing: 0.8px;
+    font-weight: 700;
 }
 
 .contents {
@@ -54,5 +60,12 @@ body {
 .rating-bar {
   display: flex;
   justify-content: space-between;
+}
+.rating-bar .rating.selected {
+  color: gold;
+}
+
+.result {
+    display: none;
 }
 

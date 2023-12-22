@@ -8,27 +8,23 @@ body {
 .container, .result-container {
     margin: 20.4% auto;
     padding: 33px;
-    width: 24.6%;
+    width: 25.2%;
     background: linear-gradient(to bottom, #212832, #171E28);
     border-radius: 22px;
 }
 
-.result-message {
-    color:
-}
-
 .title {
+    margin: 35px 0 15px;
     color: hsl(0, 0%, 100%);
     font-size: 27px;
-    margin: 33px 0 15px;
     letter-spacing: 0.8px;
     font-weight: 700;
 }
 
 .contents {
+    margin: 0px 4px 15px;
     color: hsl(217, 12%, 63%);
     font-size: 15px;
-    margin-bottom: 30px;
     line-height: 24px;
 }
 
@@ -97,9 +93,13 @@ body {
     text-align: center;
 }
 
+.image-container img {
+    margin: 12px 0px 7px;
+}
+
 .text-bg-panel {
     background-color: hsl(213, 19%, 18%);
-    padding: 8px 0px;
+    padding: 6px 0px;
     border-radius: 20px;
 }
 

@@ -10,7 +10,7 @@ body {
     padding: 33px;
     width: 25.2%;
     background: linear-gradient(to bottom, #212832, #171E28);
-    border-radius: 22px;
+    border-radius: 30px;
 }
 
 .title {
@@ -37,6 +37,7 @@ body {
     border-radius: 20px;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 15px;
     letter-spacing: 2px;
     cursor: pointer;
 }

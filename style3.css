@@ -118,11 +118,13 @@ button{
   src: url(Fonts/HankenGrotesk-Medium.ttf);
  }
 @media only screen and (max-width: 600px) {
-  #content-box{
-    width: 306px;
-}
+    #content-box {
+        width: 306px;
+    }
+
     #summary, #result {
-    float: none;
-    position: relative;
-    top: -40px;
+        float: none;
+        position: relative;
+        top: -40px;
+    }
 }

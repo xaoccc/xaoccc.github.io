@@ -103,3 +103,32 @@ body {
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    .container, .result-container {
+        margin: 154px auto;
+        padding: 24px 20px 33px 20px;
+        width: 286px;
+    }
+    .rating, .star-rating {
+        padding: 12px;
+    }
+
+    .contents {
+        margin: 0 0 25px;
+        letter-spacing: -0.44px;
+    }
+
+    .title {
+        margin: 20px 0 10px;
+        font-size: 25px;
+    }
+    .submit-button{
+        margin-top: 24px;
+    }
+
+    .result-message {
+        padding: 1px 45px;
+    }
+}
+
+

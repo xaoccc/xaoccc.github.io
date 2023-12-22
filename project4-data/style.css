@@ -6,7 +6,7 @@ body {
 }
 
 .container, .result-container {
-    margin: 14% auto;
+    margin: 14% auto 0;
     padding: 33px;
     width: 25.2%;
     background: linear-gradient(to bottom, #212832, #171E28);

@@ -18,49 +18,51 @@
 <body>
 
   <!-- Rating state start -->
-  <div class="container">
-    <div class="star-rating">
-      <img src="./project4-data/images/icon-star.svg" />
-    </div>
-
-    <div class="title">How did we do?</div>
-    <div class="contents">
-  Please let us know how we did with your support request. All feedback is appreciated
-  to help us improve our offering!
+  <main>
+    <div class="container">
+      <div class="star-rating">
+        <img src="./project4-data/images/icon-star.svg" alt="icon-star" />
       </div>
-    <div class="rating-bar">
-      <div class="rating">1</div>
-      <div class="rating">2</div>
-      <div class="rating">3</div>
-      <div class="rating">4</div>
-      <div class="rating">5</div>
+
+      <div class="title">How did we do?</div>
+      <div class="contents">
+    Please let us know how we did with your support request. All feedback is appreciated
+    to help us improve our offering!
+        </div>
+      <div class="rating-bar">
+        <div class="rating">1</div>
+        <div class="rating">2</div>
+        <div class="rating">3</div>
+        <div class="rating">4</div>
+        <div class="rating">5</div>
+      </div>
+
+    <button type="submit" class="submit-button" onclick="submitFeedback()">Submit</button>
+
     </div>
 
-  <button type="submit" class="submit-button" onclick="submitFeedback()">Submit</button>
 
-  </div>
-
-  <div class="result-container">
-    <div class="image-container">
-      <img src="./project4-data/images/illustration-thank-you.svg" />
-    </div>
-    <div class="result-message">
-      <div class="text-container text-bg-panel">
-        You selected <div class="rate"></div> out of 5
+    <div class="result-container">
+      <div class="image-container">
+        <img src="./project4-data/images/illustration-thank-you.svg" alt="illustration-thank-you" />
+      </div>
+      <div class="result-message">
+        <div class="text-container text-bg-panel">
+          You selected <div class="rate"></div> out of 5
+        </div>
+      </div>
+      <div class="title">
+        <div class="text-container">
+        Thank you!
+        </div>
+      </div>
+      <div class="contents">
+        <div class="text-container">
+        We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </div>
       </div>
     </div>
-    <div class="title">
-      <div class="text-container">
-      Thank you!
-      </div>
-    </div>
-    <div class="contents">
-      <div class="text-container">
-      We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
-      </div>
-    </div>
-  </div>
-
+  </main>
 
 </body>
 </html>

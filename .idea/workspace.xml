@@ -5,8 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project5-data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/README-template.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/fonts/Figtree-Italic-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/fonts/Figtree-VariableFont_wght.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/fonts/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/fonts/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/fonts/static/Figtree-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/fonts/static/Figtree-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/images/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/images/illustration-article.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/assets/images/image-avatar.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/design/active-states.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/design/desktop-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/design/desktop-preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/design/mobile-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/style-guide.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project5-data/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project4-data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project4-data/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project5.html" beforeDir="false" afterPath="$PROJECT_DIR$/project5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +82,8 @@
       <updated>1703062119970</updated>
       <workItem from="1703062121122" duration="3309000" />
       <workItem from="1703183168810" duration="224000" />
-      <workItem from="1703232153583" duration="8994000" />
+      <workItem from="1703232153583" duration="9321000" />
+      <workItem from="1703337838445" duration="1778000" />
     </task>
     <servers />
   </component>

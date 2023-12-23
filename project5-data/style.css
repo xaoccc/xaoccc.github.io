@@ -1,0 +1,19 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+}
+
+.container {
+    margin: 218px auto 0;
+    background-color: white;
+    width: 336px;
+    height: 522px;
+    padding: 24px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.image-container img, .container {
+    border-radius: 10px;
+}

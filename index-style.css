@@ -42,15 +42,19 @@ li:hover {
           
 @media only screen and (max-width: 800px) {
   body {
-    width: 800px;    
+    width: 800px;
   }
-	h1{
-  font-size: 100px
-}
-  li{
-  background-color: #696969;	  
-  font-size: 70px
-	}
-	a {
-  color: #f0f4fb;
+
+  h1 {
+    font-size: 100px
+  }
+
+  li {
+    background-color: #696969;
+    font-size: 70px
+  }
+
+  a {
+    color: #f0f4fb;
+  }
 }

@@ -1,5 +1,5 @@
 body {
-  	margin: 0px;
+  	margin: 0;
   	background-color: hsl(30, 38%, 92%)
 }
 @font-face {
@@ -109,4 +109,3 @@ footer {
   	bottom: 0;
   	right: 0;
 }
-          

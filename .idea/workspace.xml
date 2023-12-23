@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="" />
+    <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project1-data/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project1-data/images/icon-cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project1-data/images/image-product-desktop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project1-data/images/image-product-mobile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project1-data/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project1-data/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon-cart.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image-product-desktop.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javascript/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/image-product-mobile.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1-mobile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1.html" beforeDir="false" afterPath="$PROJECT_DIR$/project1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style-mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/under-construction.jpg" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,7 +80,7 @@
       <workItem from="1703062121122" duration="3309000" />
       <workItem from="1703183168810" duration="224000" />
       <workItem from="1703232153583" duration="9321000" />
-      <workItem from="1703337838445" duration="2078000" />
+      <workItem from="1703337838445" duration="5453000" />
     </task>
     <servers />
   </component>

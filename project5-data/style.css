@@ -38,9 +38,17 @@ body {
 
 }
 
-.title h1 {
+.title h1 a {
     font-size: 23px;
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+    cursor: pointer;
 }
+
+.title h1 a:hover {
+    color: hsl(47, 88%, 63%);
+}
+
 
 .contents {
     color: hsl(0, 0%, 50%);
@@ -62,5 +70,15 @@ body {
     position: relative;
     top: -11px;
     padding-left: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .image-container img{
+        width: 279px;
+    }
+    .container {
+        margin: 155px auto 0;
+        width: 279px;
+    }
 }
 

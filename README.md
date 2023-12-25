@@ -1,7 +1,7 @@
 # Frontend Mentor - HTML/CSS/JS problems solved
 
 ### This is a list with all solutions of Frontend Mentor challenges to help me improve my coding skills by building realistic projects:
-<a style="color: red; font-weight: 700; font-size: 50px;" href="https://xaoccc.github.io/">xaoccc.github.io</a>
+<a style="color: red; font-weight: 700; font-size: 50;" href="https://xaoccc.github.io/">xaoccc.github.io</a>
 
 ### Sample Screenshot
 

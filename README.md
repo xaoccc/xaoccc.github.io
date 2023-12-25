@@ -1,29 +1,7 @@
 # Frontend Mentor - HTML/CSS/JS problems solved
 
 ### This is a list with all solutions of Frontend Mentor challenges to help me improve my coding skills by building realistic projects:
-
-<div>	
-    <a class="my_page" href="https://xaoccc.github.io/">xaoccc.github.io</a>
-</div>
-
-<style>
-	.my_page{
-		color: #fff;
-		padding: 10px;
-        font-size: 40px;
-        font-weight: 700;
-		display: inline-block;
-		border-radius: 5px;
-		animation: blinkingColor 2s infinite;
-	}
-	@keyframes blinkingColor{
-		0%		{ color: blue;}
-		25%		{ color: purple;}
-		50%		{ color: red;}
-		75%		{ color: orange;}
-		100%	{ color: yellow;}
-	}
-</style>
+<a style="color: red; font-weight: 700; font-size: 50px;" href="https://xaoccc.github.io/">xaoccc.github.io</a>
 
 ### Sample Screenshot
 
@@ -33,8 +11,8 @@ Here is a screenshot of my first solution. As you can see, I used the online com
 
 ### Built with 
 
-- HTML5 markup
-- CSS custom properties
+- HTML5 
+- CSS3
 
 ### What I learned
 
@@ -62,5 +40,5 @@ And much more CSS features
 ## Author
 
 - Frontend Mentor - [@xaoccc](https://www.frontendmentor.io/profile/xaoccc)
-- Facebook - [@baipesho666](https://www.facebook.com/baipesho666)
+- Facebook - [@georgi.tashev](https://www.facebook.com/georgi.tashev)
 

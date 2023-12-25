@@ -3,7 +3,7 @@
 ### This is a list with all solutions of Frontend Mentor challenges to help me improve my coding skills by building realistic projects:
 # <a href="https://xaoccc.github.io/">xaoccc.github.io</a>  
 
-### Sample Screenshot
+### Sample Screenshot of my first project:
 
 ![](./printscreen.jpg)
 

@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: HankenGrotesk;
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 #content-box{
     margin: 238px auto;
@@ -121,12 +121,7 @@ h1, p, #percentage-small{
 .button:hover {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
-@font-face {
-  font-family: HankenGrotesk;
-  font-style: normal;
-  font-weight: 400;
-  src: url(fonts/HankenGrotesk-Medium.ttf);
- }
+
 @media only screen and (max-width: 600px) {
     #content-box {
         width: 306px;

@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project3-data/Fonts/HankenGrotesk-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project3-data/Fonts/HankenGrotesk-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project3-data/Fonts/HankenGrotesk-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project3-data/Fonts/HankenGrotesk-VariableFont_wght.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fonts/HankenGrotesk-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fonts/HankenGrotesk-ExtraBold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fonts/HankenGrotesk-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fonts/HankenGrotesk-VariableFont_wght.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project3.html" beforeDir="false" afterPath="$PROJECT_DIR$/project3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style3.css" beforeDir="false" afterPath="$PROJECT_DIR$/project3-data/style.css" afterDir="false" />
-    </list>
+    <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,7 +66,7 @@
       <workItem from="1703406539334" duration="6817000" />
       <workItem from="1703490952111" duration="6874000" />
       <workItem from="1703597051608" duration="12000" />
-      <workItem from="1703699848176" duration="1965000" />
+      <workItem from="1703699848176" duration="2334000" />
     </task>
     <servers />
   </component>

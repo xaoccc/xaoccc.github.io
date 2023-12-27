@@ -14,6 +14,7 @@ body {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 1.5em;
     text-align: center;
+    padding: 40px;
 }
 p, #percentage-small {
     font-size: 18px;
@@ -53,12 +54,13 @@ h1, p, #percentage-small{
     float: left;
     width: 226px;
     height: 348px;
-    padding: 40px;
+
 }
 
 #summary {
     background-color: white;
     border-radius: 1.5em;
+    padding: 25px 30px;
 }
 
 #summary div {
@@ -66,6 +68,7 @@ h1, p, #percentage-small{
     margin: 14px auto;
     border-radius: 10px;
     font-size: 16px;
+    width: 100%;
 }
 
 #summary div span{
@@ -102,20 +105,27 @@ h1, p, #percentage-small{
  .percents-max{
     color: gray; 
 }
-button{
-    width: 100%;
+.button{
+    width: 109%;
+    display: inline-block;
     font-size: 14px;
-    padding: 14px;
+    padding: 14px 0;
     background-color: hsl(224, 30%, 27%);
     border-style: none;
     color: white;
-    border-radius: 20px;
+    border-radius: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 @font-face {
   font-family: HankenGrotesk;
   font-style: normal;
   font-weight: 400;
-  src: url(Fonts/HankenGrotesk-Medium.ttf);
+  src: url(fonts/HankenGrotesk-Medium.ttf);
  }
 @media only screen and (max-width: 600px) {
     #content-box {

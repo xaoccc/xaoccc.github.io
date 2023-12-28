@@ -3,9 +3,9 @@ body {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 #content-box{
-    margin: 238px auto;
-    height: 428px;
-    width: 614px;
+    margin: 285px auto;
+    height: 512px;
+    width: 736px;
     box-shadow: 20px 40px 50px hsl(221, 100%, 96%);
     border-radius: 1.5em;
 }
@@ -31,9 +31,14 @@ h1 {
     margin-bottom: 30px;
 }
 
-h1, p, #percentage-small{
-    color: rgba(255, 255, 255, 0.4);
+h1, p{
+    color: hsl(241, 100%, 89%);
 }
+
+#percentage-small{
+    color: hsla(241, 100%, 89%, 60%);
+}
+
 #percentage{
     font-size: 52px;
     font-weight: 700;
@@ -49,15 +54,20 @@ h1, p, #percentage-small{
     font-size: 30px;
 }
 
-#summary, #result {
+#summary, #result{
     display: inline-block;
     float: left;
-    width: 226px;
-    height: 348px;
+    height: 432px;
 
 }
 
+#result {
+    width: 248px;
+    padding: 40px 60px;
+}
+
 #summary {
+    width: 288px;
     background-color: white;
     border-radius: 1.5em;
     padding: 25px 30px;
@@ -112,7 +122,7 @@ h1, p, #percentage-small{
     padding: 14px 0;
     background-color: hsl(224, 30%, 27%);
     border-style: none;
-    color: white;
+    color: hsl(221, 100%, 96%);
     border-radius: 24px;
     text-decoration: none;
     text-align: center;

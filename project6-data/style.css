@@ -1,0 +1,57 @@
+body {
+    width: 1440px;
+    margin: 0 auto;
+    background-image: url("/project6-data/assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-color: hsl(275, 100%, 97%);
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    width: 502px;
+    height: 478px;
+    padding: 55px 44px 43px;
+    margin: 168px auto;
+    background-color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    margin: 0 0 30px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 56px;
+}
+
+.section {
+    font-size: 16px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.section-title-text {
+    display: inline-block;
+}
+
+.section-title button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    /* Additional styles to ensure complete reset */
+    box-sizing: border-box;
+    line-height: normal;
+}
+
+.section-contents {
+    display: none;
+}

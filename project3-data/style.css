@@ -12,7 +12,7 @@ body {
 
 #result {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
-    border-radius: 1.5em;
+    border-radius: 2.2em;
     text-align: center;
     padding: 40px;
 }
@@ -38,20 +38,24 @@ h1, p{
 #percentage-small{
     color: hsla(241, 100%, 89%, 60%);
 }
+#percentage-big {
+    font-size: 70px;
+    font-weight: 700;
+}
 
 #percentage{
-    font-size: 52px;
-    font-weight: 700;
     padding: 40px;
-    width: 88px;
-    height: 88px;
+    width: 120px;
+    height: 120px;
     margin: auto;
-    background-image: linear-gradient(hsl(262, 100%, 46%), hsl(241, 81%, 59%));
-    border-radius: 84px;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 120px;
 }
 
 #score {
+    margin-top: 30px;
     font-size: 30px;
+    font-weight: 700;
 }
 
 #summary, #result{
@@ -73,12 +77,15 @@ h1, p{
     padding: 25px 30px;
 }
 
+#summary h2 {
+    margin-bottom: 28px;
+}
+
 #summary div {
-    padding:10px;
+    padding: 17px;
     margin: 14px auto;
-    border-radius: 10px;
-    font-size: 16px;
-    width: 100%;
+    border-radius: 13px;
+    width: 88%;
 }
 
 #summary div span{
@@ -115,15 +122,23 @@ h1, p{
  .percents-max{
     color: gray; 
 }
+  .percents-result{
+    font-weight: 700;
+}
+
+ #summary div, .button {
+     font-size: 18px;
+     font-weight: 500;
+ }
 .button{
-    width: 109%;
+    margin-top: 24px;
+    width: 100%;
     display: inline-block;
-    font-size: 14px;
-    padding: 14px 0;
+    padding: 16px 0;
     background-color: hsl(224, 30%, 27%);
     border-style: none;
     color: hsl(221, 100%, 96%);
-    border-radius: 24px;
+    border-radius: 28px;
     text-decoration: none;
     text-align: center;
 }

@@ -2,7 +2,7 @@ body {
     width: 1440px;
     margin: 0 auto;
     background-image: url("/project6-data/assets/images/background-pattern-desktop.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-color: hsl(275, 100%, 97%);
     font-family: 'Work Sans', sans-serif;
 }
@@ -36,13 +36,17 @@ h1 {
 
 .section-title-text {
     display: inline-block;
+    width: 95%;
 }
 
-.section-title button {
+.section-button {
     margin: 0;
     padding: 0;
+    height: 31px;
+    width: 30px;
     border: none;
-    background: none;
+    background-image: url(/project6-data/assets/images/icon-plus.svg);
+    background-color: hsl(0, 0%, 100%);
     font: inherit;
     color: inherit;
     cursor: pointer;

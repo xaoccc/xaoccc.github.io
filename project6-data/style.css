@@ -1,5 +1,4 @@
 body {
-    width: 1440px;
     margin: 0 auto;
     background-image: url("/project6-data/assets/images/background-pattern-desktop.svg");
     background-repeat: repeat-x;
@@ -8,22 +7,31 @@ body {
 }
 
 .container {
-    width: 502px;
-    height: 478px;
-    padding: 55px 44px 43px;
+    width: 520px;
+    height: 520px;
+    padding: 40px 40px 15px;
     margin: 168px auto;
     background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
 }
 
 h1 {
-    margin: 0 0 30px;
+    margin: 0 0 0 20px;
     display: inline-block;
     font-weight: 700;
     font-size: 56px;
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     font-size: 16px;
+    padding: 26px 0;
+}
+
+.section-border {
+    border-top: inset 2px hsla(160, 0%, 100%, 0.1);
 }
 
 .section-title {
@@ -32,11 +40,18 @@ h1 {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
+    font-size: 18px;
 }
 
 .section-title-text {
     display: inline-block;
     width: 95%;
+    font-weight: 600;
+}
+
+.section-title-text:hover {
+    color: #BA55D3;
+    cursor: pointer;
 }
 
 .section-button {
@@ -58,4 +73,39 @@ h1 {
 
 .section-contents {
     display: none;
+    margin-top: 25px;
+    color: hsl(292, 16%, 49%);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 142px auto 0;
+        width: 278px;
+        padding: 30px 24px 10px;
+        border-radius: 10px;
+    }
+    h1 {
+        margin-left: 10px;
+        font-size: 30px;
+        position: relative;
+        top: -1px;
+    }
+
+    .icon-star {
+        width: 22px;
+    }
+
+    .section-title {
+    font-size: 17px;
+        padding-left: 5px;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .section-contents {
+        font-size: 14px;
+    }
+
 }

@@ -34,9 +34,14 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         // Here we get all the buttons:
         var buttons = document.getElementsByTagName("button");
+        var sections = document.getElementsByClassName("section-title-text");
 
         // Traverse the buttons and look for a click event:
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener('click', displayContents);
+            }
+
+        for (var i = 0; i < sections.length; i++) {
+            sections[i].addEventListener('click', displayContents);
             }
 });

@@ -91,3 +91,11 @@ h3 a {
     display: flex;
     align-items: center;
 }
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin: 62px auto 0;
+        width: 278px;
+    }
+
+}

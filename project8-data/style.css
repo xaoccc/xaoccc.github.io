@@ -3,6 +3,7 @@ body {
     background-repeat: repeat-x;
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display';
+    font-size: 16px;
 }
 
 main {
@@ -25,6 +26,68 @@ main {
 }
 
 .small-container {
+    margin-top: 22px;
     padding: 22px;
     background-color: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.small-container img{
+    padding-right: 22px;
+}
+
+.small-container-title {
+    font-weight: 900;
+}
+
+.small-container a {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+
+.small-container-wrapper {
+    display: flex;
+}
+
+h1, .contents {
+    text-align: center;
+}
+
+.contents, .small-container-contents {
+    font-weight: 500;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 26px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border-width: 0;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+
+.payment-button {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin-top: 30px;
+}
+
+.cancel-button {
+    background: none;
+}
+
+.cancel-button, .small-container-contents, .contents {
+    color: hsl(224, 23%, 55%);
 }

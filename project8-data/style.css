@@ -19,7 +19,7 @@ main {
 }
 
 .container {
-    padding: 30px 46px;
+    padding: 30px 44px;
     background-color: white;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -27,20 +27,21 @@ main {
 
 .small-container {
     margin-top: 22px;
-    padding: 22px;
+    padding: 25px;
     background-color: hsl(225, 100%, 98%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 20px;
+    border-radius: 13px;
 }
 
 .small-container img{
     padding-right: 22px;
 }
 
-.small-container-title {
+h1, .small-container-title {
     font-weight: 900;
+    color: hsl(223, 47%, 23%);
 }
 
 .small-container a {
@@ -48,9 +49,13 @@ main {
     font-size: 14px;
 }
 
-
 .small-container-wrapper {
     display: flex;
+    align-items: center;
+}
+
+.contents {
+    line-height: 1.6;
 }
 
 h1, .contents {
@@ -62,32 +67,49 @@ h1, .contents {
 }
 
 h1 {
-    font-weight: 900;
-    font-size: 26px;
+    margin: 15px 0 4px;
+    font-size: 28px;
 }
 
 button {
     display: block;
     width: 100%;
-    padding: 20px 0;
+    padding: 16px 0;
     border-width: 0;
-    border-radius: 15px;
+    border-radius: 10px;
     font-size: 16px;
     font-weight: 700;
 }
 
-
-
 .payment-button {
     background-color: hsl(245, 75%, 52%);
     color: white;
-    margin-top: 30px;
+    margin-top: 34px;
+    box-shadow: 0px 16px 22px hsla(245, 75%, 52%, 0.2);
 }
 
 .cancel-button {
+    margin-top: 18px;
     background: none;
 }
 
 .cancel-button, .small-container-contents, .contents {
     color: hsl(224, 23%, 55%);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.payment-button:hover {
+    background-color: #766CF1;
+}
+
+.cancel-button:hover {
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #766CF1;
 }

@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/project8-data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project8-data/style.css" afterDir="false" />
+>>>>>>> d3162a3076be474d0cbdeba534dd546e30073e52
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +50,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+<<<<<<< HEAD
+=======
+    "git-widget-placeholder": "main",
+>>>>>>> d3162a3076be474d0cbdeba534dd546e30073e52
     "last_opened_file_path": "C:/Users/mo3ak/Documents/GitHub/xaoccc.github.io",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",

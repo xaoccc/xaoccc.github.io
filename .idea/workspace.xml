@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project9-data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/design/desktop-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/design/desktop-preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/design/mobile-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/images/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/images/image-header-desktop.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/images/image-header-mobile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/style-guide.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project9-data/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/project8-data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project8-data/style.css" afterDir="false" />
->>>>>>> d3162a3076be474d0cbdeba534dd546e30073e52
+      <change beforePath="$PROJECT_DIR$/project9.html" beforeDir="false" afterPath="$PROJECT_DIR$/project9.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,11 +56,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-<<<<<<< HEAD
-=======
     "git-widget-placeholder": "main",
->>>>>>> d3162a3076be474d0cbdeba534dd546e30073e52
-    "last_opened_file_path": "C:/Users/mo3ak/Documents/GitHub/xaoccc.github.io",
+    "last_opened_file_path": "C:/Users/user/PycharmProjects/xaoccc.github.io",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -89,9 +92,7 @@
       <workItem from="1704125462695" duration="1829000" />
       <workItem from="1704182616086" duration="1583000" />
       <workItem from="1704184269669" duration="456000" />
-      <workItem from="1704226462961" duration="1889000" />
-      <workItem from="1704303564893" duration="913000" />
-      <workItem from="1704487866023" duration="381000" />
+      <workItem from="1704226462961" duration="1660000" />
     </task>
     <servers />
   </component>

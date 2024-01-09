@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    margin: 0 auto;
+    padding: 172px 0;
+    background: hsl(185, 75%, 39%);
+    background-image: url('../project11-data/images/bg-pattern-top.svg'), url('../project11-data/images/bg-pattern-bottom.svg');
+    background-position: -63% 192%, 156% -135%;
+    background-repeat: no-repeat;
+    width: 1440px;
+    font-size: 18px;
+}
+
+#header {
+    height: 140px;
+    text-align: center;
+    background-image: url('../project11-data/images/bg-pattern-card.svg');
+    border-radius: 13px 13px 0 0;
+}
+
+#header img {
+    position: relative;
+    top: 87px;
+    border: hsl(256, 100%, 100%) 5px solid;
+    border-radius: 50%;
+}
+
+section {
+    margin: 0 auto;
+    width: 350px;
+}
+
+#main, #footer {
+    background-color: rgb(256,256,256);
+    display: flex;
+}
+
+#main {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 26px;
+    border-bottom: rgb(231, 231, 231) 1px solid;
+}
+
+h1, #age {
+    display: inline-block;
+    margin: 72px 0 8px;
+}
+
+h1 {
+    font-size: 16px;
+    color: hsl(229, 23%, 23%);
+}
+
+#footer {
+    padding: 24px 0;
+    justify-content: space-evenly;
+    border-radius: 0 0 13px 13px;
+}
+
+#age, #city, .legend {
+    color: hsl(0, 0%, 59%);
+}
+
+#city {
+    font-size: 14px;
+}
+
+.num {
+    color: hsl(229, 23%, 23%);
+    font-weight: 700;
+    text-align: center;
+}
+
+.legend {
+    width: 56.3px;
+    padding-top: 4px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+
+}

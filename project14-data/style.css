@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 100px auto 0;
+    background-color: hsl(0, 0%, 95%);
+    width: 918px;
+    font-size: 15px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+
+}

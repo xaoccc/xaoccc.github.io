@@ -67,3 +67,49 @@ h1 span {
     letter-spacing: 1.3px;
 }
 
+@media only screen and (max-width: 600px) {
+
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 86px auto;
+    }
+
+    #right {
+        background-image: linear-gradient(hsla(277, 100%, 30%, 0.6), hsla(277, 100%, 30%, 0.6)), url('../project9-data/images/image-header-mobile.jpg');
+        width: 326px;
+        height: 241px;
+        padding: 0;
+        border-radius: 8px 8px 0 0;
+    }
+
+    #left {
+        width: 258px;
+        padding: 15px 34px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    main, section {
+        width: 326px;
+        float: none;
+    }
+
+    h1, #contents, #footer {
+        text-align: center;
+    }
+
+    #footer {
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-section {
+        padding: 10px 0;
+    }
+
+    h1 {
+        font-size: 27px;
+    }
+}
+

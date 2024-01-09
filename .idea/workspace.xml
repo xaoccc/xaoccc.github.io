@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project11-data/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/design/desktop-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/design/desktop-preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/design/mobile-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/images/bg-pattern-bottom.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/images/bg-pattern-card.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/images/bg-pattern-top.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/images/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/images/image-victor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/style-guide.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11-data/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project13-data/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project13.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project14-data/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project14.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project11-data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project11-data/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

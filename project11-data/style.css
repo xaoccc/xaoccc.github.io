@@ -32,6 +32,7 @@ main {
 section {
     margin: 0 auto;
     width: 350px;
+    box-shadow: hsla(229, 23%, 23%, 0.3) 0px 0px 52px;
 }
 
 #main, #footer {
@@ -85,9 +86,9 @@ h1 {
     text-align: center;
 }
 
-
-
 @media only screen and (max-width: 600px) {
-
-
+    main {
+        width: 375px;
+        background-position: 138% 182%, -14% -135%;
+    }
 }

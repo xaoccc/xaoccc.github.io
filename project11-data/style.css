@@ -29,12 +29,6 @@ main {
     border-radius: 50%;
 }
 
-section {
-    margin: 0 auto;
-    width: 350px;
-    box-shadow: hsla(229, 23%, 23%, 0.3) 0px 0px 52px;
-}
-
 #main, #footer {
     background-color: rgb(256,256,256);
     display: flex;
@@ -46,6 +40,13 @@ section {
     align-items: center;
     padding-bottom: 26px;
     border-bottom: rgb(231, 231, 231) 1px solid;
+}
+
+#wrapper {
+    width: 350px;
+    margin: 0 auto;
+    box-shadow: hsla(229, 23%, 23%, 0.4) 0px 0px 85px;
+    border-radius: 13px;
 }
 
 h1, #age {

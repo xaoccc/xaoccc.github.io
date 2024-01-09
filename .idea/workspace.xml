@@ -5,8 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/project10-data/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/design/active-states.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/design/desktop-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/design/desktop-preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/design/mobile-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/images/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/images/icon-luxury.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/images/icon-sedans.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/images/icon-suvs.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/style-guide.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10-data/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project10.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project9-data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project9-data/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +67,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>

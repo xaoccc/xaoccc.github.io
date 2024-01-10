@@ -139,6 +139,45 @@ h1, #top-right {
 
 
 @media only screen and (max-width: 600px) {
+    main {
+        width: 325px;
+        padding: 80px 24px;
+    }
 
+    h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    #top-left p {
+        text-align: center;
+    }
+
+    #top, #bottom  {
+        display: block;
+    }
+
+    #top-right article {
+        display: flex;
+        flex-direction: column;
+        width: 293px;
+    }
+
+    #top-left {
+        width: 325px;
+    }
+
+    #top-right > article:nth-child(1), #top-right > article:nth-child(2), #top-right > article:nth-child(3) {
+        position: relative;
+        left: 96px;
+    }
+
+    #bottom article {
+        width: 259px;
+    }
+
+    main {
+        background: url('../project12-data/images/bg-pattern-top-desktop.svg') no-repeat 0 -74px;
+    }
 
 }

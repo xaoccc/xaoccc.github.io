@@ -5,23 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project12-data/design/desktop-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/design/desktop-preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/design/mobile-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/bg-pattern-bottom-desktop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/bg-pattern-bottom-mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/bg-pattern-top-desktop.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/bg-pattern-top-mobile.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/icon-star.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/image-anne.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/image-colton.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/images/image-irene.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project12-data/style-guide.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project12-data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project12-data/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project12.html" beforeDir="false" afterPath="$PROJECT_DIR$/project12.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

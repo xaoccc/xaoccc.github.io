@@ -4,10 +4,137 @@ body {
 }
 
 main {
-    margin: 100px auto 0;
-    background-color: hsl(0, 0%, 95%);
-    width: 918px;
-    font-size: 15px;
+    margin: 0 auto;
+    padding: 100px 164px;
+    background: url('../project12-data/images/bg-pattern-top-desktop.svg') no-repeat top left, url('../project12-data/images/bg-pattern-bottom-desktop.svg') no-repeat bottom right;
+    background-color: hsl(0, 0%, 100%);
+    width: 1112px;
+    font-size: 16px;
+    font-family: 'League Spartan';
+}
+
+#top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 20px 0 30px;
+}
+
+#top-left {
+    width: 412px;
+}
+
+h1, #top-right {
+    color: hsl(300, 43%, 22%);
+}
+
+#top-left p {
+    color: hsl(303, 10%, 53%);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 1.5;
+}
+
+#top-right {
+    position: relative;
+    right: 96px;
+}
+
+#top-right article {
+    margin-bottom: 18px;
+    background-color: hsl(300, 24%, 96%);
+    padding: 18px 0 18px 32px;
+    width: 412px;
+    display: flex;
+    border-radius: 8px;
+    letter-spacing: -0.4px;
+}
+
+.rating-info {
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: 2px;
+}
+
+.rating-stars {
+    width: 120px;
+    height: 16px;
+    margin-right: 30px;
+    background-image: url("../project12-data/images/icon-star.svg");
+    background-repeat: repeat-x;
+}
+
+#top-right > article:nth-child(2) {
+    position: relative;
+    left: 48px;
+}
+
+#top-right > article:nth-child(3) {
+    position: relative;
+    left: 96px;
+}
+
+#bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 54px 0 34px 0;
+}
+
+#bottom article {
+    background-color: hsl(300, 43%, 22%);
+    padding: 40px 32px 30px;
+    width: 284px;
+    border-radius: 8px;
+}
+
+#bottom article p {
+    margin-top: 26px;
+    color: hsl(300, 24%, 96%);
+    line-height: 1.4;
+}
+
+.profile-wrapper {
+    display: flex;
+}
+
+.profile-img {
+    width: 42px;
+    border-radius: 50%;
+}
+
+.profile-info {
+    margin-left: 22px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 500;
+}
+
+.profile-name {
+    color: hsl(300, 24%, 96%);
+}
+
+.profile-type {
+    padding-top: 5px;
+    color: hsla(333, 80%, 67%, 0.8);
+}
+
+#bottom > article:nth-child(2) {
+    position: relative;
+    top: 15px;
+}
+
+#bottom > article:nth-child(3) {
+    position: relative;
+    top: 30px;
 }
 
 

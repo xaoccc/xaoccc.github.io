@@ -12,6 +12,16 @@ main {
     font-family: 'Manrope';
 }
 
+#social {
+    display: none;
+}
+
+button {
+    height: 16px;
+    width: 16px;
+    background-image: url('../project13-data/images/icon-share.svg');
+}
+
 
 @media only screen and (max-width: 600px) {
 

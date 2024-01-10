@@ -4,10 +4,12 @@ body {
 }
 
 main {
-    margin: 100px auto 0;
-    background-color: hsl(0, 0%, 95%);
-    width: 918px;
-    font-size: 15px;
+    margin: 0 auto;
+    padding-top: 260px;
+    background-color: hsl(210, 46%, 95%);
+    width: 1440px;
+    font-size: 13px;
+    font-family: 'Manrope';
 }
 
 

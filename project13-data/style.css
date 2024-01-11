@@ -1,25 +1,114 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: hsl(210, 46%, 95%);
 }
 
 main {
     margin: 0 auto;
     padding-top: 260px;
-    background-color: hsl(210, 46%, 95%);
-    width: 1440px;
+    width: 730px;
     font-size: 13px;
-    font-family: 'Manrope';
+    font-family: 'Manrope', sans-serif;
+}
+
+main > #img {
+    width: 285px;
+    height: 280px;
+    background-image: url("../project13-data/images/drawers.jpg");
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+#img, section {
+    float: left;
+}
+
+section {
+    width: 365px;
+    padding: 37px 40px 30px;
+    background-color: hsl(256, 100%, 100%);
+    border-radius: 0 10px 10px 0;
+}
+
+h1 {
+    margin-top: 0;
+    color: hsl(217, 19%, 35%);
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    position: relative;
+}
+
+#user button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: hsl(210, 46%, 95%);
+    background-image: url('../project13-data/images/icon-share.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 50%;
+
+}
+
+.user-data {
+    position: relative;
+    right: 70px
+}
+
+.user-name {
+    color: hsl(217, 19%, 35%);
+}
+
+.date, p {
+    color: hsl(212, 23%, 69%);
+}
+
+#user > img {
+    width: 40px;
+    border-radius: 50%;
 }
 
 #social {
     display: none;
+    z-index: 1000;
+    position: absolute;
+    bottom: 70px;
+    left: 230px;
+    background-color: hsl(217, 19%, 35%);
+    padding: 5px 40px;
+    border-radius: 8px;
+    margin-right: -200px;
 }
 
-button {
-    height: 16px;
-    width: 16px;
-    background-image: url('../project13-data/images/icon-share.svg');
+#social p {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+ul {
+    display: inline-block;
+    padding: 0;
+    margin-left: 20px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+
+}
+
+.fa-brands {
+    font-size: 18px;
+    margin-right: 10px;
 }
 
 

@@ -87,6 +87,17 @@ h1 {
     margin-right: -200px;
 }
 
+@media only screen and (min-width: 601px) {
+    #bottom-pointer {
+      margin:  0 0 -25px 54px;
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 25px solid hsl(217, 19%, 35%);
+    }
+}
+
 #social p {
     display: inline-block;
     text-transform: uppercase;
@@ -97,6 +108,11 @@ ul {
     display: inline-block;
     padding: 0;
     margin-left: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
 }
 
 li {

@@ -1,3 +1,5 @@
-
-project1-mobile.html
-style-mobile.css
+.iml
+.idea/modules.xml
+gradle.xml
+.idea/libraries
+.idea/workspace.xml

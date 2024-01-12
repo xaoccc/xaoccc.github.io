@@ -5,14 +5,13 @@ body {
 }
 
 main {
-    margin: 0 auto;
-    padding-top: 260px;
+    margin: 260px auto 0;
     width: 730px;
     font-size: 13px;
     font-family: 'Manrope', sans-serif;
 }
 
-main > #img {
+#img {
     width: 285px;
     height: 280px;
     background-image: url("../project13-data/images/drawers.jpg");
@@ -44,7 +43,7 @@ h1 {
     position: relative;
 }
 
-#user button {
+#triggerButton {
     height: 40px;
     width: 40px;
     border: none;
@@ -54,12 +53,11 @@ h1 {
     background-position-x: center;
     background-position-y: center;
     border-radius: 50%;
-
 }
 
-.user-data {
+#user-data {
     position: relative;
-    right: 70px
+    right: 70px;
 }
 
 .user-name {
@@ -87,9 +85,22 @@ h1 {
     margin-right: -200px;
 }
 
+#social-button {
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: white;
+    display: none;
+    background-image: url('../project13-data/images/icon-share.svg');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 50%;
+}
+
 @media only screen and (min-width: 601px) {
     #bottom-pointer {
-      margin:  0 0 -25px 54px;
+      margin: 0 0 -25px 54px;
       width: 0;
       height: 0;
       border-left: 20px solid transparent;
@@ -130,5 +141,49 @@ li {
 
 @media only screen and (max-width: 600px) {
 
+    #img {
+        border-radius: 8px 8px 0 0;
+        width: 328px;
+    }
+
+    #img, section {
+        float: none;
+    }
+
+    main {
+        width: 328px;
+        margin: 74px auto;
+    }
+
+    section {
+        width: 268px;
+        padding: 37px 30px 30px;
+        border-radius: 0 0 8px 8px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+
+    #user-data {
+        position: relative;
+        right: 26px
+    }
+
+    #social {
+        position: absolute;
+        bottom: -50px;
+        left: -30px;
+        border-radius: 0 0 8px 8px;
+        width: 248px;
+    }
+
+    #triggerButton {
+        position: relative;
+    }
+
+    #bottom-pointer {
+        display: none;
+    }
 
 }

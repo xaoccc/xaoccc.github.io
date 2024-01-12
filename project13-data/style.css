@@ -7,8 +7,10 @@ body {
 main {
     margin: 260px auto 0;
     width: 730px;
+    height: 280px;
     font-size: 13px;
     font-family: 'Manrope', sans-serif;
+    box-shadow: hsla(212, 23%, 69%, 0.2) 20px 20px 37px;
 }
 
 #img {
@@ -152,6 +154,7 @@ li {
 
     main {
         width: 328px;
+        height: 538px;
         margin: 74px auto;
     }
 

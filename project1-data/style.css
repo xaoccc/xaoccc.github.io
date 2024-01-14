@@ -4,7 +4,8 @@ body {
 }
 
 main {
-  	margin: 13% 33% 0% 33%;
+  	margin: 13% auto 0;
+	max-width: 600px;
   	height: 400px;
   	overflow: hidden; 
   	position: relative;
@@ -17,6 +18,7 @@ img {
   	width: 50%;
   	height: 100%;
 }
+
 section {
 	display: table-row;
   	padding-left: 5%;
@@ -47,19 +49,26 @@ h4, .text-info {
 h4, .text-info, .old-price, .cart {
 	font-family: 'Montserrat', sans-serif;
 }
+
 .cart {
-  	background-color: hsl(158, 36%, 37%);
-  	padding: 10px 0 10px;
-  	margin: 10px 0 20px;
-  	color: white;
-  	border-radius: 8px;
+	background-color: hsl(158, 36%, 37%);
+	padding: 15px 40px;
+	margin: 10px 0 10px;
+	color: white;
+	border-radius: 8px;
 	border: none;
-	width: 100%;
 }
+
 .cart:hover {
   	color: black;
   	cursor: pointer;
 }
+
+.price {
+	display: flex;
+    align-items: center;
+}
+
 .new-price {
   	display: inline-block;
   	font-size: 25px;
@@ -69,21 +78,15 @@ h4, .text-info, .old-price, .cart {
 .old-price{
   	display: inline-block;
   	text-decoration: line-through;
-  	vertical-align: middle;
   	margin: 0;
   	padding: 0 0 10px 10px;
-  
 }
+
 .cart img{
   	width: 14px;
 }
 .cart span{
   	padding-left: 10px;
-}
-.cart-container {
-    margin: auto;
-    width: 105px;
-    position: relative;
 }
 
 
@@ -116,7 +119,7 @@ h4, .text-info, .old-price, .cart {
 		text-transform: uppercase;
 	}
 	h1 {
-		margin-top: 0em;
+		margin-top: 0;
 		font-size: 30px;
 	}
 	h4, .text-info {
@@ -132,15 +135,7 @@ h4, .text-info, .old-price, .cart {
 	h4, .text-info, .old-price, .cart {
 		font-family: 'Montserrat', sans-serif;
 	}
-	.cart {
-		background-color: hsl(158, 36%, 37%);
-		padding: 15px 0px 15px;
-		margin: 10px 0px 10px;
-		color: white;
-		border-radius: 8px;
-		border: 0px;
-		width: 100%;
-	}
+
 
 	.new-price {
 		font-size: 30px;

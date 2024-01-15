@@ -48,11 +48,6 @@ a:not([class]) {
   color: currentColor;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-}
 
 /* Inherit fonts for inputs and buttons */
 input, button,

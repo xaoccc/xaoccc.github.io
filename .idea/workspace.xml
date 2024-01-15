@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9e759a5-ea78-4911-88a7-b66e31c22035" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/project1-data/design/active-states.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project1-data/design/desktop-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project1-data/design/desktop-preview.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project1-data/design/mobile-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project1-data/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project1-data/style-guide.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1-data/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project1-data/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/project1-data/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project1-data/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/project1-data/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project1.html" beforeDir="false" afterPath="$PROJECT_DIR$/project1.html" afterDir="false" />
     </list>

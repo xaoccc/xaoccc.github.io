@@ -18,42 +18,28 @@
 <body>
 
   <main>
-    <section class="image-wrapper">
-      <img src="./project1-data/images/image-product-desktop.jpg" alt="Gabrielle Essence Eau De Parfum lying on a surface with two green leaves"/>
-    </section>
-    <section class="text-wrapper">
-      <h4>
-        perfume
-      </h4>
-      <h2>
-        Gabrielle Essence Eau De Parfum 
-      </h2>
+    <picture>
+      <source srcset="./project1-data/images/image-product-desktop.jpg" media="(min-width: 600px)" />
+      <img src="./project1-data/images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum lying on a surface with two green leaves" />
+    </picture>
+
+    <section>
+      <h4>perfume</h4>
+      <h2>Gabrielle Essence Eau De Parfum</h2>
       <p class="text-info">
         A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL. 
-       </p>
+      </p>
       <div class="price">
-        <p class="new-price">
-          $129.99
-        </p>
-        <p class="old-price">
-          $149.99
-        </p>
+        <p class="new-price">$129.99</p>
+        <p class="old-price">$149.99</p>
       </div>
      	<button class="cart">
-            <div class="cart-container">
-              <img src="./project1-data/images/icon-cart.svg" alt="white cart icon"/>
-                <span>
-                  Add to Cart
-                </span>
-            </div>
+            <img src="./project1-data/images/icon-cart.svg" alt="white cart icon"/>
+            <span>Add to Cart</span>
        </button>
     </section>
   </main>
-  
 
 </body>
-
 </html>
-<!--Progress-->
-<!--1. Removed ID styles-->
-<!--2. Added correct alt for the images-->
+

@@ -10,21 +10,22 @@ main {
   	border-radius: 12px;
 }
 
-.image-wrapper {
-    max-height: 450px;
-}
-
-.image-wrapper, .text-wrapper{
+picture, section {
     float: left;
     max-width: 50%;
 }
 
-.text-wrapper {
+picture img {
+    max-width: 100%;
+    margin-bottom: -7px;
+}
+
+section {
   	padding: 32px;
   	background-color: white;
 }
 
-h4{
+h4 {
   	letter-spacing: 5px;
   	font-size: 12px;
   	font-weight: 500;
@@ -48,17 +49,23 @@ h4, .text-info {
 .text-info, .old-price, .cart, footer {
   	font-size: 14px;
 }
+
+.text-info {
+    margin-bottom: 6px;
+}
+
 h4, .text-info, .old-price, .cart {
 	font-family: 'Montserrat', sans-serif;
 }
 
 .cart {
-	background-color: hsl(158, 36%, 37%);
-	padding: 15px 63px;
-	margin: 10px 0 10px;
-	color: white;
-	border-radius: 8px;
-	border: none;
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px;
+    margin: 10px auto;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
 }
 
 .cart:hover {
@@ -75,7 +82,8 @@ h4, .text-info, .old-price, .cart {
   	font-size: 25px;
   	color: hsl(158, 36%, 37%);
   	margin: 0 0 15px;
-  }
+}
+
 .old-price {
   	text-decoration: line-through;
   	margin: 0;
@@ -89,36 +97,27 @@ h4, .text-info, .old-price, .cart {
   	padding-left: 11px;
 }
 
-
 @media only screen and (max-width: 600px) {
 
 	main {
+	    max-width: 342px;
 		margin: 1em 0 0 1em;
 	}
 
-.image-wrapper, .text-wrapper {
+	picture, section {
+        float: none;
         max-width: 100%;
     }
 
-    .image-wrapper {
-        max-height: 240px;
+	section {
+  	    padding: 22px;
     }
 
-	.image-wrapper img {
-	    display: block;
-        width: 100%;
-	}
-
-	.text-wrapper {
-
-	}
-
 	h4 {
-		font-size: 14px;
+		font-size: 12px;
 	}
+
 	h2 {
 		margin-top: 0;
-		font-size: 20px;
 	}
-
 }

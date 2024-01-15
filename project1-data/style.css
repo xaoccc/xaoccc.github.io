@@ -4,42 +4,44 @@ body {
 }
 
 main {
-  	margin: 13% auto 0;
+  	margin: 13% auto 2%;
 	max-width: 600px;
-  	height: 400px;
-  	overflow: hidden; 
-  	position: relative;
+  	overflow: hidden;
   	border-radius: 12px;
-  	display: flex;
-}
-img {
-  	display: table-row;
-    float: left;
-  	width: 50%;
-  	height: 100%;
 }
 
-section {
-	display: table-row;
-  	padding-left: 5%;
-  	padding-right: 5%;
-  	width: 40%;
-  	padding-top: 15px;
-  	background-color: white;
-  	overflow: auto;
+.image-wrapper {
+    max-height: 450px;
 }
+
+.image-wrapper, .text-wrapper{
+    float: left;
+    max-width: 50%;
+}
+
+.text-wrapper {
+  	padding: 32px;
+  	background-color: white;
+}
+
 h4{
   	letter-spacing: 5px;
   	font-size: 12px;
   	font-weight: 500;
 	text-transform: uppercase;
 }
-h1, .new-price {
+h2, .new-price {
   	font-family: 'Fraunces', sans-serif;
 }
-h1 {
-    font-size: 30px;
+h2 {
+    font-size: 32px;
+    padding-bottom: 12px;
 }
+
+h4 {
+    margin: 2px 0 6px;
+}
+
 h4, .text-info {
   	color: hsl(228, 12%, 48%);
 }
@@ -52,7 +54,7 @@ h4, .text-info, .old-price, .cart {
 
 .cart {
 	background-color: hsl(158, 36%, 37%);
-	padding: 15px 40px;
+	padding: 15px 63px;
 	margin: 10px 0 10px;
 	color: white;
 	border-radius: 8px;
@@ -70,13 +72,11 @@ h4, .text-info, .old-price, .cart {
 }
 
 .new-price {
-  	display: inline-block;
   	font-size: 25px;
   	color: hsl(158, 36%, 37%);
   	margin: 0 0 15px;
   }
-.old-price{
-  	display: inline-block;
+.old-price {
   	text-decoration: line-through;
   	margin: 0;
   	padding: 0 0 10px 10px;
@@ -86,7 +86,7 @@ h4, .text-info, .old-price, .cart {
   	width: 14px;
 }
 .cart span{
-  	padding-left: 10px;
+  	padding-left: 11px;
 }
 
 
@@ -94,52 +94,31 @@ h4, .text-info, .old-price, .cart {
 
 	main {
 		margin: 1em 0 0 1em;
-		display: flex;
-		flex-direction: column;
 	}
 
-	img {
-		display: block;
-		width: 94%;
-		border-radius: 1em 1em 0 0;
+.image-wrapper, .text-wrapper {
+        max-width: 100%;
+    }
+
+    .image-wrapper {
+        max-height: 240px;
+    }
+
+	.image-wrapper img {
+	    display: block;
+        width: 100%;
 	}
-	section {
-		padding: 5%;
-		width: 84%;
-		background-color: white;
-		position: relative;
-		top: -0.3em;
-		border-radius: 0 0 1em 1em;
+
+	.text-wrapper {
+
 	}
-	h4{
-		margin-top: 0.3em;
-		letter-spacing: 4px;
+
+	h4 {
 		font-size: 14px;
-		font-weight: 500;
-		text-transform: uppercase;
 	}
-	h1 {
+	h2 {
 		margin-top: 0;
-		font-size: 30px;
+		font-size: 20px;
 	}
-	h4, .text-info {
-		color: hsl(228, 12%, 48%);
-	}
-	.text-info, .old-price, .cart, footer {
-		font-size: 14px;
-	}
-	.text-info {
-		padding-right: 1.2em;
-		line-height: 1.7em;
-	}
-	h4, .text-info, .old-price, .cart {
-		font-family: 'Montserrat', sans-serif;
-	}
-
-
-	.new-price {
-		font-size: 30px;
-		margin: 0;
-	  }
 
 }

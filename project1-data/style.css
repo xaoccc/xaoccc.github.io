@@ -51,7 +51,7 @@ h4, .text-info {
 }
 
 .text-info {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 h4, .text-info, .old-price, .cart {
@@ -100,8 +100,8 @@ h4, .text-info, .old-price, .cart {
 @media only screen and (max-width: 600px) {
 
 	main {
-	    max-width: 342px;
-		margin: 1em 0 0 1em;
+	    max-width: 21.375em;
+		margin: 1em auto;
 	}
 
 	picture, section {
@@ -110,7 +110,7 @@ h4, .text-info, .old-price, .cart {
     }
 
 	section {
-  	    padding: 22px;
+  	    padding: 1.375em;
     }
 
 	h4 {

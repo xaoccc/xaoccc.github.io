@@ -12,6 +12,8 @@ main {
     max-width: calc((600/16) * 1rem);
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 img {
@@ -20,7 +22,7 @@ img {
 }
 
 section {
-  	padding: 0 2em;
+  	padding: 20px;
   	background-color: white;
   	display: flex;
     flex-direction: column;

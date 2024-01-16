@@ -1,72 +1,76 @@
 body {
-  	margin: 0;
-  	background-color: hsl(30, 38%, 92%)
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 }
 
 main {
-  	margin: 13% auto 2%;
-	max-width: 600px;
-  	overflow: hidden;
-  	border-radius: 12px;
+    max-width: calc((600/16) * 1rem);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-picture, section {
-    float: left;
-    max-width: 50%;
-}
-
-picture img {
+img {
     max-width: 100%;
-    margin-bottom: -7px;
+    display: block;
 }
 
 section {
-  	padding: 32px;
+  	padding: 0 2em;
   	background-color: white;
+  	display: flex;
+    flex-direction: column;
 }
 
-h4 {
-  	letter-spacing: 5px;
-  	font-size: 12px;
-  	font-weight: 500;
-	text-transform: uppercase;
-}
 h2, .new-price {
   	font-family: 'Fraunces', sans-serif;
 }
 h2 {
-    font-size: 32px;
-    padding-bottom: 12px;
+    font-size: 2rem;
+    margin-top: 0.5em;
 }
 
-h4 {
-    margin: 2px 0 6px;
+.h4 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.3em;
+    font-size: 0.875rem;
+    margin-top: 0;
 }
 
-h4, .text-info {
+.h4, .text-info {
   	color: hsl(228, 12%, 48%);
 }
 .text-info, .old-price, .cart, footer {
-  	font-size: 14px;
+  	font-size: 0.875rem;
 }
 
 .text-info {
     margin-bottom: 8px;
 }
 
-h4, .text-info, .old-price, .cart {
+.h4, .text-info, .old-price, .cart {
 	font-family: 'Montserrat', sans-serif;
 }
 
 .cart {
     background-color: hsl(158, 36%, 37%);
-    padding: 15px;
-    margin: 10px auto;
+    padding: 1em;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1ch;
     color: white;
-    border-radius: 8px;
+    border-radius: 0.5em;
     border: none;
     width: 100%;
 }
+
 
 .cart:hover {
   	color: black;
@@ -75,7 +79,9 @@ h4, .text-info, .old-price, .cart {
 
 .price {
 	display: flex;
-    align-items: center;
+	align-items: center;
+    gap: 1ch;
+    margin-block: 1.5rem;
 }
 
 .new-price {
@@ -98,26 +104,7 @@ h4, .text-info, .old-price, .cart {
 }
 
 @media only screen and (max-width: 600px) {
-
 	main {
-	    max-width: 21.375em;
-		margin: 1em auto;
-	}
-
-	picture, section {
-        float: none;
-        max-width: 100%;
-    }
-
-	section {
-  	    padding: 1.375em;
-    }
-
-	h4 {
-		font-size: 12px;
-	}
-
-	h2 {
-		margin-top: 0;
+	    grid-template-columns: 1fr;
 	}
 }

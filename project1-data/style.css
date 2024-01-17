@@ -21,8 +21,8 @@ img {
     display: block;
 }
 
-section {
-  	padding: 20px;
+.text-wrapper {
+  	padding: 2em;
   	background-color: white;
   	display: flex;
     flex-direction: column;
@@ -34,13 +34,14 @@ h2, .new-price {
 h2 {
     font-size: 2rem;
     margin-top: 0.5em;
+    line-height: 1;
 }
 
 .h4 {
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.3em;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     margin-top: 0;
 }
 
@@ -53,6 +54,7 @@ h2 {
 
 .text-info {
     margin-bottom: 8px;
+    line-height: 1.65;
 }
 
 .h4, .text-info, .old-price, .cart {
@@ -73,7 +75,6 @@ h2 {
     width: 100%;
 }
 
-
 .cart:hover {
   	color: black;
   	cursor: pointer;
@@ -83,19 +84,18 @@ h2 {
 	display: flex;
 	align-items: center;
     gap: 1ch;
-    margin-block: 1.5rem;
+    margin-block: 1.25rem;
 }
 
 .new-price {
-  	font-size: 25px;
+  	font-size: 1.875rem;
   	color: hsl(158, 36%, 37%);
-  	margin: 0 0 15px;
+  	margin: 0 10px 0 0;
 }
 
 .old-price {
   	text-decoration: line-through;
   	margin: 0;
-  	padding: 0 0 10px 10px;
 }
 
 .cart img{

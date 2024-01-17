@@ -1,5 +1,4 @@
 .iml
-.idea/modules.xml
+.idea
 gradle.xml
-.idea/libraries
-.idea/workspace.xml
+

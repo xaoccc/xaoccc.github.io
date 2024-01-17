@@ -9,7 +9,7 @@ body {
 }
 
 main {
-    max-width: calc((600/16) * 1rem);
+    max-width: 37.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     overflow: hidden;

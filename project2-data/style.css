@@ -1,48 +1,38 @@
 
 body {
-    width: 90em;
-    margin: auto;
     background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
 }
-#content-box{
+
+.content-box{
+    padding: 1em;
     background-color: hsl(0, 0%, 100%);
-    height: 31em;
-    width: 20em;
-    margin: 9.5em auto auto;
+    max-width: 20rem;
+    margin: 9.5rem auto 1rem;
     border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 img {
-    width: 18em;
-    margin: 1em;
+    display: block;
+    max-width: 100%;
     border-radius: 1em;
 }
-h1 {
+h2 {
     margin-top: 0;
-    font-family: Outfit;
     font-weight: 700;
     font-size: 22px;
     color: hsl(218, 44%, 22%);
 }
-#item-description p {
+.item-description p {
     font-size: 15px;
     color: hsl(220, 15%, 55%);
 }
-#item-description {
-    padding: 0 2em 2em 2em;
-    font-family: Outfit;
+.item-description {
     text-align: center;
+    margin: 1em;
 }
-@font-face {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  src: url(https://fonts.gstatic.com/s/outfit/v6/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1O4a0Ew.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@media only screen and (max-width: 600px) {
-  body{
-    width: 375px;
-  }
-  #content-box{
-    margin: 4em auto auto;
-}
+
+

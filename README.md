@@ -16,20 +16,20 @@ Here is a screenshot of my first solution. As you can see, I used the online com
 
 ### What I learned
 
-```css
-#content-box {
-  	margin: 15% 33% 0% 33%;
-  	overflow: hidden;
-}
-#item-description {
-	display: table-row;
-  }
-h4{
-  	letter-spacing: 2px;
-}
-```
+#### HTML
+Proper use of elements:
+- All webpage content must be inside 'header', 'main', 'aside' and 'footed' elements.
+- Every page should have a 'h1', but no more than one 'h1' 
+- Components cannot have 'h1', they should have 'h2', 'h3', etc.
+- 'section' and 'article' are used in very specific cases. Should use 'div' instead.
+- 'img' should always have 'alt' attribute, and it should be meaningful, descriptive, not too short, not too long.
+- 'alt' for icons contains no description, but the 'alt' is not omitted.
 
-And much more CSS features  
+todo..
+#### CSS..
+
+
+
 ### Useful resources
 
 - [Programiz](https://www.programiz.com/html/online-compiler/) - This site gave me the work environment.

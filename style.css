@@ -1,44 +1,60 @@
 
 body {
-  font-family: Consolas, Lucida Console, Courier New;
-  background-color: #000000;
+    font-family: sans-serif;
+    background-color: #000000;
 }
 footer {
-  position: absolute;
-  bottom: 1em;
-  right: 2em;
-  color: white;
+    color: white;
 }
-#content-box {
-  margin: 6em auto;
-  width: 800px;
-  height: 600px;
-  color: #778899;
-  background-image: url("media/bg-img.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+main {
+    margin: 6em auto;
+    max-width: 75em;
+    color: #778899;
+    background-image: url("media/bg-img-1.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
 }
-h1{
-  font-size: 32px
+
+h1, h2{
+  font-size: 2rem;
+  text-align: center;
 }
+
 li {
-  margin: 0;
-  list-style-type: none;
-  width: 390px;
-  padding: 0.5em;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0.5em 1em;
 }
+
+ul li img {
+    max-height: 16em;
+    display: block;
+}
+
 a {
-  text-decoration: none;
-  color: white; 
+    overflow: hidden;
+    display: flex;
+    text-decoration: none;
+    max-width: 21em;
+    justify-content: center;
+    border-radius: 0.75em;
+    border: rgba(0,0,0,0) 1px solid;
+}
+
+p {
+  color: white;
   font-size: 1em;
-  
 }
-li:hover {
-  color: 	#e0ffff;
-  background-color: #696969;
-  opacity: 0.8;
-  border-radius: 5px;
+
+img:hover {
+  opacity: 0.7;
 }
+
+a:hover {
+    border: rgba(256,256,256,0.5) 1px solid;
+}
+
           
 @media only screen and (max-width: 800px) {
   body {

@@ -31,7 +31,7 @@ ul li img {
     display: block;
 }
 
-a {
+.main-projects a {
     overflow: hidden;
     display: flex;
     text-decoration: none;
@@ -39,6 +39,16 @@ a {
     justify-content: center;
     border-radius: 12px;
     border: rgba(0,0,0,0) 1px solid;
+}
+
+.other-projects a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: rgb(230, 230, 230);
+}
+
+.other-projects {
+    text-align: center;
 }
 
 p {
@@ -53,8 +63,12 @@ img:hover {
   opacity: 0.7;
 }
 
-a:hover {
+.main-projects a:hover {
     border: rgba(256,256,256,0.5) 1px solid;
+}
+
+.other-projects a:hover {
+    background-color: rgb(21,25,47);
 }
 
           

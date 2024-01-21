@@ -2,7 +2,7 @@ body {
     background-color: white;
     font-family: 'Hanken Grotesk', sans-serif;
 }
-#content-box{
+main{
     margin: 285px auto;
     height: 512px;
     width: 736px;
@@ -10,20 +10,20 @@ body {
     border-radius: 1.5em;
 }
 
-#result {
+.result {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 2.2em;
     text-align: center;
     padding: 40px;
 }
-p, #percentage-small {
+p, .percentage-small {
     font-size: 18px;
 }
 h1, h2 {
     font-size: 22px;
     font-weight: 700;
 }
-#percentage, #score{
+.percentage, .score{
     color: white;
 }
 h1 {
@@ -35,15 +35,15 @@ h1, p{
     color: hsl(241, 100%, 89%);
 }
 
-#percentage-small{
+.percentage-small{
     color: hsla(241, 100%, 89%, 60%);
 }
-#percentage-big {
+.percentage-big {
     font-size: 70px;
     font-weight: 700;
 }
 
-#percentage{
+.percentage{
     padding: 40px;
     width: 120px;
     height: 120px;
@@ -52,24 +52,24 @@ h1, p{
     border-radius: 120px;
 }
 
-#score {
+.score {
     margin-top: 30px;
     font-size: 30px;
     font-weight: 700;
 }
 
-#summary, #result{
+.summary, .result{
     display: inline-block;
     float: left;
     height: 432px;
 }
 
-#result {
+.result {
     width: 248px;
     padding: 40px 60px;
 }
 
-#summary {
+.summary {
     width: 288px;
     background-color: white;
     border-radius: 1.5em;
@@ -80,39 +80,39 @@ h2 {
     margin-bottom: 30px;
 }
 
-#summary div {
+.summary div {
     padding: 17px;
     margin: 14px auto;
     border-radius: 13px;
     width: 88%;
 }
 
-#summary div span{
+.summary div span{
     vertical-align: top;
 }
-#reaction {
+.reaction {
     background-color: rgba(255, 0, 0, 0.04);
 }
-#memory {
+.memory {
     background-color: rgba(200, 150, 0, 0.04);
 }
-#verbal {
+.verbal {
     background-color: rgba(0, 255, 0, 0.04);
 }
-#visual {
+.visual {
     background-color: rgba(0, 0, 255, 0.04);
 }
 
-#reaction-text {
+.reaction-text {
     color: red;
 }
-#memory-text {
+.memory-text {
     color: orange;
 }
-#verbal-text {
+.verbal-text {
     color: green;
 }
-#visual-text {
+.visual-text {
     color: blue;
 }
  .percents{
@@ -121,11 +121,11 @@ h2 {
  .percents-max{
     color: gray; 
 }
-  .percents-result,  #summary div{
+.percents-result,  #summary div{
     font-weight: 800;
 }
 
- #summary div, .button {
+ .summary div, .button {
      font-size: 18px;
 
  }
@@ -148,11 +148,11 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
-    #content-box {
+    .content-box {
         width: 306px;
     }
 
-    #summary, #result {
+    .summary, .result {
         float: none;
         position: relative;
         top: -40px;

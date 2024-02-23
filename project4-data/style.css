@@ -16,7 +16,7 @@ body {
 .title {
     margin: 35px 0 15px;
     color: hsl(0, 0%, 100%);
-    font-size: 27px;
+    font-size: 1.75rem;
     letter-spacing: 0.8px;
     font-weight: 700;
 }
@@ -24,7 +24,7 @@ body {
 .contents {
     margin: 0px 4px 15px;
     color: hsl(217, 12%, 63%);
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 24px;
 }
 
@@ -34,10 +34,10 @@ body {
     display: block;
     width: 100%;
     border-width: 0px;
-    border-radius: 20px;
+    border-radius: 24px;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 0.95rem;
     letter-spacing: 2px;
     cursor: pointer;
 }
@@ -51,7 +51,7 @@ body {
     background-color: hsl(213, 19%, 18%);
     color: hsl(217, 12%, 63%);
     padding: 17px;
-    border-radius: 25px;
+    border-radius: 50%;
     width: 17px;
     height: 17px;
     text-align: center;
@@ -121,7 +121,7 @@ body {
 
     .title {
         margin: 20px 0 10px;
-        font-size: 25px;
+        font-size: 1.55rem;
     }
     .submit-button{
         margin-top: 24px;

@@ -8,7 +8,6 @@ body {
     margin: 218px auto 0;
     background-color: white;
     width: 336px;
-    height: 474px;
     padding: 24px;
     border-width: 1px;
     border-color: black;
@@ -53,12 +52,12 @@ body {
 .contents {
     color: hsl(0, 0%, 50%);
     line-height: 24px;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .author {
     font-weight: bold;
-    margin: 22px 0;
+    margin: 22px 0 5px;
 }
 
 .author img {

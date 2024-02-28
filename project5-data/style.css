@@ -1,7 +1,6 @@
 body {
     background-color: hsl(47, 88%, 63%);
     font-family: 'Figtree', sans-serif;
-    font-size: 14px;
 }
 
 .container {
@@ -38,7 +37,7 @@ body {
 }
 
 .title h1 a {
-    font-size: 23px;
+    font-size: 1.44rem;
     text-decoration: none;
     color: hsl(0, 0%, 7%);
     cursor: pointer;
@@ -72,12 +71,20 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .image-container img{
-        width: 279px;
+    .image-container img {
+        max-width: 100%;
     }
+
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
     .container {
-        margin: 155px auto 0;
-        width: 279px;
+        margin: 0;
+        max-width: 279px;
     }
 }
 

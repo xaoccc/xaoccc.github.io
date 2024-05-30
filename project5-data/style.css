@@ -1,22 +1,26 @@
 body {
     background-color: hsl(47, 88%, 63%);
     font-family: 'Figtree', sans-serif;
+    display: flex ;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-    margin: 218px auto 0;
+main {
+    margin: auto;
     background-color: white;
-    width: 336px;
-    padding: 24px;
+    max-width: 21em;
+    padding: 1.5em;
     border-width: 1px;
     border-color: black;
     border-style: solid;
-    border-radius: 20px;
+    border-radius: 1.25em;
     box-shadow: 10px 10px black;
 }
 
 .image-container img {
-    border-radius: 12px;
+    border-radius: 0.75em;
 }
 
 .tag-container {
@@ -28,12 +32,8 @@ body {
     display: inline-block;
 }
 
-.published {
-}
-
 .title {
     margin: 18px 0 13px;
-
 }
 
 .title h1 a {
@@ -50,7 +50,7 @@ body {
 
 .contents {
     color: hsl(0, 0%, 50%);
-    line-height: 24px;
+    line-height: 1.5;
     font-size: 1rem;
 }
 
@@ -60,31 +60,32 @@ body {
 }
 
 .author img {
-    width: 32px;
+    width: 2em;
 }
 
-.author div {
-    display: inline-block;
-    position: relative;
-    top: -11px;
-    padding-left: 8px;
+.author {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1em;
 }
 
 @media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
     .image-container img {
         max-width: 100%;
     }
-
     main {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
+        display: flex;       
+        flex-direction: column;
+        margin: auto 2em;
     }
 
-    .container {
-        margin: 0;
-        max-width: 279px;
+    .tag-container {
+        width: 21%;
     }
+
 }
 

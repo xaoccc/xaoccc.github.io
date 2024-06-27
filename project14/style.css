@@ -1,13 +1,104 @@
 body {
-    margin: 0;
-    padding: 0;
+    background-color: hsl(148, 38%, 91%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Karla', sans-serif;
 }
 
-main {
-    margin: 100px auto 0;
-    background-color: hsl(0, 0%, 95%);
-    width: 918px;
-    font-size: 15px;
+form {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    color: hsl(187, 24%, 22%);
+    max-width: 41.625rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+
+
+button, .query label {
+    font-size: 1.10rem;
+}
+
+
+
+input[type="text"], textarea {
+    border: 1px solid hsl(186, 15%, 59%);
+}
+
+.field.flex-row {
+    flex-direction: row;
+}
+
+.query .field {    
+    padding: 0.75rem 1.5rem;
+    border: 1px solid hsl(186, 15%, 59%);
+    border-radius: 0.5rem;
+}
+
+.fields-group {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 1rem;
+}
+
+.field {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: hsl(169, 82%, 27%);
+    color: #fff;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    cursor: pointer;
+    flex: 1 1 100%;
+}
+
+input {
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.5rem;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+
+textarea {
+    border-radius: 7px;
+    padding: 0.5rem;
+    resize: none;
+    height: 6rem;
+}
+
+legend, label:not([for="consent"], [for="support"], [for="general"]) {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.field label:not([for="consent"], [for="support"], [for="general"]) {
+    order: -1;
+}
+
+.checkbox {
+    gap: 1rem;
+}
+.checkbox, .radio {
+    gap: 0.5rem;
+}
+
+input:required ~ label:not([for="support"], [for="general"])::after, textarea:required ~ label::after, legend::after {
+    content: "*";
+    color: hsl(169, 82%, 27%);
+    margin-left: 0.5rem;
+
 }
 
 

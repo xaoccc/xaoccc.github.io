@@ -8,7 +8,7 @@ main {
     margin: 0 auto;
     padding: 172px 0;
     background: hsl(185, 75%, 39%);
-    background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
     background-position: -63% 192%, 156% -135%;
     background-repeat: no-repeat;
     width: 1440px;
@@ -18,7 +18,7 @@ main {
 #header {
     height: 140px;
     text-align: center;
-    background-image: url('images/bg-pattern-card.svg');
+    background-image: url('../images/bg-pattern-card.svg');
     border-radius: 13px 13px 0 0;
 }
 

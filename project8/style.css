@@ -1,5 +1,5 @@
 body {
-    background-image: url("/project8-data/images/pattern-background-desktop.svg");
+    background-image: url("images/pattern-background-desktop.svg");
     background-repeat: repeat-x;
     background-color: hsl(225, 100%, 94%);
     font-family: 'Red Hat Display';

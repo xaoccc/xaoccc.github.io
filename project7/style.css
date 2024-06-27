@@ -17,14 +17,14 @@ main {
 }
 
 .image-container {
-    background-image: url("/images/image-equilibrium.jpg");
+    background-image: url("./images/image-equilibrium.jpg");
     background-size: 100%;
     border-radius: 8px;
 }
 
 .bg-container:hover {
     background-color: hsla(178, 100%, 50%, 0.4);
-    background-image: url("/images/icon-view.svg");
+    background-image: url("./images/icon-view.svg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;

@@ -31,10 +31,9 @@
       </div>
     </div>
     <div class="field">
-      <input type="email" id="email" name="email" oninvalid="validateEmail();" required>
+      <input type="email" id="email" name="email" oninvalid="this.setCustomValidity(' ')" required>
       <label for="email">Email Address</label>
       <div class="error-message" id="error-email"></div>
-      <div class="error-message" id="invalid-email">Please enter a valid email address</div>
     </div>
 
     <fieldset class="query fields-group">

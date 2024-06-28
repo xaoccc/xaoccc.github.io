@@ -8,7 +8,7 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Karla', sans-serif;
-    padding-top: 6rem;    
+    padding-top: 6rem;
 }
 
 form {
@@ -25,11 +25,13 @@ form {
     position: relative;
 }
 
-button, .query label {
+button,
+.query label {
     font-size: 1.12rem;
 }
 
-input[type="text"], textarea {
+input[type="text"],
+textarea {
     border: 1px solid hsl(186, 15%, 59%);
 }
 
@@ -37,7 +39,7 @@ input[type="text"], textarea {
     flex-direction: row;
 }
 
-.query .field {    
+.query .field {
     padding: 0.75rem 1.5rem;
     border: 1px solid hsl(186, 15%, 59%);
     border-radius: 0.5rem;
@@ -84,7 +86,8 @@ textarea {
     cursor: pointer;
 }
 
-legend, label:not([for="consent"], [for="support"], [for="general"]) {
+legend,
+label:not([for="consent"], [for="support"], [for="general"]) {
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0.5rem;
@@ -94,14 +97,19 @@ legend, label:not([for="consent"], [for="support"], [for="general"]) {
     order: -1;
 }
 
-.checkbox, .checkbox label {
+.checkbox,
+.checkbox label {
     cursor: pointer;
 }
-.checkbox, .radio {
+
+.checkbox,
+.radio {
     gap: 1rem;
 }
 
-input:required ~ label:not([for="support"], [for="general"])::after, textarea:required ~ label::after, legend::after {
+input:required~label:not([for="support"], [for="general"])::after,
+textarea:required~label::after,
+legend::after {
     content: "*";
     color: hsl(169, 82%, 27%);
     margin-left: 0.5rem;
@@ -111,35 +119,37 @@ input:required ~ label:not([for="support"], [for="general"])::after, textarea:re
     color: hsl(0, 66%, 54%);
     font-size: 1rem;
     margin-top: 8px;
-  }
+}
 
-  input[type="text"].error, input[type="email"].error, textarea.error{
+input[type="text"].error,
+input[type="email"].error,
+textarea.error {
     border: none;
     outline: 1px solid hsl(0, 66%, 54%);
-  }
+}
 
-  #error-general, #error-consent {
+#error-general,
+#error-consent {
     margin-top: -1.5rem;
-  }
+}
 
-  #invalid-email {
-    display: none;
-  }
-
-  .test-error {
+.test-error {
     display: block;
-  }
-  
-  .field.flex-row.radio {
+}
+
+.field.flex-row.radio {
     align-items: center;
-  }
+}
 
 
-.field.flex-row.radio:active, .field.flex-row.radio:focus-within {
+.field.flex-row.radio:active,
+.field.flex-row.radio:focus-within {
     background-color: hsl(148, 38%, 91%);
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
     outline: 1px solid hsl(169, 82%, 27%);
     border: 1px solid hsl(169, 82%, 27%);
 }
@@ -163,7 +173,7 @@ input[type="radio"]::before {
     width: 22px;
     background-color: hsl(169, 82%, 27%);
     border: 4px solid hsl(148, 38%, 91%);
-    border-radius: 50%; 
+    border-radius: 50%;
 
 }
 
@@ -192,7 +202,8 @@ input[type="checkbox"]:checked {
     padding: 0;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
     border: 1px solid hsl(187, 24%, 22%);
 }
 

@@ -19,21 +19,19 @@ function submitForm() {
             errorElement.textContent = 'To submit this form, please consent to being contacted';
             formIsValid = false;
 
+        } else if (input.type === 'email' && !input.value.includes('@')) {
+            errorElement.textContent = 'Please enter a valid email address';
+            formIsValid = false;
+
+        } else {
+            errorElement.textContent = '';
+            input.classList.remove('error');
         }
     });
 
 
 }
 
-// Validate email
-function validateEmail() {
-    let email = document.getElementById('email');
-    if (!email.value.includes('@')) {
-        email.setCustomValidity(' ');
-        document.getElementById('invalid-email').style.display = 'block';
-        email.classList.add('error');
-    }
-}
 
 
 

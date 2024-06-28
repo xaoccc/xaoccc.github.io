@@ -16,17 +16,21 @@
     <h1>Contact Us</h1>
     <div class="name fields-group">
       <div class="field">
-        <input type="text" id="first-name" name="first-name" required>
+        <input type="text" id="first-name" name="first-name" oninvalid="this.setCustomValidity(' ')" required>
         <label for="first-name">First Name</label>
+        <div class="error-message" id="error-first-name"></div>
       </div>
       <div class="field">
-        <input type="text" id="last-name" name="last-name" required>
+        <input type="text" id="last-name" name="last-name" oninvalid="this.setCustomValidity(' ')" required>
         <label for="last-name">Last Name</label>
+        <div class="error-message" id="error-last-name"></div>
       </div>
     </div>
     <div class="field">
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" oninvalid="validateEmail();" required>
       <label for="email">Email Address</label>
+      <div class="error-message" id="error-email"></div>
+      <div class="error-message" id="invalid-email">Please enter a valid email address</div>
     </div>
 
     <fieldset class="query fields-group">
@@ -39,18 +43,22 @@
         <input type="radio" id="support" name="query-type" value="support">
         <label for="support">Support Request</label>
       </div>
+      
     </fieldset> 
+    <div class="error-message" id="error-general"></div>
 
     </div>
     <div class="field">
       <textarea id="text-area" name="text-area" required></textarea>
       <label for="text-area">Message</label>
+      <div class="error-message" id="error-text-area"></div>
     </div>
     <div class="field flex-row checkbox">
       <input type="checkbox" id="consent" name="consent" required>
-      <label for="consent">I consent to being contacted by the team</label>
+      <label for="consent">I consent to being contacted by the team</label>      
     </div>
-    <button type="submit">Submit</button>
+    <div class="error-message" id="error-consent"></div>
+    <button type="submit" id="submitButton" onclick="submitForm()">Submit</button>
     
   </form>
 

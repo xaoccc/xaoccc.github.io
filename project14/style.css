@@ -68,6 +68,7 @@ input {
     border-radius: 0.5rem;
     padding: 0.8rem 0.5rem;
     border: 1px solid hsl(186, 15%, 59%);
+    cursor: pointer;
 }
 
 textarea {
@@ -75,6 +76,7 @@ textarea {
     padding: 0.5rem;
     resize: none;
     height: 6rem;
+    cursor: pointer;
 }
 
 legend, label:not([for="consent"], [for="support"], [for="general"]) {
@@ -90,6 +92,9 @@ legend, label:not([for="consent"], [for="support"], [for="general"]) {
 .checkbox {
     gap: 1rem;
 }
+.checkbox, .checkbox label {
+    cursor: pointer;
+}
 .checkbox, .radio {
     gap: 0.5rem;
 }
@@ -100,6 +105,29 @@ input:required ~ label:not([for="support"], [for="general"])::after, textarea:re
     margin-left: 0.5rem;
 
 }
+
+.error-message {
+    color: hsl(0, 66%, 54%);
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+
+  .error {
+    outline: 1px solid hsl(0, 66%, 54%);
+  }
+
+  #error-general, #error-consent {
+    margin-top: -1.5rem;
+  }
+
+  #invalid-email {
+    display: none;
+  }
+
+  .test-error {
+    display: block;
+
+  }
 
 
 @media only screen and (max-width: 600px) {

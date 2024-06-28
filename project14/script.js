@@ -2,7 +2,7 @@ function submitForm() {
     let form = document.getElementById('myForm');
     let inputs = form.querySelectorAll('input[required], textarea[required]');
     let formIsValid = true;
-
+// Check each input for data (does not validate, just chech if there is data)
     inputs.forEach(function (input) {
         let errorElement = document.getElementById('error-' + input.id);
 
@@ -25,6 +25,7 @@ function submitForm() {
 
 }
 
+// Validate email
 function validateEmail() {
     let email = document.getElementById('email');
     if (!email.value.includes('@')) {
@@ -53,17 +54,9 @@ function success(event) {
 
     // Prevent further submission until the user clicks elsewhere
     document.addEventListener('click', function handleClickOutside(event) {
-        // Check if the click is outside the success message
         if (!successMessage.contains(event.target)) {
-            // Hide the success message
             successMessage.style.display = 'none';
-
-
-            // Remove this event listener
             document.removeEventListener('click', handleClickOutside);
-
-            // Optionally, submit the form programmatically here if desired
-            // document.getElementById('myForm').submit();
         }
     });
 }

@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Contact form</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
-  <form id="myForm" action="" method="">
+  <form id="myForm" action="" method="" onsubmit="return success(event)">
     <h1>Contact Us</h1>
     <div class="name fields-group">
       <div class="field">
@@ -36,33 +40,44 @@
     <fieldset class="query fields-group">
       <legend>Query Type</legend>
       <div class="field flex-row radio">
-        <input type="radio" id="general" name="query-type" value="general" required>
+        <input type="radio" id="general" name="query-type" value="general" oninvalid="this.setCustomValidity(' ')"
+          required>
         <label for="general">General Enquiry</label>
       </div>
       <div class="field flex-row radio">
         <input type="radio" id="support" name="query-type" value="support">
         <label for="support">Support Request</label>
       </div>
-      
-    </fieldset> 
+
+    </fieldset>
     <div class="error-message" id="error-general"></div>
 
     </div>
     <div class="field">
-      <textarea id="text-area" name="text-area" required></textarea>
+      <textarea id="text-area" name="text-area" oninvalid="this.setCustomValidity(' ')" required></textarea>
       <label for="text-area">Message</label>
       <div class="error-message" id="error-text-area"></div>
     </div>
     <div class="field flex-row checkbox">
-      <input type="checkbox" id="consent" name="consent" required>
-      <label for="consent">I consent to being contacted by the team</label>      
+      <input type="checkbox" id="consent" name="consent" oninvalid="this.setCustomValidity(' ')" required>
+      <label for="consent">I consent to being contacted by the team</label>
     </div>
     <div class="error-message" id="error-consent"></div>
     <button type="submit" id="submitButton" onclick="submitForm()">Submit</button>
-    
+
+    <div class="success-message" id="success-message">
+      <div class="success-message-header">
+        <img src="./assets/images/icon-success-check.svg" alt="checkmark">
+        <p>Message Sent!</p>
+      </div>    
+      
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
   </form>
 
-  
-  
+
+
 </body>
+
 </html>

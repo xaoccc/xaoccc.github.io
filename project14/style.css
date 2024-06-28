@@ -1,31 +1,33 @@
+html {
+    font-size: 16px;
+}
+
 body {
     background-color: hsl(148, 38%, 91%);
     min-height: 100vh;
     display: flex;
     align-items: center;
     font-family: 'Karla', sans-serif;
+    padding-top: 6rem;    
 }
 
 form {
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2.5rem;
     background-color: #fff;
     color: hsl(187, 24%, 22%);
-    max-width: 41.625rem;
+    max-width: 46rem;
     display: flex;
     flex-direction: column;
     flex: 1 1 100%;
     border-radius: 1rem;
     gap: 2rem;
+    position: relative;
 }
-
-
 
 button, .query label {
-    font-size: 1.10rem;
+    font-size: 1.12rem;
 }
-
-
 
 input[type="text"], textarea {
     border: 1px solid hsl(186, 15%, 59%);
@@ -59,23 +61,26 @@ button {
     color: #fff;
     border: 0;
     border-radius: 0.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
     cursor: pointer;
     flex: 1 1 100%;
+    font-family: inherit;
 }
 
 input {
     border-radius: 0.5rem;
-    padding: 0.8rem 0.5rem;
+    padding: 0.9rem 0.5rem;
     border: 1px solid hsl(186, 15%, 59%);
     cursor: pointer;
+    font-family: inherit;
+    font-size: 1.12rem;
 }
 
 textarea {
     border-radius: 7px;
     padding: 0.5rem;
     resize: none;
-    height: 6rem;
+    height: 6.5rem;
     cursor: pointer;
 }
 
@@ -89,30 +94,27 @@ legend, label:not([for="consent"], [for="support"], [for="general"]) {
     order: -1;
 }
 
-.checkbox {
-    gap: 1rem;
-}
 .checkbox, .checkbox label {
     cursor: pointer;
 }
 .checkbox, .radio {
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 input:required ~ label:not([for="support"], [for="general"])::after, textarea:required ~ label::after, legend::after {
     content: "*";
     color: hsl(169, 82%, 27%);
     margin-left: 0.5rem;
-
 }
 
 .error-message {
     color: hsl(0, 66%, 54%);
-    font-size: 0.8em;
-    margin-top: 5px;
+    font-size: 1rem;
+    margin-top: 8px;
   }
 
-  .error {
+  input[type="text"].error, input[type="email"].error, textarea.error{
+    border: none;
     outline: 1px solid hsl(0, 66%, 54%);
   }
 
@@ -126,11 +128,104 @@ input:required ~ label:not([for="support"], [for="general"])::after, textarea:re
 
   .test-error {
     display: block;
-
+  }
+  
+  .field.flex-row.radio {
+    align-items: center;
   }
 
 
-@media only screen and (max-width: 600px) {
+.field.flex-row.radio:active, .field.flex-row.radio:focus-within {
+    background-color: hsl(148, 38%, 91%);
+}
 
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    outline: 1px solid hsl(169, 82%, 27%);
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+input[type="radio"] {
+    padding: 0;
+    appearance: none;
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+input[type="radio"]::before {
+    content: "";
+    display: none;
+    cursor: pointer;
+    height: 22px;
+    width: 22px;
+    background-color: hsl(169, 82%, 27%);
+    border: 4px solid hsl(148, 38%, 91%);
+    border-radius: 50%; 
+
+}
+
+input[type="radio"]:checked::before {
+    display: block;
+}
+
+input[type="radio"]:checked {
+    background-color: hsl(169, 82%, 27%);
+    border: 1px solid hsl(169, 82%, 27%);
+}
+
+input[type="checkbox"] {
+    aspect-ratio: 1 / 1;
+    width: 18px;
+}
+
+input[type="checkbox"]:checked {
+    appearance: none;
+    border-radius: 0;
+    background-image: url('./assets/images/icon-checkbox-check.svg');
+    aspect-ratio: 1 / 1;
+    width: 18px;
+    border: none;
+    height: auto;
+    padding: 0;
+}
+
+input:hover, textarea:hover {
+    border: 1px solid hsl(187, 24%, 22%);
+}
+
+button:hover {
+    background-color: hsl(187, 24%, 22%);
+}
+
+.success-message {
+    display: none;
+    background-color: hsl(187, 24%, 22%);
+    color: #fff;
+    position: absolute;
+    top: -6rem;
+    width: 60%;
+    align-self: center;
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.success-message-header {
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .fields-group {
+        flex-direction: column;
+    }
 
 }

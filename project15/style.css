@@ -1,0 +1,26 @@
+body {
+    font: 1em 'Outline' , sans-serif;
+    background-color: hsl(30, 54%, 90%);    
+}
+
+main {
+    width: 46rem;
+    margin: 7.75rem auto;
+    padding: 2.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5rem;
+}
+
+h1, h2 {
+    font-family: 'Young Serif' , serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.75rem;
+}
+
+ul, ol {
+    list-style-position: inside;
+}

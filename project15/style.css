@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    width: 46rem;
+    max-width: 46rem;
     margin: 7.75rem auto;
     padding: 2.5rem;
     background-color: hsl(0, 0%, 100%);
@@ -26,6 +26,7 @@ h1 {
     font-size: 2.5rem;
     font-weight: 600;
     margin: 1.75rem 0 1.2rem;
+    color: hsl(24, 5%, 18%);
 }
 
 h2 {
@@ -120,4 +121,30 @@ table tr + tr {
 table tr td, table tr th {
     flex: 1 1 100%;
     text-align: left;    
+}
+
+@media screen and (max-width: 600px){
+    main {
+        padding: 0;
+        margin: 0 auto;
+        border-radius: 0;
+    }
+
+    header img {
+        border-radius: 0;
+    }
+    header h1, header p {
+        margin: auto 2rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    section {
+        margin: 2rem;
+    }
+    .nutrition {
+        margin-bottom: 0;
+    }
+
+    
 }

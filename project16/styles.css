@@ -47,6 +47,7 @@ ul li {
 a {
     text-decoration: none;
     color: #fff;
+    font-weight: 700;
 }
 h1 {
     margin: 1.85rem 0 0.55rem 0;
@@ -63,9 +64,12 @@ h1 {
 }
 
 li:hover {
-    color: hsl(0, 0%, 20%);
+    
     background-color: hsl(75, 94%, 57%);
     cursor: pointer;
+}
+li:hover a {
+    color: hsl(0, 0%, 20%);
 }
 
 @media screen and (max-width: 600px) {

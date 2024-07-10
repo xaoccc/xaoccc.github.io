@@ -52,7 +52,7 @@ h1 {
     width: 3em;
     border: none;
     background-color: hsl(210, 46%, 95%);
-    background-image: url('../project13-data/images/icon-share.svg');
+    background-image: url('./images/icon-share.svg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -95,7 +95,7 @@ h1 {
     border: none;
     background-color: white;
     display: none;
-    background-image: url('../project13-data/images/icon-share.svg');
+    background-image: url('./images/icon-share.svg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;

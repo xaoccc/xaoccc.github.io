@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var user = document.getElementById('user');
     var socialButton = document.getElementById('social-button');
 
-
     triggerButton.addEventListener('click', function(event) {
-
 
         // Stop the click event from propagating to the document
         event.stopPropagation();

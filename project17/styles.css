@@ -14,10 +14,12 @@ h1 {
     margin-top: 5rem;
     font-size: 2.44rem;
     font-weight: 200;
+    text-align: center;
 }
 h2 {
     font-size: 2.44rem;
     font-weight: 600;
+    text-align: center;
 }
 
 h1, h2, h3 {
@@ -82,4 +84,27 @@ img {
     height: auto;
     align-self: flex-end;
     margin-top: 2.75rem;
+}
+
+@media screen and (max-width: 600px){
+    section {
+        flex-direction: column;
+        
+    }
+    div {
+        width: 100%;
+    }
+    article {
+        margin: 1rem 2rem;
+    }
+
+    h1, h2, body > p {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    
 }

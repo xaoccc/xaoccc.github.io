@@ -6,40 +6,48 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Four card feature section</title>
+  <title>Four card feature section</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="reset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
+  <h1>Reliable, efficient delivery</h1>
+  <h2>Powered by Technology</h2>
+  <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+  <section>
+    <div class="col">
+      <article class="first-article">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img src="./images/icon-supervisor.svg" alt="icon-supervisor">
+      </article>
+    </div>
+    <div class="col">
+      <article class="second-article">
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img src="./images/icon-team-builder.svg" alt="icon-team-builder">
+      </article>
+      <article class="third-article">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img src="./images/icon-karma.svg" alt="icon-karma">
+      </article>
+    </div>
+    <div class="col">
+      <article class="fourth-article">
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img src="./images/icon-calculator.svg" alt="icon-calculator">
+      </article>
+    </div>
+  </section> 
   
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
+  h1+h2+p+section>div.col*3>article>h3+p+img
 
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
 </body>
 </html>

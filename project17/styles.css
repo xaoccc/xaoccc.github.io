@@ -1,0 +1,85 @@
+html {
+    font: 15px/1.75 'Poppins';
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 5rem;
+    font-size: 2.44rem;
+    font-weight: 200;
+}
+h2 {
+    font-size: 2.44rem;
+    font-weight: 600;
+}
+
+h1, h2, h3 {
+    color: hsl(234, 12%, 34%);
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+body> p {
+    max-width: 34rem;
+    text-align: center;
+    margin: 1rem 0 2.5rem 0;
+}
+p {
+    color: hsl(229, 6%, 66%);
+}
+
+article > p {
+    font-size: 0.875rem;
+}
+
+section {
+    display: flex  ;
+    flex-direction: row;
+    align-items: center;
+    max-width: 76rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.5rem;
+    box-shadow: 0px 3px 1rem 2px hsl(204.92deg 67.51% 35.81% / 20%);
+}
+
+.first-article {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+.second-article {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+.third-article {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+.fourth-article {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+img {
+    width: 4.25rem;
+    height: auto;
+    align-self: flex-end;
+    margin-top: 2.75rem;
+}

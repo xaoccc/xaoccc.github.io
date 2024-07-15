@@ -7,19 +7,33 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Base Apparel coming soon page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="script.js"></script>
+  
 
 </head>
 <body>
+  <main>
+    <section>
+      <img src="./images/logo.svg" alt="Base Apparel logo">
+      <h1><p class="pink-text">We're</p>coming soon</h1>
+      <p class="pink-text">Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
+      <form>
+        <input id="email" type="email" placeholder="Email Address" oninvalid="this.setCustomValidity(' ')" required>
+        <span id="warning">!</span>
+        <button type="submit" onclick="submitForm()"><img src="./images/icon-arrow.svg"></button>
+      </form>
+      <p id="error"></p>
 
-  We're coming soon
+    </section>
+    <section>
+      <img src="./images/hero-desktop.jpg">
+    </section>
+  </main>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
+ 
   
 
 </body>

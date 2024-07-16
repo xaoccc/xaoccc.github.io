@@ -1,0 +1,45 @@
+body {
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%) ;
+    background-size: cover;
+    font-family: 'Poppins';
+}
+
+main {
+    max-width: 69rem;
+    margin: 7.5rem auto;
+    display: flex;
+    flex-direction: row;
+}
+
+section {
+    width: 50%;
+}
+
+.left {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right form {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    background-color: #fff;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    padding: 1.25rem 2rem;
+}
+
+small, .banner {
+    text-align: center;
+}

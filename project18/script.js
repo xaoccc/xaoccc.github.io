@@ -15,13 +15,15 @@ function submitForm() {
         formIsValid = false;
     } 
     else if (input.type === 'email' && !input.value.includes('@')) {
-        errorElement.textContent = 'Please enter a valid email address';
+        errorElement.textContent = 'Please provide a valid email';
+        input.classList.add('error');
         warning.style.display = 'inline-block';
         formIsValid = false;
 
     } else {
         formIsValid = true;
         errorElement.textContent = '';
+        input.classList.remove('error');
         warning.style.display = 'none';
     }
 ;

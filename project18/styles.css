@@ -59,7 +59,7 @@ input::placeholder {
 button {
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     border: none;
-    height: 3.1rem;
+    height: 3.25rem;
     width: 6.5rem;
     border-radius: 3rem;
     display: flex;
@@ -67,14 +67,18 @@ button {
     justify-content: center;
     padding: 1.5rem 0;
     margin-left: -5rem;
+    box-shadow: 0 0.5rem 2rem hsla(0, 93%, 68%, 50%);
 }
 
 button:hover {
     cursor: pointer;
+    background-image: linear-gradient(135deg, #FADADB, #F8C8C8);
 }
 
 #error {
-    color: hsl(0, 93%, 68%);
+    color: hsla(0, 93%, 68%, 90%);
+    margin: 0.5rem 0 0 2rem;
+    font-size: 0.85rem;
 }
 #warning {
     display: none;
@@ -89,10 +93,73 @@ button:hover {
 }
 input[type="email"].error {
     border: none;
-    outline: 1px solid hsl(0, 93%, 68%);
+    outline: 2px solid hsl(0, 93%, 68%);
 }
 
 
 main section:nth-child(2) {
     max-width: 43.36%;
+}
+.mobile-logo {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    .mobile-logo {
+        display: block;
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .desktop-logo {
+        display: none;
+    }
+
+    main section:nth-child(1) {
+        padding: 4rem 2rem;
+        order: 2;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin: 0;
+        letter-spacing: 0.5rem;
+    }
+
+    h1, section > p {
+        text-align: center;
+        width: 100%;
+    }
+
+    section > p {
+        font-size: 0.80rem;
+    }
+
+    main section:nth-child(1), main section:nth-child(2), main, .main-img {
+        max-width: 100%;
+    }
+
+    button {
+        width: 4.5rem;
+        box-shadow: 0 0.25rem 1rem hsla(0, 93%, 68%, 50%);
+        margin-left: -4.25rem;
+    }
+
+    #warning {
+        right: 5rem;
+        width: 2rem;
+    }
+     #error {
+        text-align: left;
+     }
+
+    input {
+        width: 100%;
+    }
+
+
+    
 }

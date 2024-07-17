@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">  
+  <script src="script.js" type="text/javascript"></script>
   <title>Intro component with sign up form</title>
 
 </head>
@@ -18,13 +19,17 @@
       <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. </p>
     </section>
     <section class="right">
-      <div class="banner">Try it free 7 days then $20/mo. thereafter</div>
+      <div class="banner"><span class="bold">Try it free 7 days</span> then $20/mo. thereafter</div>
       <form>
-        <input type="text" id="first-name" placeholder="First Name">
-        <input type="text" id="last-name" placeholder="Last Name">
-        <input type="email" id="email" placeholder="Email Address">
-        <input type="pasword" id="password" placeholder="Password">
-        <input type="button" id="button" value="Claim your free trial ">
+        <input type="text" id="First-Name" placeholder="First Name" oninvalid="this.setCustomValidity(' ')" required>
+        <div class="error-message" id="error-First-Name"></div>
+        <input type="text" id="Last-Name" placeholder="Last Name" oninvalid="this.setCustomValidity(' ')" required>
+        <div class="error-message" id="error-Last-Name"></div>
+        <input type="email" id="email" placeholder="Email Address" oninvalid="this.setCustomValidity(' ')" required>
+        <div class="error-message" id="error-email"></div>
+        <input type="password" id="Password" placeholder="Password" oninvalid="this.setCustomValidity(' ')" required>
+        <div class="error-message" id="error-Password"></div>
+        <input type="button" id="button" value="Claim your free trial" onclick="validate()">
         <small>By clicking the button, you are agreeing to our <a href="">Terms and Services</a></small>
       </form>
       

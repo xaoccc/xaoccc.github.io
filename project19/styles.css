@@ -23,11 +23,17 @@ section {
     justify-content: center;
 }
 
+h1 {
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+}
+
 .right form {
     padding: 2.5rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    /* gap: 1.25rem; */
     background-color: #fff;
 }
 
@@ -35,11 +41,106 @@ input {
     display: block;
     width: 100%;
     background-color: #fff;
-    border-radius: 0.25rem;
+    border-radius: 0.4rem;
     border: 1px solid #ccc;
     padding: 1.25rem 2rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #000;
+}
+
+input::placeholder {
+    font-weight: 600;
+    font-family: 'Poppins';
+}
+
+.bold {
+    font-weight: 700;
 }
 
 small, .banner {
     text-align: center;
+}
+
+.banner {
+    background-color: hsl(248, 32%, 49%);
+    color: #fff;
+    padding: 1.25rem 2rem;
+}
+
+.banner, form {
+    border-radius: 0.65rem;
+    box-shadow: 0 0.5rem 0rem hsla(150, 20%, 20%, 20%);
+    margin-bottom: 1.5rem;
+}
+
+.error-message {
+    text-align: right;
+    font-size: 0.75rem;
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+    margin: 0.5rem 0 0.7rem 0;
+    position: relative;
+}
+
+.error-img::before {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(./images/icon-error.svg);
+    position: absolute;
+    right: 1.5rem;
+    top: -3.1rem;
+}
+
+#button {
+    padding: 1.25rem 2rem;
+    background-color: hsl(154, 59%, 51%);
+    color: #fff;
+    border: 1px solid #3EB37F;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 0 0.25rem 0rem #3EB37F;
+}
+
+small {
+    color: #ccc;
+    font-size: 0.68rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+small a {
+    color: hsl(0, 100%, 74%);
+    text-decoration: none;
+    font: inherit;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+
+    .left {
+        text-align: center;
+    }
+
+    .right form {
+        padding: 2.5rem 1.5rem;
+    }
 }

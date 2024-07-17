@@ -6,7 +6,6 @@ function submitForm() {
 // Check each input for data (does not validate, just chech if there is data)
 
     let errorElement = document.getElementById('error');
-    console.log('test');
 
     if ( input.type === 'email'  && !input.value) {
         errorElement.textContent = 'This field is required';
@@ -27,12 +26,7 @@ function submitForm() {
         warning.style.display = 'none';
     }
 ;
-
-
 }
-
-
-
 
 document.querySelectorAll('input[required]').forEach(function (input) {
     input.addEventListener('input', function () {

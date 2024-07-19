@@ -1,0 +1,167 @@
+html {
+    font: 20px 'Libre Franklin';
+}
+
+header, main, footer {
+    text-align: center;
+    max-width: 32rem;
+}
+
+header {
+    margin: 4rem auto 2rem;
+}
+
+h1 {
+    color: hsl(0, 0%, 59%);
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin: 3rem 0 1rem;
+}
+h3 {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+h1 > span {
+    color: #000;
+    font-weight: 700;
+}
+
+img {
+    margin: 0 auto;
+}
+
+main {
+    margin: 0 auto;
+}
+
+main > img {
+    width: 100%;
+    margin: 3.65rem 0 ;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+    justify-content: center;
+    width: 100%;
+}
+
+form input {
+    padding: 1rem 1.5rem;
+    border-radius: 3rem;
+}
+
+#email::placeholder {
+    color: hsla(223, 87%, 63%, 20%);
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#email {
+    border: 1px solid hsla(223, 87%, 63%, 20%);
+    flex-grow: 10;
+    text-align: left;
+}
+
+#button {
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    flex-grow: 5;
+    font-size: 0.8rem;
+}
+
+#button:hover {
+    background-color: hsl(223, 100%, 88%);    
+    cursor: pointer;
+}
+
+a i:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: #fff;
+    border: 1px solid hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+
+footer {
+    margin: 2rem auto;
+}
+
+footer p {
+    color: hsl(0, 0%, 59%);
+    font-size: 0.55rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a i {
+    color: hsl(223, 87%, 63%);
+    border: 1px solid hsla(209, 33%, 12%, 20%);
+    border-radius: 50%;
+    font-size: 0.7rem;
+    padding: 0.35rem 0.3rem;
+    aspect-ratio: 1 / 1;
+    height: 1.5rem;
+}
+
+.error-message {
+    text-align: left;
+    font-size: 0.6rem;
+    color: hsl(354, 100%, 66%);
+    font-style: italic;
+    padding: 0.75rem 0 0 1.5rem;
+}
+
+@media  screen and (max-width: 600px) {
+    form {
+        flex-direction: column;
+    }
+    input {
+        flex-grow: 1;
+    }
+    main {
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+    form {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    form input {
+        padding: 0.5rem 1rem;
+    }
+
+    .error-message {
+        margin-top: -4rem;
+        padding: 0.25rem 0 1.5rem 0;
+        text-align: center;
+    }
+    #button {
+        margin-top: 1.5rem;
+    }
+
+    main > img {
+        margin-top: 6.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+    h3 {
+        font-size: 0.75rem;
+    }
+}
+

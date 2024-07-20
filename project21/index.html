@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
   <script src="script.js" type="text/javascript"></script>
   
@@ -15,21 +15,70 @@
 
 </head>
 <body>
+  <main>
+    <section id="left">
+      <div class="header">
+        <h1>Mortgage Calculator</h1>
+        <button id="reset">Clear All</button>
+      </div>
+      <form>
+        <div class="field mortage-amount">
+          <label for="mortage-amount">Mortgage Amount</label>
+          <div class="input">
+            <input type="text" class="input-helper mortage-amount-helper" value="£" readonly required>
+            <input type="text" id="mortage-amount" class="input-field">            
+          </div>          
+        </div>
+        <div class="fieldset">
+          <div class="field">
+            <label for="mortage-term">Mortgage Term</label>
+            <div class="input">
+              <input type="text" id="mortage-term" class="input-field">
+              <input type="text" class="input-helper" value="years" readonly required>
+            </div>          
+          </div>
+          <div class="field">
+            <label for="interest-rate">Interest Rate</label>
+            <div class="input">
+              <input type="text" id="interest-rate" class="input-field">
+              <input type="text" class="input-helper" value="%" readonly required>
+            </div>          
+          </div>
+        </div>
+      </form>
+      
+      
+  
 
-  Mortgage Calculator
-  Clear All
+  
 
-  Mortgage Amount
+  
 
-  Mortgage Term
-
-  Interest Rate
+  
 
   Mortgage Type
   Repayment
   Interest Only
 
   Calculate Repayments
+
+    </section>
+    <section id="right">
+      <h1>Your results</h1>
+      
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term
+
+    </section>
+  </main>
+
+
+  
 
   <!-- Empty results start -->
 
@@ -42,14 +91,7 @@
 
   <!-- Completed results start -->
 
-  Your results
-
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
-
-  Your monthly repayments
-
-  Total you'll repay over the term
+  
 
 
 </body>

@@ -1,0 +1,111 @@
+html {
+    font-family: 'Plus Jakarta Sans' ;
+}
+
+body {
+    background-color: hsl(202, 86%, 94%);
+}
+
+main {
+    max-width: 63rem;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    margin: 13rem auto;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+section {
+    width: 50%;
+    padding: 2.5rem;
+}
+
+#right {
+    background-color: hsl(202, 55%, 16%);
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#reset, label {
+    background-color: #fff;
+    border: none;
+    color: hsl(200, 24%, 40%);
+    font-size: 1rem;
+}
+
+#reset {
+    text-decoration: underline;
+}
+
+.input {
+    border: 1px solid hsl(202, 55%, 16%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    
+}
+
+input {
+    border: none;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+.input-helper {
+    background-color: hsl(202, 86%, 94%);
+}
+
+.fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fieldset .field {
+    width: 48%;
+}
+.fieldset .input {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.fieldset .input-field, #mortage-amount{
+  flex: 1 1 auto;
+  width: 50%;
+}
+
+
+.mortage-amount-helper {
+    flex: 0 0 auto;
+    width: calc(1ch + 2em);
+}
+
+#mortage-term ~ .input-helper {
+    flex: 0 0 auto;
+    width: calc(4ch + 2em);
+  }
+#interest-rate ~ .input-helper {
+    flex: 0 0 auto;
+    width: calc(1ch + 2em);
+  }
+
+/* .fieldset .input input:first-child {
+    width: 100%;
+}
+
+.fieldset .input input:last-child {
+    width: 50%;
+} */
+
+
+

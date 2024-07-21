@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reset.css">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <script src="script.js" type="text/javascript"></script>
-  
+
   <title>Mortgage repayment calculator</title>
 
 </head>
+
 <body>
   <main>
     <section id="left">
@@ -26,8 +29,8 @@
           <label for="mortage-amount">Mortgage Amount</label>
           <div class="input">
             <input type="text" class="input-helper mortage-amount-helper" value="£" readonly required>
-            <input type="text" id="mortage-amount" class="input-field">            
-          </div>          
+            <input type="text" id="mortage-amount" class="input-field">
+          </div>
         </div>
         <div class="fieldset">
           <div class="field">
@@ -35,64 +38,78 @@
             <div class="input">
               <input type="text" id="mortage-term" class="input-field">
               <input type="text" class="input-helper" value="years" readonly required>
-            </div>          
+            </div>
           </div>
           <div class="field">
             <label for="interest-rate">Interest Rate</label>
             <div class="input">
               <input type="text" id="interest-rate" class="input-field">
               <input type="text" class="input-helper" value="%" readonly required>
-            </div>          
+            </div>
           </div>
         </div>
+        <div class="field">
+          <ledend>Mortgage Type</legend>
+          <fieldset id="mortage-type">
+            <div class="mortage">
+              <input type="radio" id="repayment" name="mortage-type" class="input-field" required>
+              <label for="repayment">Repayment</label>
+            </div>
+            <div class="mortage">
+              <input type="radio" id="interest" class="input-field mortage" name="mortage-type" required>
+              <label for="interest">Interest Only</label>
+            </div>
+          </fieldset>
+        </div>
       </form>
-      
-      
-  
 
-  
 
-  
 
-  
 
-  Mortgage Type
-  Repayment
-  Interest Only
 
-  Calculate Repayments
+
+
+
+
+
+
+
+
+
+      Calculate Repayments
 
     </section>
     <section id="right">
       <h1>Your results</h1>
-      
 
-  Your results are shown below based on the information you provided. 
-  To adjust the results, edit the form and click “calculate repayments” again.
 
-  Your monthly repayments
+      Your results are shown below based on the information you provided.
+      To adjust the results, edit the form and click “calculate repayments” again.
 
-  Total you'll repay over the term
+      Your monthly repayments
+
+      Total you'll repay over the term
 
     </section>
   </main>
 
 
-  
+
 
   <!-- Empty results start -->
 
   Results shown here
 
-  Complete the form and click “calculate repayments” to see what 
+  Complete the form and click “calculate repayments” to see what
   your monthly repayments would be.
 
   <!-- Empty results end -->
 
   <!-- Completed results start -->
 
-  
+
 
 
 </body>
+
 </html>

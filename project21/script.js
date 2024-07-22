@@ -1,9 +1,9 @@
-function validate() {
+function validate(event) {
+    event.preventDefault();
     const inputDiv = document.querySelectorAll('.input');
     const inputRadio = document.querySelectorAll('.mortage-input');
     const noResult = document.querySelector('#right');
     const result = document.querySelector('#result');
-    const repaymentResult = document.querySelectorAll('.repayment-result');
     
     let amount = document.querySelector('#mortage-amount').value;
     let term = document.querySelector('#mortage-term').value;
@@ -86,7 +86,8 @@ function validate() {
         radioInputError.textContent = 'This field is required';
         radioInputError.classList.add('error');
     } 
-    
+    console.log(isRadioValid);
+    console.log(isTextValid);
     if (isRadioValid === true && isTextValid === true) {
        
         if (repayment) {

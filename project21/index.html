@@ -4,17 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="reset.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="script.js" type="text/javascript"></script>
-
   <title>Mortgage repayment calculator</title>
-
+  <script src="script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -61,7 +58,7 @@
             </div>
           </fieldset>
         </div>
-        <button class="submit-button" type="submit" onclick="validate()"><img src="./assets/images/icon-calculator.svg" alt="Calculator icon"><span>Calculate Repayments</span></button>
+        <button class="submit-button" type="submit" onclick="validate(event)"><img src="./assets/images/icon-calculator.svg" alt="Calculator icon"><span>Calculate Repayments</span></button>
       </form>
     </section>
     <section id="right" class="right">
@@ -72,7 +69,6 @@
     <section id="result" class="right">
       <h1>Your results</h1>
       <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
-
       <div class="results">
         <div class="repayment-result">
           <p>Your monthly repayments</p>
@@ -85,5 +81,6 @@
       </div>
     </section>
   </main>
+  
 </body>
 </html>

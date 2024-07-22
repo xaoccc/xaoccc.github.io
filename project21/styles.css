@@ -1,5 +1,5 @@
 html {
-    font-family: 'Plus Jakarta Sans' ;
+    font-family: 'Plus Jakarta Sans';
 }
 
 body {
@@ -21,22 +21,22 @@ section {
     padding: 2.5rem;
 }
 
-#right {
-    background-color: hsl(202, 55%, 16%);
-    color: #fff;
-}
-
 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-#reset, label {
+#reset,
+legend {
     background-color: #fff;
     border: none;
     color: hsl(200, 24%, 40%);
     font-size: 1rem;
+}
+
+legend {
+    margin-bottom: 0.5rem;
 }
 
 #reset {
@@ -44,23 +44,32 @@ section {
 }
 
 .input {
-    border: 1px solid hsl(202, 55%, 16%);
-    border-radius: 0.5rem;
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 0.3rem;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    
 }
 
-input {
+input,
+label {
     border: none;
-    padding: 1rem;
+    padding: 0.8rem;
     font-size: 1.2rem;
+}
+
+label {
+    color: hsl(200, 24%, 40%);
+    font-weight: 700;
 }
 
 .input-helper {
     background-color: hsl(202, 86%, 94%);
+}
+
+.input-field, .input-field:active, .input-field:focus, input:-internal-autofill-selected {
+    background-color: #fff;
 }
 
 .fieldset {
@@ -70,67 +79,210 @@ input {
 }
 
 .field {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .fieldset .field {
     width: 48%;
 }
+
 .fieldset .input {
     display: flex;
     flex-direction: row;
-
     width: 100%;
 }
 
-.fieldset .input-field, #mortage-amount{
-  flex: 1 1 auto;
-  width: 50%;
+.fieldset .input-field,
+#mortage-amount {
+    flex: 1 1 auto;
+    width: 50%;
 }
-
 
 .mortage-amount-helper {
     flex: 0 0 auto;
     width: calc(1ch + 2em);
 }
 
-#mortage-term ~ .input-helper {
+#mortage-term~.input-helper {
     flex: 0 0 auto;
-    width: calc(4ch + 2em);
-  }
-#interest-rate ~ .input-helper {
+    width: calc(4ch + 1.5em);
+}
+
+#interest-rate~.input-helper {
     flex: 0 0 auto;
     width: calc(1ch + 2em);
-  }
+}
 
-  .mortage {
+.mortage {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    border: 1px solid hsl(202, 55%, 16%);
-    border-radius: 0.5rem;
-    padding: 1rem;
-  }
-  fieldset {
-    border: none;
+    border: 1px solid hsl(200, 24%, 40%);
+    border-radius: 0.3rem;
+    padding-left: 1rem;
+}
 
-  }
-
-  #mortage-type {
-
-    
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-/* .fieldset .input input:first-child {
+.mortage>label {
+    color: hsl(202, 55%, 16%);
     width: 100%;
 }
 
-.fieldset .input input:last-child {
-    width: 50%;
-} */
+fieldset {
+    border: none;
+}
 
+#mortage-type {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+/* Custom Radio Input */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
 
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 2.25rem;
+    line-height: 1.2rem;
+}
+
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background: #fff;
+}
+
+[type="radio"]:not(:checked)+label:before {
+    border: 1px solid hsl(202, 55%, 16%);
+}
+
+[type="radio"]:checked+label:before {
+    border: 1px solid hsl(61, 70%, 52%);
+}
+
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: hsl(61, 70%, 52%);
+    position: absolute;
+    top: 1.05rem;
+    left: 4px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+button {
+    background-color: hsl(61, 70%, 52%);
+    color: hsl(202, 55%, 16%);
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+input:hover,
+button:hover,
+label:hover {
+    cursor: pointer;
+}
+
+/* Result section */
+.right {
+    background-color: hsl(202, 55%, 16%);
+    color: #fff;
+    border-radius: 0 0 0 5rem;
+}
+
+#right {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#result {
+    display: none;
+}
+
+.right h1 {
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.right p {
+    color: hsl(203, 41%, 72%);
+    margin: 1rem 0;
+}
+
+.right img {
+    margin: 0 auto;
+}
+
+.results {
+    background-color: #0E2431;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    border-top: 4px solid hsl(61, 70%, 52%);
+}
+
+.results > div:first-of-type {
+    border-bottom: 1px solid hsl(200, 26%, 54%);
+    padding-bottom: 2rem;
+}
+.results > div:last-of-type {
+
+    padding: 1rem 0 1rem 0;
+}
+
+#total {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#monthly{
+    font-size: 4rem;
+    color: hsl(61, 70%, 52%);
+}
+
+/* Selected */
+.mortage:has(input[type="radio"]:checked) {
+    border: 1px solid hsl(61, 70%, 52%);
+    background-color: hsla(61, 70%, 52%, 20%);
+}
+
+/* Errors */
+.error {
+    color: hsl(4, 69%, 50%);
+    margin-top: 0.5rem;
+}

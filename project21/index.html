@@ -22,94 +22,68 @@
     <section id="left">
       <div class="header">
         <h1>Mortgage Calculator</h1>
-        <button id="reset">Clear All</button>
+        <button onclick="location.reload()">Clear All</button>
       </div>
-      <form>
+      <form action="#">
         <div class="field mortage-amount">
-          <label for="mortage-amount">Mortgage Amount</label>
+          <legend>Mortgage Amount</legend>
           <div class="input">
-            <input type="text" class="input-helper mortage-amount-helper" value="£" readonly required>
+            <label for="mortage-amount" class="input-helper mortage-amount-helper">£</label>
             <input type="text" id="mortage-amount" class="input-field">
           </div>
         </div>
         <div class="fieldset">
           <div class="field">
-            <label for="mortage-term">Mortgage Term</label>
+            <legend>Mortgage Term</legend>
             <div class="input">
               <input type="text" id="mortage-term" class="input-field">
-              <input type="text" class="input-helper" value="years" readonly required>
+              <label for="mortage-term" class="input-helper">years</label>
             </div>
           </div>
           <div class="field">
-            <label for="interest-rate">Interest Rate</label>
+            <legend>Interest Rate</legend>
             <div class="input">
               <input type="text" id="interest-rate" class="input-field">
-              <input type="text" class="input-helper" value="%" readonly required>
+              <label for="interest-rate" class="input-helper">%</label>
             </div>
           </div>
         </div>
         <div class="field">
-          <ledend>Mortgage Type</legend>
+          <legend>Mortgage Type</legend>
           <fieldset id="mortage-type">
             <div class="mortage">
-              <input type="radio" id="repayment" name="mortage-type" class="input-field" required>
+              <input type="radio" id="repayment" class="input-field mortage-input" name="mortage-type" required>
               <label for="repayment">Repayment</label>
             </div>
             <div class="mortage">
-              <input type="radio" id="interest" class="input-field mortage" name="mortage-type" required>
+              <input type="radio" id="interest" class="input-field mortage-input" name="mortage-type" required>
               <label for="interest">Interest Only</label>
             </div>
           </fieldset>
         </div>
+        <button type="submit" onclick="validate()"><img src="./assets/images/icon-calculator.svg" alt="Calculator icon"><span>Calculate Repayments</span></button>
       </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      Calculate Repayments
-
     </section>
-    <section id="right">
+    <section id="right" class="right">
+      <img src="./assets/images/illustration-empty.svg" alt="calculator">
+      <h1>Results shown here</h1>
+      <p>Complete the form and click “calculate repayments” to see what your monthly repayments would be.</p>
+    </section>
+    <section id="result" class="right">
       <h1>Your results</h1>
+      <p>Your results are shown below based on the information you provided. To adjust the results, edit the form and click “calculate repayments” again.</p>
 
-
-      Your results are shown below based on the information you provided.
-      To adjust the results, edit the form and click “calculate repayments” again.
-
-      Your monthly repayments
-
-      Total you'll repay over the term
-
+      <div class="results">
+        <div class="repayment-result">
+          <p>Your monthly repayments</p>
+          <div id="monthly"></div>          
+        </div>
+        <div class="repayment-result">
+          <p>Total you'll repay over the term</p>
+          <div id="total"></div>          
+        </div>
+      </div>
     </section>
   </main>
-
-
-
-
-  <!-- Empty results start -->
-
-  Results shown here
-
-  Complete the form and click “calculate repayments” to see what
-  your monthly repayments would be.
-
-  <!-- Empty results end -->
-
-  <!-- Completed results start -->
-
-
-
-
 </body>
-
 </html>

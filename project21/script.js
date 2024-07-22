@@ -32,7 +32,7 @@ function validate() {
         element.style.border = '1px solid hsl(4, 69%, 50%)';
         isTextValid = false;
         if (inputField.value === '') {
-            return 'This field is empty!';
+            return 'This field is required';
         } else if (isNaN(Number(inputField.value))) {
             return 'Incorrect Input! Please enter a number.';
         }        
@@ -83,7 +83,7 @@ function validate() {
     
     if (!isRadioValid) {
         const radioInputError = type.insertAdjacentElement('afterend', document.createElement('div'));
-        radioInputError.textContent = 'This field is empty!';
+        radioInputError.textContent = 'This field is required';
         radioInputError.classList.add('error');
     } 
     

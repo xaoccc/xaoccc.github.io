@@ -19,7 +19,8 @@ let projectsTitles = [
     'Four Card Feature Section',
     'Coming Soon Page',
     'Intro Component With Sign Up Form',
-    'Ping Coming Soon Page'
+    'Ping Coming Soon Page',
+    'Mortgage Repayment Calculator'
 ];
 
 function addProjects() {

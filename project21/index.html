@@ -22,7 +22,7 @@
     <section id="left">
       <div class="header">
         <h1>Mortgage Calculator</h1>
-        <button onclick="location.reload()">Clear All</button>
+        <button id="reset" onclick="location.reload()">Clear All</button>
       </div>
       <form action="#">
         <div class="field mortage-amount">
@@ -61,7 +61,7 @@
             </div>
           </fieldset>
         </div>
-        <button type="submit" onclick="validate()"><img src="./assets/images/icon-calculator.svg" alt="Calculator icon"><span>Calculate Repayments</span></button>
+        <button class="submit-button" type="submit" onclick="validate()"><img src="./assets/images/icon-calculator.svg" alt="Calculator icon"><span>Calculate Repayments</span></button>
       </form>
     </section>
     <section id="right" class="right">

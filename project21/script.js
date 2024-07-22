@@ -15,7 +15,7 @@ function validate(event) {
     
     let isTextValid = true;
     let isRadioValid = false;
-    let [repayment, interest] = [false, false]
+    let [repayment, interest] = [false, false];
 
     // Clear old error messages from radio inputs
     let nextTypeElement = type.nextElementSibling;

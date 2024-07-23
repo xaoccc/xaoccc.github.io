@@ -1,0 +1,46 @@
+html {
+    font-family: 'Epilogue', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem 2.25rem;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;;
+    gap: 3rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 71rem;
+    gap: 9rem;
+    margin: 4rem auto;
+}
+section {
+    max-width: 32rem;
+}
+
+section > img {
+    width: 100%;
+    padding-left: 2rem;
+}

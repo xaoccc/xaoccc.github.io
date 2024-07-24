@@ -1,8 +1,18 @@
-
 const dropDownElements = document.querySelectorAll('.dropdown-base');
+const showNav = document.querySelector('.mobile-dropdown-button');
+const nav = document.querySelector('nav');
+const closeButton = document.querySelector('nav > img');
+const filter = document.querySelector('.filter');
+const hideNav = document.querySelector('.hide-nav');
+const authButtons = document.querySelectorAll('.auth-btn');
+
 dropDownElements.forEach((element) => {
     element.addEventListener('click', dropDown);
 })
+
+showNav.addEventListener('click', showMobileNav);
+hideNav.addEventListener('click', hideMobileNav);
+filter.addEventListener('click', hideMobileNav);
 
 function showMenu(target, arrow, listElement) {
     target.style.visibility = 'visible';
@@ -29,6 +39,28 @@ function dropDown(event) {
     }
     event.preventDefault();
 }
+
+function showMobileNav(event) {
+    closeButton.style.display = 'block';
+    showNav.style.display = 'none';
+    nav.style.display = 'block';
+    filter.style.display = 'block';
+    authButtons.forEach((button) =>{
+        button.style.display = 'block';
+    })
+}
+
+function hideMobileNav(event) {
+    closeButton.style.display = 'none';
+    showNav.style.display = 'block';
+    nav.style.display = 'none';
+    filter.style.display = 'none';
+    authButtons.forEach((button) =>{
+        button.style.display = 'none';
+    })
+}
+
+
 
 function dropdownReset(event) {
     if (event.target.className !== 'dropdown-base' && event.target.parentElement.className !== 'dropdown-base') {

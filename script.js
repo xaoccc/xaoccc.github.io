@@ -20,7 +20,8 @@ let projectsTitles = [
     'Coming Soon Page',
     'Intro Component With Sign Up Form',
     'Ping Coming Soon Page',
-    'Mortgage Repayment Calculator'
+    'Mortgage Repayment Calculator',
+    'Intro Section With Dropdown Navigation'
 ];
 
 function addProjects() {

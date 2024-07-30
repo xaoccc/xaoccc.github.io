@@ -39,9 +39,10 @@ function emptyCartView() {
 }
 
 fetchJSONData(() => {
-    JSONdata.forEach(element => {
+    JSONdata.forEach((element, index) => {
         console.log(element)
         let listItem = document.createElement('li');
+        listItem.id = `item-${index}`;
         createChild('img', listItem, [], '', '', element.image.desktop);
         createChild('button', listItem, ['shopping-time']);
         createChild('p', listItem, ['category'], element.category);
@@ -55,9 +56,43 @@ fetchJSONData(() => {
 });
 
 container.addEventListener('click', (e) => {
+    
+    Array.from(container.querySelectorAll('button')).forEach((button) => {
+        if (button.className === 'shopping-time changed-add-to-cart-button' && document.activeElement !== button) {
+            Array.from(button.querySelectorAll('.decrement-button,  .increment-button')).forEach((button) => button.remove());
+            button.classList.remove('changed-add-to-cart-button');
+            button.querySelector('.qty').remove();
+            createChild('img', button, ['cart-icon', 'shopping-time'], '', '', './assets/images/icon-add-to-cart.svg');
+            createChild('span', button, ['shopping-time'], 'Add to Cart');            
+        }       
+
+
+    });
+
     if (e.target.className === 'shopping-time') {
-        console.log('Shopping time!')
-    }
+        let elementToChange = e.target;
+        if (e.target.tagName !== 'BUTTON') {
+            elementToChange = e.target.parentElement;
+        }
+        elementToChange.textContent = '';
+        elementToChange.classList.add('changed-add-to-cart-button');
+        let decrementButton = document.createElement('img');      
+        let number = document.createElement('span'); 
+        let incrementButton = document.createElement('img'); 
+
+        decrementButton.classList.add('decrement-button');
+        incrementButton.classList.add('increment-button');
+        number.classList.add('qty');
+
+        decrementButton.src = './assets/images/icon-decrement-quantity.svg'
+        number.textContent = 0;        
+        incrementButton.src = './assets/images/icon-increment-quantity.svg';  
+
+        elementToChange.appendChild(decrementButton);
+        elementToChange.appendChild(number);      
+        elementToChange.appendChild(incrementButton);       
+        
+    } 
 })
 
 cartHeading.textContent = `Your Cart (${totalQuantity})`;

@@ -41,7 +41,7 @@ li {
     margin: 2rem 0;
 }
 
-ul li img {
+ul li > img {
     width: 100%;
     border-radius: 0.5rem;
 }
@@ -58,6 +58,8 @@ ul li button {
     flex-direction: row;
     justify-content: space-around;
     gap: 0.5rem;
+    align-items: center;
+    width: 65%;
 }
 
 ul li button:hover {
@@ -98,4 +100,12 @@ ul li button:hover {
     font-size: 0.85rem;
     color: hsl(12, 20%, 44%);
     font-weight: 600;
+}
+
+.changed-add-to-cart-button, .changed-add-to-cart-button:hover {
+    background-color: hsl(14, 86%, 42%);
+    color:#fff;
+}
+.decrement-button, .increment-button {
+    width: 0.75rem;
 }

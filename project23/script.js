@@ -43,14 +43,22 @@ fetchJSONData(() => {
         console.log(element)
         let listItem = document.createElement('li');
         createChild('img', listItem, [], '', '', element.image.desktop);
-        createChild('button', listItem, [], 'Add to Cart');
+        createChild('button', listItem, ['shopping-time']);
         createChild('p', listItem, ['category'], element.category);
         createChild('p', listItem, ['name'], element.name);
         createChild('p', listItem, ['price'], `$${Number(element.price).toFixed(2)}`);
+        createChild('img', listItem.querySelector('button'), ['cart-icon', 'shopping-time'], '', '', './assets/images/icon-add-to-cart.svg');
+        createChild('span', listItem.querySelector('button'), ['shopping-time'], 'Add to Cart');
         container.appendChild(listItem);
     });
 
 });
+
+container.addEventListener('click', (e) => {
+    if (e.target.className === 'shopping-time') {
+        console.log('Shopping time!')
+    }
+})
 
 cartHeading.textContent = `Your Cart (${totalQuantity})`;
 

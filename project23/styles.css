@@ -50,11 +50,23 @@ ul li button {
     margin: -1.4rem auto 0;
     border: 1px solid hsl(14, 65%, 9%);
     border-radius: 2rem;
-    padding: 0.7rem 1rem;
+    padding: 0.7rem 1.5rem;
     position: relative;
-    display: block;
     font-size: 0.85rem;
     font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.5rem;
+}
+
+ul li button:hover {
+    color: hsl(14, 86%, 42%);
+    border: 1px solid hsl(14, 86%, 42%);
+    cursor: pointer;
+}
+.cart-icon {
+    width: 1.3rem;
 }
 
 .category {

@@ -1,3 +1,89 @@
 html {
     font-family: 'Red Hat Text'; 
 }
+
+body {
+    background-color: hsl(20, 50%, 98%);
+}
+
+main {
+    max-width: 76rem;
+    margin: 5.5rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart {
+    background-color: #fff;
+    padding: 2rem;
+    height: fit-content;
+    border-radius: 0.5rem;
+}
+
+
+
+h1 {
+    color: hsl(14, 65%, 9%);
+    font-size: 2.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 50rem;
+}
+
+li {
+    width: 30%;
+    margin: 2rem 0;
+}
+
+ul li img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+ul li button {
+    margin: -1.4rem auto 0;
+    border: 1px solid hsl(14, 65%, 9%);
+    border-radius: 2rem;
+    padding: 0.7rem 1rem;
+    position: relative;
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.category {
+    font-size: 0.85rem;
+    color: hsl(7, 20%, 60%);
+}
+
+.name {
+    color: hsl(14, 65%, 9%);
+    font-weight: 600;
+}
+
+.price {
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+}
+
+.cart-empty {
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.cart h2 {
+    color: hsl(14, 86%, 42%);
+}
+
+.cart p {
+    padding: 0 3rem;
+    font-size: 0.85rem;
+    color: hsl(12, 20%, 44%);
+    font-weight: 600;
+}

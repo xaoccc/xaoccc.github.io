@@ -21,7 +21,8 @@ let projectsTitles = [
     'Intro Component With Sign Up Form',
     'Ping Coming Soon Page',
     'Mortgage Repayment Calculator',
-    'Intro Section With Dropdown Navigation'
+    'Intro Section With Dropdown Navigation',
+    'Product List With Cart'
 ];
 
 function addProjects() {

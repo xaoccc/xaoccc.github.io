@@ -17,6 +17,7 @@ main {
 h1 {
     color: hsl(14, 65%, 9%);
     font-size: 2.5rem;
+    margin-top: 1.75rem;
 }
 
 ul {
@@ -37,7 +38,7 @@ ul {
     border-radius: 0.5rem;
 }
 
-.items-list li button {
+button.shopping-time {
     margin: -1.4rem auto 0;
     border: 1px solid hsl(14, 65%, 9%);
     border-radius: 2rem;
@@ -47,18 +48,26 @@ ul {
     font-weight: 600;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 0.5rem;
     align-items: center;
     width: 65%;
     margin-bottom: 1rem;
 }
 
-ul li button:hover {
+button.shopping-time:hover {
     color: hsl(14, 86%, 42%);
     border: 1px solid hsl(14, 86%, 42%);
     cursor: pointer;
 }
+
+button.shopping-time.changed-add-to-cart-button, button.shopping-time.changed-add-to-cart-button:hover {
+    background-color: hsl(14, 86%, 42%);
+    color:#fff;
+    cursor: auto;
+    padding: 0.7rem 1rem;
+}
+
 .cart-icon {
     width: 1.3rem;
 }
@@ -141,13 +150,7 @@ h2 {
     display: inline-block;
 }
 
-.changed-add-to-cart-button, .changed-add-to-cart-button:hover {
-    background-color: hsl(14, 86%, 42%);
-    color:#fff;
-    justify-content: space-between;
-    padding: 0.7rem 1rem;
-    cursor: auto;
-}
+
 
 .decrement-button, .increment-button {
     width: 1.25rem;
@@ -252,11 +255,10 @@ h2 {
 
 .popup {
     background-color: white;
-    padding: 20px;
+    padding: 2.25rem;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-    width: 50%;
+    width: 42%;
 }
 
 /* Style for the close button */
@@ -272,11 +274,39 @@ h2 {
     text-align: center;
 }
 
+/* Purchase order list */
 .confirmed-items-list {
     margin: 1.5rem 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: hsl(20, 50%, 98%);
 }
 
+.confirmed-items-list .total-cart-amount {
+    background-color: hsl(20, 50%, 98%);
+    padding: 1rem;
+}
 
+.order-item-img {
+    width: 3rem;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid hsl(20, 50%, 90%);
+}
+
+.order-item-left {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
 
 
 

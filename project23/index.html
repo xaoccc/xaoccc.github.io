@@ -14,11 +14,32 @@
   <main>
     <section class="products">
       <h1>Desserts</h1>
-      <ul></ul>
+      <ul class="items-list"></ul>
     </section>
-    <section class="cart">
+    <section class="cart-empty">
+      <h2>Your Cart (0)</h2>
+    </section>
+    <section class="cart-full">
       <h2></h2>
+      <ul class="shopping-cart-list"></ul>
+      <div class="total-cart-amount"></div>
+      <div class="carbon-neutral">
+        <img src="./assets/images/icon-carbon-neutral.svg" alt="tree-icon">
+        This is a <span class="bold">carbon-neutral</span> delivery
+      </div>
+      <button>Confirm Order</button>
     </section>
+
+    <div class="order-confirmation">
+      <div class="popup">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="ok">
+        <h1>Order Confirmed</h1>
+        <p>We hope you enjoy your food</p>
+        <ul class="confirmed-items-list"></ul>
+        <button class="close-button">Start New Order</button>
+      </div>
+    </div>
+
   </main>
   <script type="module" src="./script.js"></script>
 </body>

@@ -309,6 +309,30 @@ h2 {
     gap: 0.5rem;
 }
 
+@media screen and (max-width: 600px) {
+    main {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .items-list {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .items-list li {
+        width: 100%;
+    }
+
+    .cart-full, .cart-empty {
+        width: 100%;
+    }
+
+    .popup {
+        width: 100%;
+    }
+}
+
 
 
 

@@ -76,17 +76,30 @@ container.addEventListener('click', (e) => {
         }
         elementToChange.textContent = '';
         elementToChange.classList.add('changed-add-to-cart-button');
-        let decrementButton = document.createElement('img');      
+        let decrementButton = document.createElement('span');      
         let number = document.createElement('span'); 
-        let incrementButton = document.createElement('img'); 
+        let incrementButton = document.createElement('span'); 
 
         decrementButton.classList.add('decrement-button');
         incrementButton.classList.add('increment-button');
         number.classList.add('qty');
 
-        decrementButton.src = './assets/images/icon-decrement-quantity.svg'
+
         number.textContent = 0;        
-        incrementButton.src = './assets/images/icon-increment-quantity.svg';  
+        const decrementSVG = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" fill="none" viewBox="0 0 10 2">
+                <path fill="#fff" d="M0 .375h10v1.25H0V.375Z"/>
+            </svg>
+        `;
+
+        const incrementSVG = `
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10">
+                <path fill="#fff" d="M10 4.375H5.625V0h-1.25v4.375H0v1.25h4.375V10h1.25V5.625H10v-1.25Z"/>
+            </svg>
+        `;
+
+        decrementButton.innerHTML = decrementSVG;
+        incrementButton.innerHTML = incrementSVG;
 
         elementToChange.appendChild(decrementButton);
         elementToChange.appendChild(number);      

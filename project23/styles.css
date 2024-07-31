@@ -53,6 +53,7 @@ button.shopping-time {
     align-items: center;
     width: 65%;
     margin-bottom: 1rem;
+    background-color: #fff;
 }
 
 button.shopping-time:hover {

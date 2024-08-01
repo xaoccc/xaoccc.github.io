@@ -227,7 +227,6 @@ cartFull.addEventListener('click', (e) => {
         totalQuantity -= orderQty;
         cartHeading.textContent = `Your Cart (${totalQuantity})`;
         (totalQuantity === 0) ? switchToEmptyCardView() : switchToFullCardView();
-        // cartObj[item.id.slice(5)] = 0;
         delete cartObj[item.id.slice(5)];
         item.remove();
     }

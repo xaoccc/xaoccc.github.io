@@ -233,28 +233,32 @@ cartFull.addEventListener('click', (e) => {
     
 })
 
+let allImages = {}
+fetchJSONData(() => {
+    JSONdata.forEach((element, index) => {
+        allImages[`item-${index}`] = element.image;
+    });
+});
+
 cartFull.querySelector('button').addEventListener('click', (e) => {
     let popUpWindow = document.querySelector('.order-confirmation')
     popUpWindow.style.display = 'flex';
     let orderList = popUpWindow.querySelector('.confirmed-items-list');
     Object.entries(cartObj).forEach((item) => {
-        const itemImg = document.querySelector(`#${item[0]} img`);
         createChild('li', orderList, ['order-item'], '', `order-${item[0]}`);
         createChild('div', orderList.lastElementChild, ['order-item-left']);
         createChild('div', orderList.lastElementChild, ['order-item-rigth']);
-        createChild('img', orderList.lastElementChild.children[0], ['order-item-img'], '', '', itemImg.src);
+        createChild('img', orderList.lastElementChild.children[0], ['order-item-img'], '', '', allImages[item[0]].thumbnail);
         const itemData = cartFull.querySelector(`#cart-${item[0]} .cart-list-left`).cloneNode(true);        
         orderList.lastElementChild.children[0].appendChild(itemData);
         orderList.lastElementChild.children[1].appendChild(itemData.querySelector('.cart-product-total-price'));
     })
     orderList.appendChild(cartFull.querySelector(`.total-cart-amount`).cloneNode(true));
-
 })
 
 document.querySelector('.close-button').addEventListener('click', (e) => {
     location.reload();
 })
-
 
 cartHeading.textContent = `Your Cart (${totalQuantity})`;
 (totalQuantity === 0) ? emptyCartView() : switchToFullCardView();

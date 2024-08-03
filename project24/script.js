@@ -17,8 +17,6 @@ function createElements(tagName) {
 
 // const reactSection = React.createElement('section', {className: 'left-section'});
 
-function createDOM() {
-    return createElements('section')
-}
 
-root.render(createDOM());
+// Note ot self: This action replaces all other html code:
+// root.render(createElements('section'));

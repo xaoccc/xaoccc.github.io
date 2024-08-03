@@ -29,6 +29,10 @@ main {
     width: 25rem;
 }
 
+.success {
+    display: none;
+}
+
 h1, p, ul, li, label {
     color: hsl(234, 29%, 20%);
 }
@@ -55,8 +59,7 @@ ul li {
     gap: 1rem;    
 }
 
-ul li::before {
-    content: '';
+ul li span {
     width: 1.5rem;
     height: 1.5rem;
     display: block;

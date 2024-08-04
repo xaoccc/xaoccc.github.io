@@ -13,27 +13,42 @@ const listItems = [
 ];
 const ul = React.createElement('ul', {key: 'ul'}, listItems);
 
+
 const label = React.createElement('label', {key: 'label', htmlFor: 'email'}, 'Email address');
-const input = React.createElement('input', {key: 'input', id: 'email', placeholder: 'email@company.com'});
+const errorMsg = React.createElement('span', {className: 'error', key: 'error'}, 'Valid email required');
+const labelAndError = React.createElement('div', {className: 'label-error', key: 'labelerror' }, label, errorMsg);
+const input = React.createElement('input', {key: 'input', id: 'email', placeholder: 'email@company.com', required: 'true'});
 const button = React.createElement('button', {key: 'button', onClick: (e) => submit(e)}, 'Subscribe to monthly newsletter');
-const form = React.createElement('form', {key: 'form'}, label, input, button);
+const form = React.createElement('form', {key: 'form'}, labelAndError, input, button);
 
 let leftContent = React.createElement('section', {className: 'left-section', key: 1}, heading, p, ul, form);
 const rightContent = React.createElement('section', {className: 'right-section', key: 2});
 
-const boldSpan = React.createElement('span', {className: 'bold', key: 'boldspan'}, 'ash@loremcompany.com');
-const successImg = React.createElement('img', {});
+const boldSpan = React.createElement('span', {className: 'bold', key: 'boldspan'});
+const successImg = React.createElement('img', {src: './assets/images/icon-success.svg', alt: 'checked-icon'});
 const successHeading = React.createElement('h1', {}, 'Thanks for subscribing!');
-const successP = React.createElement('p', {}, 'A confirmation email has been sent to ', boldSpan, 'Please open it and click the button inside to confirm your subscription.');
+const successP = React.createElement('p', {}, 'A confirmation email has been sent to ', boldSpan, '. Please open it and click the button inside to confirm your subscription.');
 const successButton = React.createElement('button', {key: 'button', onClick: (e) => reset(e)}, 'Dismiss message');
 
 const success = React.createElement('section', {className: 'success', key: 3}, successImg, successHeading, successP, successButton );
 
 function submit(e) {
   e.preventDefault();
-  document.querySelector('.left-section').style.display = 'none';
-  document.querySelector('.right-section').style.display = 'none';
-  document.querySelector('.success').style.display = 'block';
+  const input = document.querySelector('input');
+  const error = document.querySelector('.error');
+  const pattern = /^\w+@\w+.\w+$/;
+
+  if (!input.value || !input.value.match(pattern) ) {    
+    error.style.display = 'inline-block';
+    input.style.backgroundColor = 'rgb(255,232,230)';
+    input.style.border = '1px solid hsl(4, 100%, 67%)';
+  } else {
+    document.querySelector('.bold').textContent = document.querySelector('input').value;
+    document.querySelector('.left-section').style.display = 'none';
+    document.querySelector('.right-section').style.display = 'none';
+    document.querySelector('.success').style.display = 'block';
+  }
+  
 }
 
 function reset(e) {

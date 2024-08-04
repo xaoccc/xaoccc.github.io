@@ -31,6 +31,8 @@ main {
 
 .success {
     display: none;
+    padding: 3rem 4rem 4rem 4rem;
+    max-width: 31.5rem;
 }
 
 h1, p, ul, li, label {
@@ -78,14 +80,25 @@ form input, form button {
     border-radius: 0.5rem;
 }
 
-label {
-    font-size: 0.8rem;
+
+.label-error {    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 0.75rem;
+    font-size: 0.8rem;    
     font-weight: 700;
+}
+
+.error {
+    display: none;
+    color: hsl(4, 100%, 67%);
+
 }
 
 input::placeholder {
     font-size: 1rem;
+    font-weight: 700;
 }
 
 input {
@@ -110,4 +123,19 @@ button:hover {
     cursor: pointer;
     background: linear-gradient(rgb(255, 83, 123), hsl(4, 100%, 67%)) ;
     box-shadow: 0 10px 20px 4px hsl(4, 100%, 67%, 0.5);
+}
+
+.success button {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.success h1 {
+    margin-top: 2rem;
+}
+
+
+.bold {
+    font-weight: 700;
 }

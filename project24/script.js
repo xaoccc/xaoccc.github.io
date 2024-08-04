@@ -12,8 +12,6 @@ const listItems = [
   React.createElement('li', {key: 'li-3'}, React.createElement('span', {key: 'span-3'},), 'And much more!')
 ];
 const ul = React.createElement('ul', {key: 'ul'}, listItems);
-
-
 const label = React.createElement('label', {key: 'label', htmlFor: 'email'}, 'Email address');
 const errorMsg = React.createElement('span', {className: 'error', key: 'error'}, 'Valid email required');
 const labelAndError = React.createElement('div', {className: 'label-error', key: 'labelerror' }, label, errorMsg);

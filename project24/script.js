@@ -1,5 +1,5 @@
-import 'https://github.com/xaoccc/xaoccc.github.io/blob/main/node_modules/react/umd/react.development.js';
-import 'https://github.com/xaoccc/xaoccc.github.io/blob/main/node_modules/react-dom/umd/react-dom.development.js';
+import 'xaoccc.github.io/node_modules/react/umd/react.development.js';
+import 'xaoccc.github.io/node_modules/react-dom/umd/react-dom.development.js';
 
 
 const root = ReactDOM.createRoot(document.querySelector('main'));

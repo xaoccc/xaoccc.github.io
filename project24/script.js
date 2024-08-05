@@ -1,6 +1,6 @@
 import '../node_modules/react/umd/react.development.js';
 import '../node_modules/react-dom/umd/react-dom.development.js';
-import ReactDOM from 'react-dom';
+
 
 const root = ReactDOM.createRoot(document.querySelector('main'));
 

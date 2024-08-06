@@ -20,13 +20,20 @@ const button = React.createElement('button', {key: 'button', onClick: (e) => sub
 const form = React.createElement('form', {key: 'form'}, labelAndError, input, button);
 
 let leftContent = React.createElement('section', {className: 'left-section', key: 1}, heading, p, ul, form);
-const rightContent = React.createElement('section', {className: 'right-section', key: 2});
+
+let rightContentImg = React.createElement('img', {src: './assets/images/illustration-sign-up-desktop.svg', key: 'img'});
+const rightContent = React.createElement('section', {className: 'right-section', key: 2}, rightContentImg);
+
+
 
 const boldSpan = React.createElement('span', {className: 'bold', key: 'boldspan'});
 const successImg = React.createElement('img', {src: './assets/images/icon-success.svg', alt: 'checked-icon'});
 const successHeading = React.createElement('h1', {}, 'Thanks for subscribing!');
 const successP = React.createElement('p', {}, 'A confirmation email has been sent to ', boldSpan, '. Please open it and click the button inside to confirm your subscription.');
 const successButton = React.createElement('button', {key: 'button', onClick: (e) => reset(e)}, 'Dismiss message');
+
+
+
 
 const success = React.createElement('section', {className: 'success', key: 3}, successImg, successHeading, successP, successButton );
 

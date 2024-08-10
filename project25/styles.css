@@ -1,0 +1,30 @@
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: sans-serif;
+}
+
+main {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 66rem;
+    margin: 5rem auto;
+}
+
+#playground {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#playground .box {
+    height: 4rem;
+    width: 4rem;
+    border: 1px solid #ccc;
+}
+
+p {
+    margin: 0.25rem 0;
+}

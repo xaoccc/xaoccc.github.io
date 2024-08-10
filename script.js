@@ -23,7 +23,8 @@ let projectsTitles = [
     'Mortgage Repayment Calculator',
     'Intro Section With Dropdown Navigation',
     'Product List With Cart',
-    'Newsletter Sign-Up Form With Success Message'
+    'Newsletter Sign-Up Form With Success Message',
+    'Click The Boxes'
 ];
 
 function addProjects() {

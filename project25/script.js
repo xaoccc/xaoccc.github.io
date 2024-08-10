@@ -1,27 +1,69 @@
+const resetBtn = document.getElementById('reset');
+const newGameBtn = document.getElementById('new-game');
+const playground = document.getElementById('playground');
+
+newGameBtn.addEventListener('click', createPlayground);
+
+
+let bestScore = 0;
+const scoreBoard = document.getElementById('score');
+
+let currentResult = document.createElement('p');
+currentResult.classList.add('current-result');
+
+
+let bestResult = document.createElement('p');
+bestResult.classList.add('best-result');
+bestResult.textContent = `Your best result is: ${bestScore}`;
+scoreBoard.prepend(bestResult);
+scoreBoard.prepend(currentResult);
+
+let timeCounter = document.createElement('p');
+scoreBoard.appendChild(timeCounter);
+
 function createPlayground() {
-    
-    const playground = document.getElementById('playground');
+    let score = 0;
+    currentResult.textContent = `Score ${score}`   
+
+    function startTimeout() {
+        
+        // Set up the timeout
+        let timeoutId;
+        let intervalId;
+        const timeoutDuration = 24000;
+        const startTime = Date.now();
+        timeoutId = setTimeout(() => {
+            createPlayground();
+        }, timeoutDuration);
+
+        
+        // Update remaining time every second
+        intervalId = setInterval(() => {
+            const elapsedTime = Date.now() - startTime;
+            const remainingTime = timeoutDuration - elapsedTime;
+            if (remainingTime <= 0) {
+                timeCounter.textContent = 'Game over!';
+            } else {
+                timeCounter.textContent = `Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`;
+                console.log(`Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`);
+            }
+        }, 1000); // Update every second
+    }
+
+    startTimeout();
+
     const colors = {'yellow': 150, 'orange': 70, 'green': 30 , 'purple':10};
     const boxesScore = {'yellow': 1, 'orange': 3, 'green': 5 , 'purple':10};
     let boxes = [];
-    let score = 0;
-    let bestScore = 0;
-    const scoreBoard = document.getElementById('score');
-    const resetBtn = document.getElementById('reset');
+    
 
     resetBtn.addEventListener('click', (e) => {
         e.preventDefault();
         location.reload();
     })
 
-    let currentResult = document.createElement('p');
-    currentResult.classList.add('current-result');
-    currentResult.textContent = `Score ${score}`
-    let bestResult = document.createElement('p');
-    bestResult.classList.add('best-result');
-    bestResult.textContent = `Your best result is: ${bestScore}`
-    scoreBoard.prepend(bestResult);
-    scoreBoard.prepend(currentResult);
+
+    playground.innerHTML = '';
 
     for (i=0; i<128; i++) {
         let box = document.createElement('div');
@@ -34,14 +76,11 @@ function createPlayground() {
 
             if (score > bestScore) {
                 bestScore = score;
-                bestScore.textContent = `Your best result is: ${bestScore}`;
+                bestResult.textContent = `Your best result is: ${bestScore}`;
             }
             resetClickedBoxes();
     });
-
-
-        boxes.push(box);
-        
+        boxes.push(box);        
         playground.appendChild(box);
     }
 
@@ -54,7 +93,6 @@ function createPlayground() {
     }
 
     function resetClickedBoxes() {
-        console.log(document.querySelectorAll('.clicked'));
         Array.from(document.querySelectorAll('.clicked')).forEach((box) => {
             setTimeout(() => {
                 colorize(box);
@@ -75,10 +113,8 @@ function createPlayground() {
         let ColorScore = boxesScore[box.style.backgroundColor];
         box.style.backgroundColor = 'red';
         box.classList.add('clicked');
-        console.log(box);
         score += ColorScore;
-        console.log(score);
-       
+      
 
         if (boxes[boxId - 16]) {
             upperBox = boxes[boxId - 16];
@@ -107,9 +143,7 @@ function createPlayground() {
                 changeColor(e, downBox, boxesColor);
             } 
         }         
-        console.log(score);
     }
 
 }
-
 createPlayground();

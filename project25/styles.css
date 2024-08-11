@@ -28,3 +28,20 @@ main {
 p {
     margin: 0.25rem 0;
 }
+
+button {
+    border: none;
+    background-color: rgb(171, 171, 237);
+    color: #222;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    color: #fff;
+    background-color: rgb(57, 62, 144);
+    cursor: pointer;
+}

@@ -2,7 +2,7 @@ const resetBtn = document.getElementById('reset');
 const newGameBtn = document.getElementById('new-game');
 const playground = document.getElementById('playground');
 
-newGameBtn.addEventListener('click', createPlayground);
+newGameBtn.addEventListener('click', startTimeout);
 
 
 let bestScore = 0;
@@ -25,32 +25,7 @@ function createPlayground() {
     let score = 0;
     currentResult.textContent = `Score ${score}`   
 
-    function startTimeout() {
-        
-        // Set up the timeout
-        let timeoutId;
-        let intervalId;
-        const timeoutDuration = 24000;
-        const startTime = Date.now();
-        timeoutId = setTimeout(() => {
-            createPlayground();
-        }, timeoutDuration);
-
-        
-        // Update remaining time every second
-        intervalId = setInterval(() => {
-            const elapsedTime = Date.now() - startTime;
-            const remainingTime = timeoutDuration - elapsedTime;
-            if (remainingTime <= 0) {
-                timeCounter.textContent = 'Game over!';
-            } else {
-                timeCounter.textContent = `Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`;
-                console.log(`Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`);
-            }
-        }, 1000); // Update every second
-    }
-
-    startTimeout();
+    
 
     const colors = {'yellow': 150, 'orange': 70, 'green': 30 , 'purple':10};
     const boxesScore = {'yellow': 1, 'orange': 3, 'green': 5 , 'purple':10};
@@ -146,4 +121,47 @@ function createPlayground() {
     }
 
 }
-createPlayground();
+
+function startTimeout() {
+    (scoreBoard.querySelector('.again-btn')) ? scoreBoard.querySelector('.again-btn').remove() : null;
+        
+    // Set up the timeout
+    let timeoutId;
+    let intervalId;
+    const timeoutDuration = 24000;
+    const startTime = Date.now();
+    playground.style.display = 'flex';
+    createPlayground();
+    
+    timeoutId = setTimeout(() => {
+        clearInterval(intervalId);
+        timeCounter.textContent = 'Game over!';
+        const ynButton = document.createElement('button');
+        ynButton.classList.add('again-btn');
+        ynButton.textContent = 'Play again?';
+
+        playground.style.display = 'none';
+
+        scoreBoard.appendChild(ynButton);
+        ynButton.addEventListener('click', startTimeout);
+
+
+    }, timeoutDuration);
+
+    
+    // Update remaining time every second
+    intervalId = setInterval(() => {
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = timeoutDuration - elapsedTime;
+        if (remainingTime <= 0) {
+            timeCounter.textContent = 'Game over!';
+        } else {
+            timeCounter.textContent = `Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`;
+            console.log(`Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`);
+        }
+    }, 1000); // Update every second
+}
+
+startTimeout();
+
+// createPlayground();

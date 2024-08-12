@@ -24,8 +24,8 @@ function createPlayground() {
 
     
 
-    const colors = {'yellow': 150, 'orange': 70, 'green': 30 , 'purple':10};
-    const boxesScore = {'yellow': 1, 'orange': 3, 'green': 5 , 'purple':10};
+    const colors = {'rgb(255, 228, 0)': 150, 'orange': 70, 'rgb(20, 167, 108)': 30 , 'rgb(136, 96, 208)': 10};
+    const boxesScore = {'rgb(255, 228, 0)': 1, 'orange': 3, 'rgb(20, 167, 108)': 5 , 'rgb(136, 96, 208)': 10};
     let boxes = [];
     
 
@@ -43,12 +43,11 @@ function createPlayground() {
     (container.clientWidth < 1056) ? playGroundWidth -= 17 : null;
 
     const cols = Math.floor(playGroundWidth / boxSize)
-    console.log(playGroundWidth);
-    console.log(cols);
+
     const rows = 10;
     const totalBoxes = cols * rows;
 
-    console.log(totalBoxes);
+
 
     for (i=0; i<totalBoxes; i++) {
         let box = document.createElement('div');
@@ -89,14 +88,14 @@ function createPlayground() {
     function changeColor(e, box, boxesColor) {     
                
 
-        if (box.style.backgroundColor !== 'red' && box.style.backgroundColor !== boxesColor) {
+        if (box.style.backgroundColor !== 'rgb(230, 72, 51)' && box.style.backgroundColor !== boxesColor) {
             return
         }
 
         let [upperBox, leftBox, rigthBox, downBox] = ['', '', '', '']
-        const boxId = Number(box.id)        
+        const boxId = Number(box.id)   
         let ColorScore = boxesScore[box.style.backgroundColor];
-        box.style.backgroundColor = 'red';
+        box.style.backgroundColor = 'rgb(230, 72, 51)';
         box.classList.add('clicked');
         score += ColorScore;
       
@@ -168,7 +167,6 @@ function startTimeout() {
             timeCounter.textContent = 'Game over!';
         } else {
             timeCounter.textContent = `Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`;
-            console.log(`Time remaining: ${Math.ceil(remainingTime / 1000)} seconds`);
         }
     }, 1000); // Update every second
 }

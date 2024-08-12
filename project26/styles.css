@@ -1,0 +1,106 @@
+body {
+    font-family: 'Poppins';
+    background-color: hsl(0, 0%, 86%);
+}
+
+main {
+    max-width: 52.5rem;
+    padding: 3.5rem;
+    background-color: #fff;
+    margin: 9.5rem auto;
+    border-radius: 1.5rem 1.5rem 9rem 1.5rem;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    gap: 2rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+    margin-bottom: 0.25rem;
+}
+
+input {
+    padding: 0.7rem 1.3rem;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 0.5rem;
+
+}
+
+input, input::placeholder {
+    font-weight: 700;
+    font-size: 2rem;
+    
+}
+
+input:focus {
+    border: 1px solid hsl(259, 100%, 65%);
+    outline: none;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+button[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
+}
+
+button[type="submit"] img {
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+button[type="submit"] img:hover {
+    background-color: hsl(0, 0%, 8%);
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 6.5rem;
+}
+
+h1 span {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: 1rem;
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
+    margin-top: 0.5rem;
+    font-style: italic;
+    display: none;
+}
+
+
+
+

@@ -1,9 +1,6 @@
 const resetBtn = document.getElementById('reset');
-const newGameBtn = document.getElementById('new-game');
 const playground = document.getElementById('playground');
-
-newGameBtn.addEventListener('click', startTimeout);
-
+const container = document.querySelector('main');
 
 let bestScore = 0;
 const scoreBoard = document.getElementById('score');
@@ -37,10 +34,23 @@ function createPlayground() {
         location.reload();
     })
 
+    let boxSize = 64;
+    (window.innerWidth < 800) ? boxSize = 32 : null;    
 
     playground.innerHTML = '';
+    let playGroundWidth = Number(container.clientWidth) - 48;
 
-    for (i=0; i<128; i++) {
+    (container.clientWidth < 1056) ? playGroundWidth -= 17 : null;
+
+    const cols = Math.floor(playGroundWidth / boxSize)
+    console.log(playGroundWidth);
+    console.log(cols);
+    const rows = 10;
+    const totalBoxes = cols * rows;
+
+    console.log(totalBoxes);
+
+    for (i=0; i<totalBoxes; i++) {
         let box = document.createElement('div');
         box.classList.add('box');
         box.id = i;
@@ -91,29 +101,29 @@ function createPlayground() {
         score += ColorScore;
       
 
-        if (boxes[boxId - 16]) {
-            upperBox = boxes[boxId - 16];
+        if (boxes[boxId - cols]) {
+            upperBox = boxes[boxId - cols];
             if (boxesColor === upperBox.style.backgroundColor) {
                 changeColor(e, upperBox, boxesColor);
             } 
         }  
         
-        if (!(boxId % 16 === 0)) {
+        if (!(boxId % cols === 0)) {
             leftBox = boxes[boxId - 1];
             if (boxesColor === leftBox.style.backgroundColor) {
                 changeColor(e, leftBox, boxesColor);
             } 
         } 
         
-        if (!((boxId + 1) % 16 === 0)) {
+        if (!((boxId + 1) % cols === 0)) {
             rigthBox = boxes[boxId + 1];
             if (boxesColor === rigthBox.style.backgroundColor) {              
                 changeColor(e, rigthBox, boxesColor);
             } 
         } 
         
-        if (boxes[boxId + 16]) {
-            downBox = boxes[boxId + 16];
+        if (boxes[boxId + cols]) {
+            downBox = boxes[boxId + cols];
             if (boxesColor === downBox.style.backgroundColor) {             
                 changeColor(e, downBox, boxesColor);
             } 
@@ -132,6 +142,7 @@ function startTimeout() {
     const startTime = Date.now();
     playground.style.display = 'flex';
     createPlayground();
+
     
     timeoutId = setTimeout(() => {
         clearInterval(intervalId);

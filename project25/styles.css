@@ -17,11 +17,12 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 #playground .box {
-    height: 4rem;
-    width: 4rem;
+    height: 62px;
+    width: 62px;
     border: 1px solid #ccc;
 }
 
@@ -44,4 +45,11 @@ button:hover {
     color: #fff;
     background-color: rgb(57, 62, 144);
     cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    #playground .box {
+        height: 30px;
+        width: 30px;
+    }
 }

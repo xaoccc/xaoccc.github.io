@@ -59,18 +59,23 @@ button.addEventListener('click', (e) => {
 
   if (validDay && validMonth && validYear) {
 
-    today = new Date(Date.now());
+    today = new Date();
 
+    let years = today.getFullYear() - Number(inputs[2].value);
+    let months = ((today.getMonth() + 1) - Number(inputs[1].value));
+    let days = today.getDate() - Number(inputs[0].value);
 
-    birthDate = new Date(Number(inputs[2].value), Number(inputs[1].value), Number(inputs[0].value))
-
-    let years = today.getFullYear() - birthDate.getFullYear();
-    let months = today.getMonth() - birthDate.getMonth();
-    let days = today.getDate() - birthDate.getDate();
-    console.log([yearsField, monthsField, daysField]);
+    if (days < 0) {
+      months --;
+      const lastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+      days += lastMonth.getDate();
+    }  
+    if (months < 0) {
+      years --;
+      months += 12;
+    }
 
     [yearsField, monthsField, daysField].forEach((field) => field.style.letterSpacing = 0);
-
     [yearsField.textContent, monthsField.textContent, daysField.textContent] = [years, months, days];
 
 

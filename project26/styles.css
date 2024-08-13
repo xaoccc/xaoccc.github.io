@@ -81,6 +81,11 @@ button[type="submit"] img:hover {
 hr {
     height: 1px;
     width: 100%;
+    background-color: hsl(0, 0%, 86%);
+}
+
+.hidden-hr {
+    display: none;
 }
 
 h1 {
@@ -99,6 +104,52 @@ h1 span {
     margin-top: 0.5rem;
     font-style: italic;
     display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    main {
+        padding: 3.5rem 2rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    fieldset {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .field {
+        max-width: 30%;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    button {
+        padding: 0;
+    }
+
+    .button {
+        margin: 2rem 0;
+    }
+
+    button[type="submit"] img {
+        height: 5rem;
+        width: 5rem;
+    }
+
+    .hidden-hr {
+        display: block;
+    }
+    
 }
 
 

@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins';
-    background-color: hsl(0, 0%, 86%);
+    background-color: hsl(0, 0%, 94%);
 }
 
 main {
@@ -8,7 +8,7 @@ main {
     padding: 3.5rem;
     background-color: #fff;
     margin: 9.5rem auto;
-    border-radius: 1.5rem 1.5rem 9rem 1.5rem;
+    border-radius: 1.5rem 1.5rem 10.5rem 1.5rem;
 }
 
 fieldset {
@@ -79,9 +79,10 @@ button[type="submit"] img:hover {
 }
 
 hr {
-    height: 1px;
+    height: 2px;
+    border: none;
     width: 100%;
-    background-color: hsl(0, 0%, 86%);
+    background-color: hsl(0, 0%, 94%);
 }
 
 .hidden-hr {
@@ -92,6 +93,7 @@ h1 {
     font-weight: 800;
     font-style: italic;
     font-size: 6.5rem;
+    color:hsl(0, 0%, 8%)
 }
 
 h1 span {

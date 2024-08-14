@@ -10,7 +10,7 @@ main {
     max-width: 75rem;
     color: #778899;
     background-image: url("media/bg-img-1.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: contain;
     background-position: top center;
 }

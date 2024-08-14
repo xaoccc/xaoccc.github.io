@@ -93,7 +93,8 @@ h1 {
     font-weight: 800;
     font-style: italic;
     font-size: 6.5rem;
-    color:hsl(0, 0%, 8%)
+    color:hsl(0, 0%, 8%);
+    line-height: 1;
 }
 
 h1 span {

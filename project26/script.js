@@ -60,20 +60,13 @@ button.addEventListener('click', (e) => {
   if (validDay && validMonth && validYear) {
 
     today = new Date();
+    birthday = new Date(Number(inputs[2].value), Number(inputs[1].value) - 1, Number(inputs[0].value));
 
-    let years = today.getFullYear() - Number(inputs[2].value);
-    let months = ((today.getMonth() + 1) - Number(inputs[1].value));
-    let days = today.getDate() - Number(inputs[0].value);
+    const totalDays = Math.floor((today - birthday) / (1000 * 60 * 60 * 24));
 
-    if (days < 0) {
-      months --;
-      const lastMonth = new Date(today.getFullYear(), today.getMonth(), 0);
-      days += lastMonth.getDate();
-    }  
-    if (months < 0) {
-      years --;
-      months += 12;
-    }
+    const years = Math.floor(totalDays / 365.25);
+    const months = Math.floor(((totalDays / 365.25) - years) * 12);
+    const days =  Math.round((((totalDays / 365.25) - years) * 12 - months) * 30);  
 
     [yearsField, monthsField, daysField].forEach((field) => field.style.letterSpacing = 0);
     [yearsField.textContent, monthsField.textContent, daysField.textContent] = [years, months, days];

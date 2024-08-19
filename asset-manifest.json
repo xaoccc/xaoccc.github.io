@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/Tic-Tac-Toe/static/css/main.9c5c5444.css",
-    "main.js": "/Tic-Tac-Toe/static/js/main.bda75a46.js",
-    "index.html": "/Tic-Tac-Toe/index.html",
-    "main.9c5c5444.css.map": "/Tic-Tac-Toe/static/css/main.9c5c5444.css.map",
-    "main.bda75a46.js.map": "/Tic-Tac-Toe/static/js/main.bda75a46.js.map"
+    "main.css": "/xaoccc.github.io/demo1/static/css/main.f855e6bc.css",
+    "main.js": "/xaoccc.github.io/demo1/static/js/main.b7d070da.js",
+    "static/js/453.7dc074ba.chunk.js": "/xaoccc.github.io/demo1/static/js/453.7dc074ba.chunk.js",
+    "static/media/logo.svg": "/xaoccc.github.io/demo1/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/xaoccc.github.io/demo1/index.html",
+    "main.f855e6bc.css.map": "/xaoccc.github.io/demo1/static/css/main.f855e6bc.css.map",
+    "main.b7d070da.js.map": "/xaoccc.github.io/demo1/static/js/main.b7d070da.js.map",
+    "453.7dc074ba.chunk.js.map": "/xaoccc.github.io/demo1/static/js/453.7dc074ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c5c5444.css",
-    "static/js/main.bda75a46.js"
+    "static/css/main.f855e6bc.css",
+    "static/js/main.b7d070da.js"
   ]
 }

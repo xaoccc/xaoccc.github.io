@@ -4,28 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- displays site properly based on user's device -->
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-    <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+    <title>Huddle landing page with single introductory section</title>
+    <script src="https://kit.fontawesome.com/a9f18534d3.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     <link href="./output.css" rel="stylesheet">
-
 </head>
 
-<body class="bg-[url('./images/bg-desktop.svg')] min-h-screen bg-purple-800 flex items-center">
-    <section class="mx-auto my-0 max-w-screen-2xl flex flex-row">
-        <div class="w-1/2">
-            <img src="./images/illustration-mockups.svg" alt="mockups" class="w-full">
-        </div>
-        <div class="w-1/2">
-            <h1>Build The Community Your Fans Will Love</h1>
-            <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
-                Create connections with your users as you engage in genuine discussion.</p>
-            <button>Register</button>
-        </div>
-    </section>
+<body class="bg-[url('./images/bg-desktop.svg')] min-h-screen bg-[#674BB1]">
+    <main class="mx-auto my-0 max-w-80rem max-sm:w-4/5">
+        <section class="mb-28 mt-16 max-sm:mt-8 max-sm:mb-14">
+            <img class="max-sm:w-2/5" src="./images/logo.svg" alt="logo" >
+        </section>
+        <section class="flex flex-row max-sm:flex-col max-sm:items-center max-sm:w-full">
+            <div class="w-[44rem] max-sm:w-full">
+                <img src="./images/illustration-mockups.svg" alt="mockups" class="w-full">
+            </div>
+            <div class="w-[35rem] text-white py-12 mx-14 max-sm:w-full max-sm:flex max-sm:flex-col max-sm:justify-center">
+                <h1 class="text-[2.5rem] font-semibold font-poppins leading-normal max-sm:text-center">Build The Community Your Fans Will Love</h1>
+                <p class="font-opensans text-lg pt-8 pb-6 max-sm:text-center" >Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+                    Create connections with your users as you engage in genuine discussion.</p>
+                <button class="font-opensans text-[#674BB1] bg-white hover:text-white active:text-white hover:bg-[#E882E8] active:bg-[#E882E8] py-4 px-16 rounded-full text-lg shadow-xl">Register</button>
+            </div>
+        </section>    
+        <section class="social-icons flex flex-row justify-end gap-4 mt-8 max-sm:justify-center max-sm:w-full">
+            <a href="#" class=" w-10 h-10 text-white border-solid border-white rounded-full flex justify-center items-center border-[1px] hover:text-[#E882E8] active:text--[#E882E8] hover:border-[#E882E8] active:border-[#E882E8]"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class=" w-10 h-10 text-white border-solid border-white rounded-full flex justify-center items-center border-[1px] hover:text-[#E882E8] active:text--[#E882E8] hover:border-[#E882E8] active:border-[#E882E8]"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class=" w-10 h-10 text-white border-solid border-white rounded-full flex justify-center items-center border-[1px] hover:text-[#E882E8] active:text--[#E882E8] hover:border-[#E882E8] active:border-[#E882E8]"><i class="fa-brands fa-instagram"></i></a>         
+            
+        </section>    
+    </main>
+
+    
 
 
 

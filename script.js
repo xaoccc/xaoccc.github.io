@@ -26,7 +26,8 @@ let projectsTitles = [
     'Newsletter Sign-Up Form With Success Message',
     'Click The Boxes',
     'Age Calculator App',
-    'Single Price Grid Component'
+    'Single Price Grid Component',
+    'Huddle Landing Page With Single Introductory Section'
 ];
 
 function addProjects() {

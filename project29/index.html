@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header>
         <nav>
             <img src="./assets/images/logo.svg" alt="News Homepage">
@@ -25,12 +26,23 @@
                 <li><a href="#">Trending</a></li>
                 <li><a href="#">Categories</a></li>
             </ul>
+            <button class="icon-menu" onclick=showNav()></button>
         </nav>
+        <div class="mobile-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </div>
     </header>
     <main>
         <section class="upper-section">
             <section class="upper-section-left">
-                <img src="./assets/images/image-web-3-desktop.jpg" alt="Colorful plastic details">
+                <img class="desktop-main-img" src="./assets/images/image-web-3-desktop.jpg" alt="Colorful plastic details">
+                <img class="mobile-main-img" src="./assets/images/image-web-3-mobile.jpg" alt="Colorful plastic details">
                 <article>
                     <div>
                         <h1>The Bright Future of Web 3.0?</h1>
@@ -89,5 +101,6 @@
 
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

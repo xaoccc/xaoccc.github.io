@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="overlay"></div>
+    <div class="overlay" onclick=hideNav()></div>
     <header>
         <nav>
             <img src="./assets/images/logo.svg" alt="News Homepage">
@@ -29,6 +29,7 @@
             <button class="icon-menu" onclick=showNav()></button>
         </nav>
         <div class="mobile-nav">
+            <button class="icon-menu-close" onclick=hideNav()></button>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">New</a></li>

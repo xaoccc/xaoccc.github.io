@@ -23,13 +23,21 @@ nav {
 
 .mobile-nav {
     display: none;
-    width: 50%;
+    width: 66%;
     height: 100%;
     background-color: hsl(36, 100%, 99%);
     position: absolute;
     top: 0;
     right: 0;
     z-index: 2;
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
 }
 
 .overlay {
@@ -47,11 +55,23 @@ nav {
     display: none;
     width: 40px;
     height: 17px;
+    
     background-image: url('assets/images/icon-menu.svg');
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    z-index: 2;
+}
+
+.icon-menu-close {
+    width: 40px;
+    height: 40px;
+    padding: 3rem;
+    background: url('assets/images/icon-menu-close.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-left: auto;
+    margin-bottom: 4rem;
 }
 
 p {

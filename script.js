@@ -27,7 +27,8 @@ let projectsTitles = [
     'Click The Boxes',
     'Age Calculator App',
     'Single Price Grid Component',
-    'Huddle Landing Page With Single Introductory Section'
+    'Huddle Landing Page With Single Introductory Section',
+    'News Homepage'
 ];
 
 function addProjects() {

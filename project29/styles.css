@@ -1,0 +1,157 @@
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: hsl(36, 100%, 99%);
+    padding: 2.5rem 0 8.67rem;
+}
+
+header, main {
+    margin: 0 auto;
+    max-width: 74rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+}
+
+p {
+    color: hsl(236, 13%, 42%);
+    line-height: 1.75;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2.65rem;
+    color: hsl(236, 13%, 42%);
+}
+
+.upper-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.upper-section img {
+    width: 100%;
+}
+
+.upper-section-left {
+    max-width: 48.67rem;
+}
+
+.upper-section-right {
+    max-width: 23.33rem;
+}
+
+.upper-section-left article {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+
+.upper-section-left article div {
+    width: 50%;
+}
+
+.upper-section-left h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1;
+    color: hsl(240, 100%, 5%);
+}
+
+.read-more {
+    background-color: hsl(5, 85%, 63%);
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.upper-section-right {
+    background-color: hsl(240, 100%, 5%);
+    padding: 2rem 1.5rem 0;
+}
+
+.upper-section-right article {
+    padding: 2rem 0;
+
+    
+}
+
+.upper-section-right article:not(:last-child) {
+    border-bottom: 1px solid hsl(236, 13%, 42%);
+}
+
+.upper-section-right h2 {
+    color: hsl(35, 77%, 62%);
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.upper-section-right h3 {
+  color: hsl(36, 100%, 99%); 
+  font-weight: 800; 
+  line-height: 1.7;
+}
+
+.upper-section-right p {
+    color: hsla(233, 8%, 79%, 70%);
+}
+
+.lower-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.lower-section article {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.lower-section article img {
+    width: 6.25rem;
+}
+
+.lower-section h2 {
+    color: hsl(5, 85%, 63%);
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.lower-section h3 {
+    color: hsl(240, 100%, 5%);
+    line-height: 1.7;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+nav ul li a:hover, .lower-section a:hover {
+    color: hsl(5, 85%, 63%);
+}
+
+.upper-section-right a:hover {
+    color: hsl(35, 77%, 62%);
+}
+
+.read-more:hover {
+    background-color: hsl(240, 100%, 5%);
+    color: hsl(36, 100%, 99%);
+}
+

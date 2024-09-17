@@ -15,4 +15,23 @@ main {
     margin: 3.875rem auto;
     background-color: #fff;
     border-radius: 1rem ;
+    padding: 0 2rem;
+}
+
+.unread {
+    margin: 0.5rem;
+    background-color: hsl(210, 60%, 98%);
+    border-radius: 0.5rem ;
+    padding: 1rem;
+    width: 100%;
+
+}
+
+.unread p {
+    color: hsl(219, 14%, 63%);
+    
+}
+
+.unread-bullet {
+    color: hsl(1, 90%, 64%);
 }

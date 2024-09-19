@@ -34,3 +34,19 @@ main {
 .unread-bullet {
     color: hsl(1, 90%, 64%);
 }
+
+h1 span {
+    background-color: hsl(219, 85%, 26%);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    width: 100%;
+}

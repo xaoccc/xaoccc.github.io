@@ -50,3 +50,13 @@ h1 span {
     margin: 1rem 0;
     width: 100%;
 }
+
+.header button {
+    color: hsl(219, 12%, 42%);
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    border: none;
+    cursor: pointer;
+}

@@ -47,6 +47,12 @@ main {
     color: hsl(1, 90%, 64%);
 }
 
+.private-message {
+    padding: 1rem;
+    border: 1px solid hsl(219, 12%, 42%);
+    border-radius: 0.5rem;
+}
+
 h1 span {
     background-color: hsl(219, 85%, 26%);
     color: #fff;

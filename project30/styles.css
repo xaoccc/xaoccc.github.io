@@ -29,28 +29,70 @@ main {
     gap: 1rem;
 }
 
+.notification-text-wrapper {
+    width: 100%;
+}
+
 .notification-wrapper img {
     width: 2.5rem;
     height: 2.5rem;
+}
+
+.notification-text {
+    color: hsl(219, 12%, 42%);
+}
+
+.notification-time {
+    color: hsl(219, 14%, 63%);
+    margin: 0.25rem 0;
+}
+
+.user-name {
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.user-name:hover {
+    color: hsl(219, 85%, 26%);
+    cursor: pointer;
+}
+
+.post-name {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+
+.group-name {
+    font-weight: 800;
+    color: hsl(219, 85%, 26%);
+}
+
+.post-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .unread {
     background-color: hsl(210, 60%, 98%);
 }
 
-.unread p {
-    color: hsl(219, 14%, 63%);
-    
-}
 
 .unread-bullet {
     color: hsl(1, 90%, 64%);
 }
 
 .private-message {
-    padding: 1rem;
-    border: 1px solid hsl(219, 12%, 42%);
-    border-radius: 0.5rem;
+    padding: 1.2rem;
+    margin-top: 1rem;
+    border: 1px solid hsl(205, 33%, 90%);
+    border-radius: 0.25rem;
+    color: hsl(219, 12%, 42%);
+}
+
+.private-message:hover {
+    background-color: hsl(211, 68%, 94%);
+    cursor: pointer;
 }
 
 h1 span {
@@ -77,4 +119,12 @@ h1 span {
     font-size: 0.9rem;
     border: none;
     cursor: pointer;
+}
+
+.header button:hover {
+    color: hsl(219, 85%, 26%);
+}
+
+.post-name:hover {
+    color: hsl(219, 85%, 26%);
 }

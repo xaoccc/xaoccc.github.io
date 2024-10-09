@@ -29,7 +29,8 @@ let projectsTitles = [
     'Single Price Grid Component',
     'Huddle Landing Page With Single Introductory Section',
     'News Homepage',
-    'Notifications Page'
+    'Notifications Page',
+    'Bento Grid',
 ];
 
 function addProjects() {

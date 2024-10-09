@@ -1,0 +1,97 @@
+body {
+    background-color: #F5F5F5;
+    font-family: 'DM Sans', sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(36, 2rem);
+    grid-template-rows: repeat(56, 1rem);
+    max-width: 70rem;
+    height: 100vh;
+    margin: 5rem auto;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.yellow100 {
+    color: hsl(31, 66%, 93%);
+}
+
+.yellow500 {
+    color: hsl(39, 100%, 71%);
+}
+
+.purple100 {
+    color: hsl(254, 88%, 90%);
+}
+
+.purple500 {
+    color: hsl(256, 67%, 59%);
+}
+
+.bg-yellow100 {
+    background-color: hsl(31, 66%, 93%);
+}
+
+.bg-yellow500 {
+    background-color: hsl(39, 100%, 71%);
+}
+
+.bg-purple100 {
+    background-color: hsl(254, 88%, 90%);
+}
+
+.bg-purple500 {
+    background-color: hsl(256, 67%, 59%);
+}
+
+.bg-white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.post-button {
+    background: none;
+    border: none;
+}
+
+article {
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+article img {
+    width: 100%;
+    
+}
+
+.item1 {
+    grid-area: 1 / 1 / 27 / 9;
+}
+.item2 {
+    grid-area: 1 / 10 / 21 / 27;
+}
+.item3 {
+    grid-area: 1 / 28 / 39 / 36;
+}
+.item4 {
+    grid-area: 29 / 1 / 56 / 9;
+}
+.item5 {
+    grid-area: 23 / 10 / 39 / 18;
+}
+.item6 {
+    grid-area: 23 / 19 / 39 / 27;
+}
+.item7 {
+    grid-area: 41 / 10 / 56 / 17;
+}
+.item8 {
+    grid-area: 41 / 18 / 56 / 36;
+}
+

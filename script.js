@@ -31,6 +31,7 @@ let projectsTitles = [
     'News Homepage',
     'Notifications Page',
     'Bento Grid',
+    'Interactive Card Details Form',
 ];
 
 function addProjects() {

@@ -51,4 +51,8 @@ main {
     grid-column-start: 14;  
     grid-row-start: 26;  
     background-image: url('./images/bg-card-back.png');
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 3rem;
 }

@@ -5,9 +5,9 @@ html {
 
 main {
     display: grid;
-    grid-template-columns: repeat(80, 1rem);
-    grid-template-rows: repeat(50, 1rem);
-    max-width: 70rem;
+    grid-template-columns: repeat(80, minmax(0, 1fr));
+    grid-template-rows: repeat(50, minmax(0, 1fr));
+    width: 100vw;
     height: 100vh;
 }
 
@@ -23,10 +23,6 @@ main {
 .form-container {
     grid-column-start: 46;  
     grid-row-start: 14;  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 21.1rem;
     margin: 0 auto;
 }

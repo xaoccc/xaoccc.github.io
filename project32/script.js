@@ -1,6 +1,8 @@
 const card = document.querySelector('.card-front');
 const form = document.querySelector('.form-container');
 const inputs = document.querySelectorAll('input[required]');
+const submitButton = document.querySelector('.submit-button');
+const successMessage = document.querySelector('.success-message');
 
 function moveForm() {
     const cardRect = card.getBoundingClientRect();
@@ -18,7 +20,8 @@ function checkScreenSize() {
 inputs.forEach(function (input) {
     input.addEventListener('input', function (e) {
         this.setCustomValidity('');
-        document.getElementById('error-' + input.id).textContent = '';
+
+        (input.id !== 'yy' && input.id !== 'mm') ? document.getElementById('error-' + input.id).textContent = '' : document.getElementById('error-expiry').textContent = '';
         if (input.id === 'number' || input.id === 'cvv' || input.id === 'dd' || input.id === 'mm') {
             if (input.id === 'number') {
                 let cardNumber = '';
@@ -39,29 +42,35 @@ inputs.forEach(function (input) {
     });
 });
 
-function submitForm() {
-
-    let formIsValid = true;
-
+submitButton.addEventListener('click', function (e)  {
+    e.preventDefault();
+    
 
     inputs.forEach(function (input) {
         let errorElement = (input.id !== 'yy' && input.id !== 'mm') ? document.getElementById('error-' + input.id) : document.getElementById('error-expiry');
         if (!input.value && input.id) {
             errorElement.textContent = "Can't be blank";
             input.classList.add('error');
-            formIsValid = false;
         } else if (input.id === 'number' && input.value.length !== 19) {
             errorElement.textContent = 'Your card number must be 16 digits';
         } else if (input.id === 'cvc' && input.value.length !== 3) {
             errorElement.textContent = 'Your CVC must be 3 digits';
-        } else if ((input.value.id === 'mm' || input.value.id === 'yy')  && input.length !== 2) {     
+        } else if ((input.id === 'mm' || input.id === 'yy')  && input.value.length !== 2) {     
             errorElement.textContent = 'Your MM/YY must be 2 digits each';        
         } else {
             errorElement.textContent = '';
             input.classList.remove('error');
+            if (!document.querySelector('.error')) {
+                form.style.display = 'none';
+                successMessage.style.display = 'flex';
+            }
         }
+
+        
     });
-}
+
+    
+});
 
 
 window.addEventListener('resize', checkScreenSize);

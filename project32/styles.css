@@ -20,7 +20,8 @@ main {
 }
 
 .form-container {
-    display: flex;
+    /* display: flex; */
+    display: none;
     align-items: center;
     justify-content: center;
     grid-area: 1 / 31 / 50 / 80;
@@ -30,7 +31,6 @@ main {
 form {
     width: 21.1rem;
     margin: 0 auto;
-
 }
 
 
@@ -61,17 +61,22 @@ form {
     flex-direction: row;
     justify-content: space-between;
     text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
 }
 
 .card-back {
     grid-area: 25 / 16 / 38 / 41;
     background-image: url('./images/bg-card-back.png');
     background-position-y: center;
+    background-position-x: right;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     padding-right: 3rem;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
 }
 
 .input-container {
@@ -83,7 +88,6 @@ form {
 
 .date-field, .cvc-field {
     width: 44%;
-
 }
 
 .cvc-field {
@@ -94,13 +98,15 @@ form {
     width: 100%;
 }
 
+.card-cvc {
+    color: #fff;
+}
+
 form input {
     border-radius: 0.5rem;
     border: 1px solid hsl(270, 3%, 87%);
     padding: 0.75rem;
     outline: none;
-    
-
 }
 
 form input::placeholder {
@@ -120,12 +126,9 @@ form input:active, form input:focus {
     border: 1px solid hsl(0, 100%, 66%);
 }
 
-
-
 form > .field input {
     width: 100%;
 }
-
 
 form label {
     font-size: 0.65rem;
@@ -138,14 +141,14 @@ form label {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-
 }
+
 .date-field input {
     width: 100%;
     display: inline-block;
 }
 
-form button {
+.submit-button, .confirm-button {
     width: 100%;
     background-color: hsl(278, 68%, 11%);
     color: hsl(270, 3%, 87%);
@@ -161,6 +164,34 @@ form button {
 .error-message {
     font-size: 0.5rem;
     color: hsl(0, 100%, 66%);
+}
+
+.success-message {
+    /* display: none; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: 1 / 51 / 50 / 95;
+    padding: 0;
+    width: 70%;
+}
+
+.success-message h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1.5rem 0 1rem;
+    font-weight: 500;
+}
+
+.success-message p {
+    margin-bottom: 2.5rem;
+    color: hsl(279, 6%, 55%);
+}
+
+.success-message img {
+    width: 4.44rem;
 }
 
 @media screen and (min-width: 1600px) {
@@ -193,7 +224,11 @@ form button {
     .card-back {
         grid-area: 25 / 10 / 38 / 35;
     }
-    
+
+    .success-message {
+        grid-area: 1 / 37 / 50 / 95;
+        width: 90%;   
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -239,6 +274,15 @@ form button {
         text-wrap: nowrap;
     }
 
+    .confirm-button {
+        width: 50%;
+    }
+
+    .success-message {
+        width: 100%;
+        margin: 20rem auto 0;
+    }
+
     
     
 }
@@ -250,6 +294,14 @@ form button {
 
     .card-holder {
         font-size: 0.8rem;
+    }
+
+    .confirm-button {
+        width: 80%;
+    }
+
+    .success-message {
+        margin: 10rem auto 0;
     }
 }
 

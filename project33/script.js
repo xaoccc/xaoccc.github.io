@@ -8,13 +8,13 @@ async function fetchData() {
     const response = await fetch(request);
     let data = await response.json();
     data = data.slice(data.length - 7, data.length);
-    console.log(data);
     const GRAPH_HEIGHT = 150;
 
     const nums = data.map(entry => Number(entry.amount));
     console.log(Math.max(...nums));
 
     data.forEach(entry => {
+        const wrapper = document.querySelector('.wrapper');
         let graphWrapper = document.createElement('div');
         graphWrapper.classList.add('graph');
         let graphHeading = document.createElement('div');

@@ -1,5 +1,13 @@
 [
   {
+    "day": "sat",
+    "amount": 13.63
+  },
+  {
+    "day": "sun",
+    "amount": 45.25
+  },
+  {
     "day": "mon",
     "amount": 17.45
   },

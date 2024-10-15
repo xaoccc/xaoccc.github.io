@@ -6,7 +6,9 @@ async function fetchData() {
     const requestURL = 'https://raw.githubusercontent.com/xaoccc/xaoccc.github.io/refs/heads/main/project33/data.json';
     const request = new Request(requestURL);
     const response = await fetch(request);
-    const data = await response.json();
+    let data = await response.json();
+    data = data.slice(data.length - 7, data.length);
+    console.log(data);
     const GRAPH_HEIGHT = 150;
 
     const nums = data.map(entry => Number(entry.amount));

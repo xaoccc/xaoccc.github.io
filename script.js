@@ -32,6 +32,7 @@ let projectsTitles = [
     'Notifications Page',
     'Bento Grid',
     'Interactive Card Details Form',
+    'Expenses Chart Component',
 ];
 
 function addProjects() {

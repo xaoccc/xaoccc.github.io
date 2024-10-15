@@ -28,6 +28,9 @@ section {
     background-color: hsl(10, 79%, 65%);
     color: #FFFCF7;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .main {
@@ -37,6 +40,7 @@ section {
 
 h1 {
     color: hsl(25, 47%, 15%);
+    font-size: 1.9rem;
 }
 
 .summary h3 {
@@ -44,20 +48,22 @@ h1 {
 }
 
 .data-wrapper {
+    
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-end;
+    gap: 1rem;
     padding-bottom: 2rem;
     border-bottom: 2px solid hsl(27, 66%, 92%);
 }
 
 .graph {
+    margin-top: 3.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: calc(30rem / 7);
+    width: calc(20rem / 7);
 }
 
 .graph-data {
@@ -69,7 +75,33 @@ h1 {
     border-radius: 0.25rem;
 }
 
-.graph-data p {
+.graph-heading {
+    display: none;
+    position: fixed;
+    background-color: hsl(25, 47%, 15%);
+    color: hsl(33, 100%, 98%);
+    width: 135%;
+    position: relative;
+    text-align: center;
+    right: 0.5rem;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+.graph:hover  {
+    margin-top: 0.7rem;
+}
+
+.graph:hover .graph-data {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.graph:hover .graph-heading {
+    display: block;
+}
+
+.graph p {
     text-align: center;
     color: hsl(28, 10%, 53%);
 }
@@ -79,5 +111,13 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.summary p {
+    color: hsl(28, 10%, 53%);
 }
 

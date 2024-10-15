@@ -3,6 +3,7 @@ const form = document.querySelector('.form-container');
 const inputs = document.querySelectorAll('input[required]');
 const submitButton = document.querySelector('.submit-button');
 const successMessage = document.querySelector('.success-message');
+let [validName, validNumber, validMM, validYY, validCvc] = [false, false, false, false, false];
 
 function moveForm() {
     const cardRect = card.getBoundingClientRect();
@@ -11,9 +12,28 @@ function moveForm() {
 
 function checkScreenSize() {
     const screenWidth = window.innerWidth;
-    console.log(screenWidth);
     if (screenWidth < 768) {
         moveForm();
+    }
+}
+
+function switchValidate(input) {
+    switch (input.id) {
+        case 'name':
+            validName = true;
+            break;
+        case 'number':
+            validNumber = true;
+            break;
+        case 'mm':
+            validMM = true;
+            break;
+        case 'yy':
+            validYY = true;
+            break;
+        case 'cvc':
+            validCvc = true;
+            break;
     }
 }
 
@@ -43,8 +63,7 @@ inputs.forEach(function (input) {
 });
 
 submitButton.addEventListener('click', function (e)  {
-    e.preventDefault();
-    
+    e.preventDefault();    
 
     inputs.forEach(function (input) {
         let errorElement = (input.id !== 'yy' && input.id !== 'mm') ? document.getElementById('error-' + input.id) : document.getElementById('error-expiry');
@@ -55,23 +74,33 @@ submitButton.addEventListener('click', function (e)  {
             errorElement.textContent = 'Your card number must be 16 digits';
         } else if (input.id === 'cvc' && input.value.length !== 3) {
             errorElement.textContent = 'Your CVC must be 3 digits';
-        } else if ((input.id === 'mm' || input.id === 'yy')  && input.value.length !== 2) {     
-            errorElement.textContent = 'Your MM/YY must be 2 digits each';        
+        } else if (input.id === 'mm') { 
+            if (input.value.length !== 2) {
+                errorElement.textContent = 'Your MM must be 2 digits';
+            } else if (Number(input.value) < 1 || Number(input.value) > 12) {
+                errorElement.textContent = 'Invalid month';
+            } else {
+                validMM = true;
+            }
+        } else if (input.id === 'yy') { 
+            if (input.value.length !== 2) {
+                errorElement.textContent = 'Your YY must be 2 digits';
+            } else if (Number(input.value) < 19 || Number(input.value) > 29) {
+                errorElement.textContent = 'Invalid year';
+            } else {
+                validYY = true;
+            }        
         } else {
+            switchValidate(input);
             errorElement.textContent = '';
             input.classList.remove('error');
-            if (!document.querySelector('.error')) {
+            if (validName === true && validNumber === true && validMM === true && validYY === true && validCvc === true) {
                 form.style.display = 'none';
                 successMessage.style.display = 'flex';
             }
-        }
-
-        
-    });
-
-    
+        }        
+    });    
 });
-
 
 window.addEventListener('resize', checkScreenSize);
 

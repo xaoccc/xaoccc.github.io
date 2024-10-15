@@ -20,8 +20,7 @@ main {
 }
 
 .form-container {
-    /* display: flex; */
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     grid-area: 1 / 31 / 50 / 80;
@@ -167,8 +166,7 @@ form label {
 }
 
 .success-message {
-    /* display: none; */
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -262,6 +260,8 @@ form label {
     .form-container {
         padding: 0;
         width: 100%;
+        position: relative;
+        top: 6rem;
     }
 
     form {
@@ -281,10 +281,14 @@ form label {
     .success-message {
         width: 100%;
         margin: 20rem auto 0;
-    }
+    }    
+    
+}
 
-    
-    
+@media screen and (max-width: 600px) {
+    .form-container {
+        top: 3rem;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -302,6 +306,10 @@ form label {
 
     .success-message {
         margin: 10rem auto 0;
+    }
+
+    .form-container {
+        position: static;
     }
 }
 

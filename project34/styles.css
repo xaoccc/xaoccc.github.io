@@ -5,4 +5,45 @@ html {
 
 body {
     background-color: hsl(226, 43%, 10%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 61.7rem;
+    gap: 1.75rem;    
+}
+
+section {
+    border-radius: 1rem;
+}
+
+.profile {
+    max-width: 14.17rem;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 4rem;
+    border: 2px solid #fff;
+}
+
+.data-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+}
+
+.data-wrapper .section-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
 }

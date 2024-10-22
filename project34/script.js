@@ -1,15 +1,23 @@
 const dataWrapper = document.querySelector('.data-wrapper');
 let dataSections = ['Work', 'Play', 'Study', 'Exercise', 'Social', 'Self-Care'];
 const [dailyBtn, weeklyBtn, monthlyBtn] = document.querySelectorAll('.data-options button');
+dailyBtn.focus();
+window.addEventListener('DOMContentLoaded', () => {
+    dailyBtn.focus();
+    addData('Yesterday');
+    dailyBtn.addEventListener('keydown', (e) => {
+        (e.key === 'ArrowDown') ? weeklyBtn.focus() : null;
+    });
+});
 
 dataSections.forEach(section => {
-    let elements = [['div', 'section-wrapper'], ['div', 'section-logo'],  ['div', 'section-data-wrapper'], ['div', 'section-header'], ['div', 'section-header-text'], ['a', 'section-header-link'], ['div', 'data-text'], ['h2', 'current-data'], ['p', 'previous-data']];
+    let elements = [['div', 'section-wrapper'], ['div', 'section-logo'], ['div', 'section-data-wrapper'], ['div', 'section-header'], ['div', 'section-header-text'], ['a', 'section-header-link'], ['div', 'data-text'], ['h2', 'current-data'], ['p', 'previous-data']];
     let [sectionWrapper, sectionLogo, sectionDataWrapper, sectionHeader, sectionHeaderText, sectionHeaderLink, dataText, currentData, previousData] = [null, null, null, null, null, null, null, null];
 
     elements.forEach((element, index) => {
         const el = document.createElement(element[0]);
         el.classList.add(element[1]);
-        switch(index) {
+        switch (index) {
             case 0: sectionWrapper = el; break;
             case 1: sectionLogo = el; break;
             case 2: sectionDataWrapper = el; break;
@@ -23,12 +31,13 @@ dataSections.forEach(section => {
     });
 
     sectionHeaderLink.href = '#';
+    sectionHeaderLink.tabIndex = -1;
     sectionHeaderText.textContent = section.split('-').join(' ');
     sectionLogo.style.backgroundImage = `url(./images/icon-${section.toLowerCase()}.svg)`;
 
     switch (section) {
         case 'Work':
-            sectionLogo.style.backgroundColor = 'hsl(15, 100%, 70%)';            
+            sectionLogo.style.backgroundColor = 'hsl(15, 100%, 70%)';
             break;
         case 'Play':
             sectionLogo.style.backgroundColor = 'hsl(195, 74%, 62%)';
@@ -65,39 +74,48 @@ async function fetchData() {
     return data;
 }
 
-
-dailyBtn.addEventListener('click', async (e) => {
+async function addData(text) {
     const dataSections = document.querySelectorAll('.section-wrapper');
     const data = await fetchData();
 
-    dataSections.forEach((section, index) => {     
+    dataSections.forEach((section, index) => {
         const currentData = section.children[1].children[1].children[0];
         const previousData = section.children[1].children[1].children[1];
-        currentData.textContent = `${data[index].timeframes.daily.current}hrs`;
-        previousData.textContent = `Yesterday - ${data[index].timeframes.daily.previous}hrs`;
-    });    
+        switch (text) {
+            case 'Yesterday':
+                currentData.textContent = `${data[index].timeframes.daily.current}hrs`;
+                previousData.textContent = `${text} - ${data[index].timeframes.daily.previous}hrs`;
+                break;
+            case 'Last Week':
+                currentData.textContent = `${data[index].timeframes.weekly.current}hrs`;
+                previousData.textContent = `${text}- ${data[index].timeframes.weekly.previous}hrs`;
+                break;
+            case 'Last Month':
+                currentData.textContent = `${data[index].timeframes.monthly.current}hrs`;
+                previousData.textContent = `${text}- ${data[index].timeframes.monthly.previous}hrs`;
+                break;
+        }
+    });
+}
+
+dailyBtn.addEventListener('focus', (e) => {
+    addData('Yesterday');
+    e.target.addEventListener('keydown', (e) => {
+        (e.key === 'ArrowDown') ? weeklyBtn.focus() : null;
+    });
+});
+weeklyBtn.addEventListener('focus', (e) => {
+    addData('Last Week');
+    e.target.addEventListener('keydown', (e) => {
+        (e.key === 'ArrowDown') ? monthlyBtn.focus() : null;
+        (e.key === 'ArrowUp') ? dailyBtn.focus() : null;
+    });
+});
+monthlyBtn.addEventListener('focus', (e) => {
+    addData('Last Month');
+    e.target.addEventListener('keydown', (e) => {
+        (e.key === 'ArrowUp') ? weeklyBtn.focus() : null;
+    });
 });
 
-weeklyBtn.addEventListener('click', async (e) => {
-    const dataSections = document.querySelectorAll('.section-wrapper');
-    const data = await fetchData();
 
-    dataSections.forEach((section, index) => { 
-        const currentData = section.children[1].children[1].children[0];
-        const previousData = section.children[1].children[1].children[1];
-        currentData.textContent = `${data[index].timeframes.weekly.current}hrs`;
-        previousData.textContent = `Last Week - ${data[index].timeframes.weekly.previous}hrs`;
-    });    
-});
-
-monthlyBtn.addEventListener('click', async (e) => {
-    const dataSections = document.querySelectorAll('.section-wrapper');
-    const data = await fetchData();
-
-    dataSections.forEach((section, index) => { 
-        const currentData = section.children[1].children[1].children[0];
-        const previousData = section.children[1].children[1].children[1];
-        currentData.textContent = `${data[index].timeframes.monthly.current}hrs`;
-        previousData.textContent = `Last Month - ${data[index].timeframes.monthly.previous}hrs`;
-    });    
-});

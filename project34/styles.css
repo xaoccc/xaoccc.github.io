@@ -21,7 +21,6 @@ main {
     color: #fff; 
 }
 
-
 .profile{
     border-radius: 1rem;
     display: flex;
@@ -29,6 +28,7 @@ main {
     width: 46%;
     overflow: hidden;
 }
+
 .section-wrapper {
     width: 14.17rem;
     border-radius: 1rem;
@@ -78,19 +78,6 @@ p {
 .profile-info, .data-options, .section-data-wrapper {
     padding: 1.5rem;
 }
-
-
-/* .section-logo::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1rem;
-    position: relative;
-    top: 2.5rem;
-    background-color: hsl(235, 46%, 20%);
-    border-radius: 1rem 1rem 0 0;
-
-} */
 
 .data-options {
     background-color: hsl(235, 46%, 20%);
@@ -196,18 +183,15 @@ button:focus, button:active {
         justify-content: space-between;
         padding: 2.5rem 1.5rem 1.5rem 1.5rem;
     }
-
 }
 
 @media screen and (max-width: 800px) {
-
     .data-wrapper {
         flex-direction: column;
     }
     .section-wrapper {
         width: 100%;
     }
-
     .data-text {
         display: flex;
         flex-direction: row;
@@ -217,7 +201,6 @@ button:focus, button:active {
 }
 
 @media screen and (max-width: 480px) {
-
     html {
         font-size: 14px;
     }

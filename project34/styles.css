@@ -92,8 +92,6 @@ p {
     border-radius: 0 0 1rem 1rem;
 }
 
-
-
 .section-data-wrapper {
     border-radius: 1rem;
     background-color: hsl(235, 46%, 20%);
@@ -143,4 +141,53 @@ button:focus, button:active {
 .section-data-wrapper:hover {
     cursor: pointer;
     background-color: #34397B;
+}
+
+.data-text {
+    display: flex;
+    flex-direction: column;
+}
+
+@media  (max-width: 1110px) {
+    main {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 80px 24px;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .data-wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+
+
+
+    .section-data-wrapper h2, .section-data-wrapper p {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .data-wrapper {
+        flex-direction: column;
+    }
+    .section-wrapper {
+        width: 100%;
+    }
+
+    .data-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
 }

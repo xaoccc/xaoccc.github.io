@@ -3,8 +3,8 @@ let dataSections = ['Work', 'Play', 'Study', 'Exercise', 'Social', 'Self-Care'];
 const [dailyBtn, weeklyBtn, monthlyBtn] = document.querySelectorAll('.data-options button');
 
 dataSections.forEach(section => {
-    let elements = [['div', 'section-wrapper'], ['div', 'section-logo'],  ['div', 'section-data-wrapper'], ['div', 'section-header'], ['div', 'section-header-text'], ['a', 'section-header-link'], ['h2', 'current-data'], ['p', 'previous-data']];
-    let [sectionWrapper, sectionLogo, sectionDataWrapper, sectionHeader, sectionHeaderText, sectionHeaderLink, currentData, previousData] = [null, null, null, null, null, null, null, null];
+    let elements = [['div', 'section-wrapper'], ['div', 'section-logo'],  ['div', 'section-data-wrapper'], ['div', 'section-header'], ['div', 'section-header-text'], ['a', 'section-header-link'], ['div', 'data-text'], ['h2', 'current-data'], ['p', 'previous-data']];
+    let [sectionWrapper, sectionLogo, sectionDataWrapper, sectionHeader, sectionHeaderText, sectionHeaderLink, dataText, currentData, previousData] = [null, null, null, null, null, null, null, null];
 
     elements.forEach((element, index) => {
         const el = document.createElement(element[0]);
@@ -16,8 +16,9 @@ dataSections.forEach(section => {
             case 3: sectionHeader = el; break;
             case 4: sectionHeaderText = el; break;
             case 5: sectionHeaderLink = el; break;
-            case 6: currentData = el; break;
-            case 7: previousData = el; break;
+            case 6: dataText = el; break;
+            case 7: currentData = el; break;
+            case 8: previousData = el; break;
         }
     });
 
@@ -50,8 +51,9 @@ dataSections.forEach(section => {
     sectionDataWrapper.appendChild(sectionHeader);
     sectionWrapper.appendChild(sectionLogo);
     sectionWrapper.appendChild(sectionDataWrapper);
-    sectionDataWrapper.appendChild(currentData);
-    sectionDataWrapper.appendChild(previousData);
+    dataText.appendChild(currentData);
+    dataText.appendChild(previousData);
+    sectionDataWrapper.appendChild(dataText);
     dataWrapper.appendChild(sectionWrapper);
 });
 
@@ -68,9 +70,9 @@ dailyBtn.addEventListener('click', async (e) => {
     const dataSections = document.querySelectorAll('.section-wrapper');
     const data = await fetchData();
 
-    dataSections.forEach((section, index) => {        
-        const currentData = section.children[1].children[1];
-        const previousData = section.children[1].children[2];
+    dataSections.forEach((section, index) => {     
+        const currentData = section.children[1].children[1].children[0];
+        const previousData = section.children[1].children[1].children[1];
         currentData.textContent = `${data[index].timeframes.daily.current}hrs`;
         previousData.textContent = `Yesterday - ${data[index].timeframes.daily.previous}hrs`;
     });    
@@ -81,8 +83,8 @@ weeklyBtn.addEventListener('click', async (e) => {
     const data = await fetchData();
 
     dataSections.forEach((section, index) => { 
-        const currentData = section.children[1].children[1];
-        const previousData = section.children[1].children[2];
+        const currentData = section.children[1].children[1].children[0];
+        const previousData = section.children[1].children[1].children[1];
         currentData.textContent = `${data[index].timeframes.weekly.current}hrs`;
         previousData.textContent = `Last Week - ${data[index].timeframes.weekly.previous}hrs`;
     });    
@@ -93,8 +95,8 @@ monthlyBtn.addEventListener('click', async (e) => {
     const data = await fetchData();
 
     dataSections.forEach((section, index) => { 
-        const currentData = section.children[1].children[1];
-        const previousData = section.children[1].children[2];
+        const currentData = section.children[1].children[1].children[0];
+        const previousData = section.children[1].children[1].children[1];
         currentData.textContent = `${data[index].timeframes.monthly.current}hrs`;
         previousData.textContent = `Last Month - ${data[index].timeframes.monthly.previous}hrs`;
     });    

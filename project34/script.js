@@ -1,7 +1,7 @@
 const dataWrapper = document.querySelector('.data-wrapper');
 let dataSections = ['Work', 'Play', 'Study', 'Exercise', 'Social', 'Self-Care'];
 const [dailyBtn, weeklyBtn, monthlyBtn] = document.querySelectorAll('.data-options button');
-dailyBtn.focus();
+
 window.addEventListener('DOMContentLoaded', () => {
     dailyBtn.focus();
     addData('Yesterday');

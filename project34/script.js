@@ -5,9 +5,6 @@ const [dailyBtn, weeklyBtn, monthlyBtn] = document.querySelectorAll('.data-optio
 window.addEventListener('DOMContentLoaded', () => {
     dailyBtn.focus();
     addData('Yesterday');
-    dailyBtn.addEventListener('keydown', (e) => {
-        (e.key === 'ArrowDown') ? weeklyBtn.focus() : null;
-    });
 });
 
 dataSections.forEach(section => {
@@ -98,24 +95,49 @@ async function addData(text) {
     });
 }
 
-dailyBtn.addEventListener('focus', (e) => {
+// The trickiest part of this project was to make the buttons focusable and clickable using the keyboard only and work on mobile devices as well.
+
+dailyBtn.addEventListener('click', (e) => {
     addData('Yesterday');
-    e.target.addEventListener('keydown', (e) => {
-        (e.key === 'ArrowDown') ? weeklyBtn.focus() : null;
-    });
 });
-weeklyBtn.addEventListener('focus', (e) => {
+
+dailyBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown' || e.key === 'Tab') {
+        e.preventDefault();       
+        weeklyBtn.focus();
+        weeklyBtn.click();
+    }
+});
+
+weeklyBtn.addEventListener('click', (e) => {
     addData('Last Week');
-    e.target.addEventListener('keydown', (e) => {
-        (e.key === 'ArrowDown') ? monthlyBtn.focus() : null;
-        (e.key === 'ArrowUp') ? dailyBtn.focus() : null;
-    });
 });
-monthlyBtn.addEventListener('focus', (e) => {
+
+weeklyBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown' || e.key === 'Tab') {
+        e.preventDefault();
+        monthlyBtn.focus();
+        monthlyBtn.click();
+    } else if (e.key === 'ArrowUp') {
+        dailyBtn.focus();
+        dailyBtn.click();
+    } 
+});
+
+monthlyBtn.addEventListener('click', (e) => {
     addData('Last Month');
-    e.target.addEventListener('keydown', (e) => {
-        (e.key === 'ArrowUp') ? weeklyBtn.focus() : null;
-    });
+
+});
+
+monthlyBtn.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowUp') {
+        weeklyBtn.focus();
+        weeklyBtn.click();
+    } else if (e.key === 'Tab') {
+        e.preventDefault();
+        dailyBtn.focus();
+        dailyBtn.click();
+    }
 });
 
 

@@ -1,0 +1,154 @@
+html {
+    font-family: 'Space Mono', monospace;
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: 700;
+}
+
+.logo img {
+    margin: 0 auto;
+}
+
+.logo {
+    padding: 2rem;
+    width: 100%;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.wrapper {    
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 53.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.wrapper form {
+    width: 23.75rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.result-wrapper {
+    width: 20.75rem;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tip-fields {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.tip {
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    border: none;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    width: 30%;   
+}
+
+input {
+    font-size: 1.5rem;   
+}
+
+.tip.custom-tip {
+    width: 26%;
+    text-align: center;
+    color: hsl(183, 100%, 15%);
+}
+
+label {
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 0.5rem;
+}
+
+form .field:nth-child(2) label {
+    margin-bottom: 1rem;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    outline: none;
+}
+
+#bill {
+    background-image: url('./images/icon-dollar.svg');
+    background-position-x: 1rem;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+#people {
+    background-image: url('./images/icon-person.svg');
+    background-position-x: 1rem;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+#people, #bill {
+    width: 97%;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.reset {
+    width: 100%;
+    border-radius: 0.25rem;
+    background-color: #0D686D;
+    color: #035E63;
+    border: none;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25rem;
+    font-family: inherit;
+}
+
+.result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.result-left small {
+    color: hsl(186, 14%, 43%)
+}
+
+.result p {
+    color: hsl(189, 41%, 97%);
+    padding: 0;
+    margin: 0;
+}
+
+.result-right span {
+    font-size: 2.5rem;
+    color: hsl(172, 67%, 45%);
+}

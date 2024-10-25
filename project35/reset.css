@@ -1,0 +1,6 @@
+img, a, button, input, label {
+    display: block;
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+}

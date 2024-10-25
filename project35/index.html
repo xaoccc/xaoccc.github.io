@@ -12,26 +12,66 @@
 </head>
 
 <body>
+    <header>
 
-    Bill
+    </header>
+    <main>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="">
+        </div>
 
-    Select Tip %
-    5%
-    10%
-    15%
-    25%
-    50%
-    Custom
+        <section class="wrapper">
+            <form action="">
+                <div class="field">
+                    <label for="bill">Bill</label>
+                    <input type="text" name="bill" id="bill" placeholder="0" />
+                </div>
+                <div class="field">
+                    <label for="tip">Select Tip %</label>
+                    <div class="tip-fields">
+                        <input type="button" name="tip" class="tip" value="5%" />
+                        <input type="button" name="tip" class="tip" value="10%" />
+                        <input type="button" name="tip" class="tip" value="15%" />
+                        <input type="button" name="tip" class="tip" value="25%" />
+                        <input type="button" name="tip" class="tip" value="50%" />
+                        <input type="text" name="tip" class="tip custom-tip" placeholder="Custom" />
+                    </div>
 
-    Number of People
+                </div>
+                <div class="field">
+                    <label for="people">Number of People</label>
+                    <input type="number" name="people" id="people" placeholder="0" />
+                </div>
 
-    Tip Amount
-    / person
 
-    Total
-    / person
 
-    Reset
+            </form>
+            <div class="result-wrapper">
+                <div class="result">
+                    <div class="result-left">
+                        <p>Tip Amount</p>
+                        <small>/ person</small>
+                    </div>
+                    <div class="result-right result-tip">
+                        <span>$</span>
+                        <span>0.00</span>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result-left">
+                        <p>Total</p>
+                        <small>/ person</small>
+                    </div>
+                    <div class="result-right result-total">
+                        <span>$</span>
+                        <span>0.00</span>
+                    </div>
+                </div>
+                <button class="reset" disabled>Reset</button>
+            </div>
+
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>

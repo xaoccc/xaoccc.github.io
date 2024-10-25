@@ -23,8 +23,11 @@
         <section class="wrapper">
             <form action="">
                 <div class="field">
-                    <label for="bill">Bill</label>
-                    <input type="text" name="bill" id="bill" placeholder="0" />
+                    <label for="bill">
+                        <span>Bill</span>
+                        <span class="error"></span>
+                    </label>
+                    <input type="number" name="bill" id="bill" placeholder="0" />
                 </div>
                 <div class="field">
                     <label for="tip">Select Tip %</label>
@@ -39,7 +42,10 @@
 
                 </div>
                 <div class="field">
-                    <label for="people">Number of People</label>
+                    <label for="people">
+                        <span>Number of People</span>
+                        <span class="error"></span>
+                    </label>
                     <input type="number" name="people" id="people" placeholder="0" />
                 </div>
 
@@ -54,7 +60,7 @@
                     </div>
                     <div class="result-right result-tip">
                         <span>$</span>
-                        <span>0.00</span>
+                        <span class="result-value">0.00</span>
                     </div>
                 </div>
                 <div class="result">
@@ -64,7 +70,7 @@
                     </div>
                     <div class="result-right result-total">
                         <span>$</span>
-                        <span>0.00</span>
+                        <span class="result-value">0.00</span>
                     </div>
                 </div>
                 <button class="reset" disabled>Reset</button>

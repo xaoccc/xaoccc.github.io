@@ -75,8 +75,16 @@ main {
     width: 30%;   
 }
 
+.reset.reset-active {
+    color: white;
+}
+
 input {
     font-size: 1.5rem;   
+}
+
+input[type="number"].input-error {
+    outline: 2px solid #B3806F;
 }
 
 .tip.custom-tip {
@@ -176,7 +184,7 @@ input[type="text"], input[type="number"] {
 }
 
 /* Hover */
-.tip:hover {
+.tip:hover, .reset-active:hover {
     background-color: #9FE8DF;
     color: hsl(183, 100%, 15%);
     cursor: pointer;

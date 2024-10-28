@@ -33,7 +33,8 @@ let projectsTitles = [
     'Bento Grid',
     'Interactive Card Details Form',
     'Expenses Chart Component',
-    'Time Tracking Dashboard'
+    'Time Tracking Dashboard',
+    'Check Splitter',
 ];
 
 function addProjects() {

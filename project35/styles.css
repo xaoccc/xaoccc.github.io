@@ -30,13 +30,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 53.5rem;
+    width: 57.5rem;
     padding: 2rem;
     border-radius: 1rem;
 }
 
 .wrapper form {
-    width: 23.75rem;
+    width: 25.75rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -44,7 +44,7 @@ main {
 }
 
 .result-wrapper {
-    width: 20.75rem;
+    width: 25.75rem;
     background-color: hsl(183, 100%, 15%);
     border-radius: 0.75rem;
     padding: 2.5rem;
@@ -63,7 +63,7 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 1rem;
-    gap: 1rem;
+    gap: 0.8rem;
 }
 
 .tip {
@@ -72,7 +72,8 @@ main {
     border: none;
     padding: 0.4rem;
     border-radius: 0.5rem;
-    width: 30%;   
+    width: 31%; 
+    text-align: center;  
 }
 
 .reset.reset-active {
@@ -88,7 +89,6 @@ input[type="number"].input-error {
 }
 
 .tip.custom-tip {
-    width: 26%;
     text-align: right;
     color: hsl(183, 100%, 15%);
 }
@@ -140,7 +140,7 @@ input[type="text"], input[type="number"] {
 }
 
 #people, #bill {
-    width: 97%;
+    width: 100%;
     margin-bottom: 1rem;
     text-align: right;
 }
@@ -199,4 +199,29 @@ input[type="text"], input[type="number"] {
 input[type="text"]:hover, input[type="text"]:focus, input[type="number"]:hover, input[type="number"]:focus {
     outline: 2px solid #5DAAA2;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .result-wrapper, .wrapper form {
+        width: 100%;
+    }
+
+    .tip {
+        width: 47%;
+    }
+
+    .result-wrapper .result:nth-child(2) {
+        margin-top: 0;
+    }
+
+
+    
 }

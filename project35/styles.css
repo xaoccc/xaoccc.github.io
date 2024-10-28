@@ -201,7 +201,7 @@ input[type="text"]:hover, input[type="text"]:focus, input[type="number"]:hover, 
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     html {
         font-size: 12px;
     }

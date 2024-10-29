@@ -35,6 +35,7 @@ let projectsTitles = [
     'Expenses Chart Component',
     'Time Tracking Dashboard',
     'Check Splitter',
+    'Advice generator'
 ];
 
 function addProjects() {

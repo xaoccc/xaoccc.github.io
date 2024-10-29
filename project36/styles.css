@@ -54,3 +54,14 @@ button:hover {
     cursor: pointer;
     box-shadow: 0 0 15px hsl(150, 100%, 66%);
 }
+
+@media screen and (max-width: 540px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+}

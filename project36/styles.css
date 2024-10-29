@@ -49,3 +49,8 @@ button {
     position: relative;
     top: 2rem;
 }
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}

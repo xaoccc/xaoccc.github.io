@@ -1,18 +1,28 @@
+/* Header */
+
 header {
     background-image: url('./images/desktop/image-header.jpg');
-    background-position-x: 0;
+    background-position-x: center;
     background-position-y: 0;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
+    padding-bottom: calc(100vw - 71rem);
 }
 
-.fa-solid.fa-arrow-down-long {
+header .logo img {
+    width: 10.5rem;
+}
+
+.arrow {
     color: white;
-    margin: 3rem auto 20rem;
-    font-size: 5rem;
-    width: 100%;
+    margin: 3rem auto 0;
+    padding-top: 2.5rem;
     text-align: center;
+}
+
+header nav {  
+    padding: 3rem;
 }
 
 nav {
@@ -20,7 +30,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem;
 }
 
 ul {
@@ -45,12 +54,247 @@ ul .contact {
     font-size: 1rem;
 }
 
+h1, h2, h3, h4 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+}
+
 h1 {
     text-align: center;
-    font-family: 'Fraunces', sans-serif;
     font-size: 3.6rem;
     margin: 3rem;
     text-transform: uppercase;
     letter-spacing: 10px;
-    font-weight: 900;
 }
+
+/* Main */
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+section > img, section > article {
+    width: 50%;
+}
+
+.transform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    text-align: left;  
+    line-height: 1.6;
+    padding: 0 7rem 0 10rem;
+    width: 50%;
+}
+
+.transform h2 {
+    font-size: 2.5rem;
+}
+
+.transform p {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: hsl(232, 10%, 55%);
+}
+
+.transform a {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.yellow, .red {
+    width: 11ch;
+    position: relative;
+    bottom: 10px;
+    right: 0.5ch;
+    z-index: -1;
+    opacity: 0.3;
+    border-radius: 6px;
+}
+.yellow {
+    border: 6px solid hsl(51, 100%, 49%);
+}
+
+.red {
+    border: 6px solid hsl(7, 99%, 70%);
+}
+.fruits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: calc(100vw - 45rem);
+}
+
+.fruits article {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fruits .wrapper {
+    position: absolute;
+    bottom: 15%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+}
+
+.cherry h3, .cherry p {
+    color:hsl(167, 40%, 24%);
+}
+.orange h3, .orange p {
+    color:hsl(198, 62%, 26%);
+}
+
+.fruits .wrapper h3 {
+    font-size: 1.9rem;
+}
+.fruits .wrapper p {
+    font-family: 'Barlow', sans-serif;
+    margin-top: 2rem;
+}
+
+.cherry {
+    background-image: url('./images/desktop/image-graphic-design.jpg');
+}
+
+.orange {
+    background-image: url('./images/desktop/image-photography.jpg');
+}
+
+.article-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 76%;
+    margin: 0 auto;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    text-align: center;    
+    padding: 10rem 0;
+}
+
+.testimonials img {
+    border-radius: 50%;
+    width: 4.5rem;
+}
+
+.testimonials h4 {
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.article-wrapper article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 32%;
+}
+
+.article-wrapper article blockquote p {
+    color: hsl(213, 9%, 39%);
+    line-height: 1.6;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 3rem 0;
+}
+
+.author {
+    color: hsl(212, 27%, 19%);
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+}
+
+.author-position {
+    color: hsl(210, 4%, 67%);
+    font-size: 0.8rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    margin-top: 0.8rem;
+}
+
+.pics {
+    display: flex;
+    flex-direction: row;
+}
+
+.pics img {
+    width: 25%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #90D4C5;
+    color: hsl(168, 34%, 41%);
+    padding: 4.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+footer .logo {
+    text-align: center;
+}
+
+footer .logo, footer nav, .social {
+    width: 19rem;
+    margin: 0 auto;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 1100px) {
+    html {
+        font-size: 14px;
+    }
+    .arrow {
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+    }
+
+    .fruits .wrapper {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+    }
+
+    .fruits .wrapper p {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .transform {
+        padding: 0 4rem 0 5rem;
+    }
+    
+    html {
+        font-size: 12px;
+    }
+}
+

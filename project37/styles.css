@@ -3,7 +3,7 @@
 header {
     background-image: url('./images/desktop/image-header.jpg');
     background-position-x: center;
-    background-position-y: 0;
+    background-position-y: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
@@ -86,7 +86,6 @@ section > img, section > article {
     text-align: left;  
     line-height: 1.6;
     padding: 0 7rem 0 10rem;
-    width: 50%;
 }
 
 .transform h2 {
@@ -104,23 +103,28 @@ section > img, section > article {
     font-family: 'Fraunces', sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-}
-
-.yellow, .red {
-    width: 11ch;
     position: relative;
-    bottom: 10px;
-    right: 0.5ch;
-    z-index: -1;
-    opacity: 0.3;
-    border-radius: 6px;
-}
-.yellow {
-    border: 6px solid hsl(51, 100%, 49%);
+    width: fit-content;
+    margin: 0 auto;
 }
 
-.red {
-    border: 6px solid hsl(7, 99%, 70%);
+.transform a::after {
+    content: "";
+    position: absolute;
+    bottom: 4px; 
+    left: -5px;
+    width: 110%;
+    height: 6px;
+    border-radius: 5px;
+    z-index: -1;
+}
+
+.yellow::after {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.red::after {
+    background-color: hsl(7, 99%, 70%);
 }
 .fruits {
     display: flex;
@@ -231,6 +235,7 @@ section > img, section > article {
 
 .pics {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
 }
 
@@ -265,6 +270,16 @@ footer .logo, footer nav, .social {
     gap: 2rem;
 }
 
+/* Mobile */
+.mobile-nav-btn {
+    display: none;
+}
+
+.mobile-nav-btn i {
+    color: #fff;
+    font-size: 2rem;
+}
+
 @media (max-width: 1100px) {
     html {
         font-size: 14px;
@@ -296,5 +311,44 @@ footer .logo, footer nav, .social {
     html {
         font-size: 12px;
     }
+}
+
+@media (max-width: 768px) {
+    ul.menu {
+        display: none;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+    }
+
+    section {
+        flex-direction: column;
+    }
+    
+    section > img, section > article {
+        width: 100%;
+    }
+
+    .pics img {
+        width: 50%;
+    }
+
+    .transform {
+        order: 2;
+        padding: 4rem 2rem;
+        text-align: center;
+    }
+
+    .fruits {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .fruits article {
+        height: 37.5rem;
+    }
+
+
 }
 

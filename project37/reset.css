@@ -17,6 +17,7 @@ button, a {
   font: inherit;
   color: inherit;
   border: none;
+  background: none;
 }
 
 button {

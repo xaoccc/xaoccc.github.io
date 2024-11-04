@@ -8,11 +8,19 @@
   text-align: inherit;
 }
 
-img, button, a {
+button, a {
   display: block;
 }
 
-button, a {
+img {
+  display: inline-block;
+}
+
+li {
+    list-style: none;
+}
+
+button, a, li {
   text-decoration: none;
   font: inherit;
   color: inherit;

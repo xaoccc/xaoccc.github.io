@@ -1,7 +1,7 @@
+/* Header */
 header {
     background: linear-gradient(90deg, hsl(13, 100%, 72%), hsl(353, 100%, 62%));   
-    border-bottom-left-radius: 2rem;
-
+    border-bottom-left-radius: 6rem;
 }
 
 h1, h2, h3, h4, main p {
@@ -16,12 +16,12 @@ nav, button, header p {
     width: 100%;
     background: url('./images/bg-pattern-intro-desktop.svg');
     background-position-x: 25%;
-    background-position-y: center;
+    background-position-y: -83.5rem;
     padding: 3.75rem 10rem 9.75rem 10rem;
     color: #fff;    
     display: flex;
     flex-direction: column;
-    gap: 9rem;
+    gap: 8rem;
 }
 
 .dropdown-hidden {
@@ -30,8 +30,29 @@ nav, button, header p {
 
 .dropdown-visible {
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 1rem;
+    background-color: #fff;
+    color: #000;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 2.5rem;
+    left: -1rem;
+}
+
+.dropdown:hover {
+    font-weight: 700;
+}
+
+.action:hover {
+    text-decoration: underline;
+}
+
+.action::after {
+    content: url('./images/icon-arrow-light.svg');
+    margin-left: 0.25rem;
 }
 
 .main-nav-link > div {
@@ -43,6 +64,7 @@ nav, button, header p {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    position: relative;
 }
 
 .header-nav {
@@ -55,17 +77,159 @@ nav, button, header p {
 .header-links, .left, .header-buttons {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 1rem;
 }
 
+.header-links {
+    gap: 1rem;
+}
+
+.header-buttons {
+    gap: 2rem;
+}
+
+.left{
+    gap: 4rem;
+}
+
+.header-links {
+    align-items: center;
+    position: relative;
+}
+
 h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 3.75rem;
+    font-weight: 500;
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 header p {
     font-size: 1.125rem;
     font-weight: 400;
     text-align: center;
+}
+
+.nav-buttons {
+    margin: 3rem auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.nav-buttons, .header-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-buttons button, .nav-buttons button {
+    font-weight: 700;
+
+}
+
+.nav-buttons button {
+    padding: 0.85rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.nav-buttons button {
+    border: 1px solid #fff;
+}
+
+.login {
+    margin-right: 1rem;
+}
+
+.white-btn {
+    background-color: #fff;
+    color: hsl(353, 100%, 62%);
+    padding: 0.85rem 2.5rem;
+    border: 1px solid #fff;
+    border-radius: 2rem;
+}
+
+.white-btn:hover {
+    background-color: #FF7B86;
+    border: 1px solid #FF7B86;
+    color: #fff;
+}
+
+.nav-buttons button:nth-child(2) {
+    color: #fff;
+}
+
+.nav-buttons button:nth-child(2):hover {
+    background-color: #fff;
+    color: #FF7B86;
+}
+
+/* Main */
+/* First Section */
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section p{
+    color: hsl(207, 13%, 34%);
+    font-weight: 300;
+    font-size: 1.073rem;
+}
+
+.dftf {
+    background-image: url('./images/illustration-editor-desktop.svg');
+    background-position: 158% 4.375rem;
+    background-repeat: no-repeat;
+    background-size: 64%;
+    overflow: visible;
+    padding: 10.25rem 10rem;
+    gap: 1.5rem;
+}
+
+h2, h3 {
+    font-weight: 600;
+    color: hsl(208, 49%, 24%);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.3rem;
+    
+}
+
+h3 {
+    font-size: 1.7rem;
+    margin: 5rem 0 2rem;
+}
+
+.dftf article {
+    width: 50%;
+    margin-right: auto;
+    padding-right: 0.5rem;
+}
+
+/* Second Section */
+
+.sotai {
+    background: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    display: flex;
+    flex-direction: row;
+    border-bottom-left-radius: 6rem;
+    border-top-right-radius: 6rem;
+}
+
+.sotai img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.sotai article {
+    padding: 7.5rem 11rem 7rem 6rem;
 }

@@ -1,9 +1,11 @@
 const dropDownButtons = document.querySelectorAll('.main-nav-link > div');
+const dropDownMenus = document.querySelectorAll('.main-nav-link ul');
 
 
-dropDownButtons.forEach((dropDownButton) => {
-    dropDownButton.addEventListener('click', () => {
-        const dropdownMenu = dropDownButton.nextElementSibling;
+document.addEventListener('click', (e) => {
+
+    if (e.target.classList.contains('action')) {
+        const dropdownMenu = e.target.nextElementSibling;
         if (dropdownMenu.classList.contains('dropdown-visible')) {
             dropdownMenu.classList.remove('dropdown-visible');
             dropdownMenu.classList.add('dropdown-hidden');
@@ -11,5 +13,13 @@ dropDownButtons.forEach((dropDownButton) => {
             dropdownMenu.classList.remove('dropdown-hidden');
             dropdownMenu.classList.add('dropdown-visible');
         }
-    })
+    }  else if (!e.target.classList.contains('dropdown-visible') && !e.target.classList.contains('dropdown')) {
+        dropDownMenus.forEach((dropDownMenu) => {
+            dropDownMenu.classList.remove('dropdown-visible');
+            dropDownMenu.classList.add('dropdown-hidden');
+        });
+
+    }
+
 });
+    

@@ -1,5 +1,5 @@
-const dropDownButtons = document.querySelectorAll('.main-nav-link > div');
-const dropDownMenus = document.querySelectorAll('.main-nav-link ul');
+const dropDownButtons = document.querySelectorAll('.header-links .main-nav-link > div');
+const dropDownMenus = document.querySelectorAll('.header-links .main-nav-link ul');
 
 
 document.addEventListener('click', (e) => {

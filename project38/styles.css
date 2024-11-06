@@ -14,6 +14,9 @@ nav, button, header p {
 
 .overlay {
     width: 100%;
+}
+
+header .overlay {
     background: url('./images/bg-pattern-intro-desktop.svg');
     background-position-x: 25%;
     background-position-y: -83.5rem;
@@ -55,14 +58,13 @@ nav, button, header p {
     margin-left: 0.25rem;
 }
 
-.main-nav-link > div {
+.header-links .main-nav-link > div {
     cursor: pointer;
 }
 
-.main-nav-link {
+.header-links .main-nav-link {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
     position: relative;
 }
@@ -183,13 +185,12 @@ section p{
     font-size: 1.073rem;
 }
 
-.dftf {
+.editor {
     background-image: url('./images/illustration-editor-desktop.svg');
-    background-position: 158% 4.375rem;
+    background-position: 54vw 4.375rem;
     background-repeat: no-repeat;
-    background-size: 64%;
-    overflow: visible;
-    padding: 10.25rem 10rem;
+    background-size: 58rem;
+    padding: 10.25rem 10rem 17rem 10.25rem;
     gap: 1.5rem;
 }
 
@@ -200,8 +201,7 @@ h2, h3 {
 
 h2 {
     text-align: center;
-    font-size: 2.3rem;
-    
+    font-size: 2.3rem;    
 }
 
 h3 {
@@ -209,7 +209,7 @@ h3 {
     margin: 5rem 0 2rem;
 }
 
-.dftf article {
+.editor article {
     width: 50%;
     margin-right: auto;
     padding-right: 0.5rem;
@@ -223,13 +223,91 @@ h3 {
     flex-direction: row;
     border-bottom-left-radius: 6rem;
     border-top-right-radius: 6rem;
+    position: relative;
+    
+}  
+
+.sotai p, .sotai h2 {
+    color: #fff;
+}
+
+.sotai p {
+    line-height: 1.6;   
+}
+
+.sotai h2 {
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 .sotai img {
-    width: 50%;
-    object-fit: cover;
+    width: 35rem;
+    /* width: 39%; */
+    position: absolute;
+    top: -4.5rem;
 }
 
-.sotai article {
-    padding: 7.5rem 11rem 7rem 6rem;
+.sotai .overlay {
+    padding: 7.5rem 10rem 7rem 6rem;
+    background-image: url('./images/bg-pattern-circles.svg');
+    background-repeat: no-repeat;
+    background-position: -13rem -32rem;
 }
+
+.sotai article {    
+    width: 45%;
+    margin-left: auto;
+}
+
+/* Third Section */
+
+.laptop {
+    background-image: url('./images/illustration-laptop-desktop.svg');
+    background-position: -51% 4.375rem;
+    background-repeat: no-repeat;
+    background-size: 64%;
+    padding: 10.25rem 10rem 17rem 10.25rem;
+    gap: 1.5rem;
+}
+
+.laptop article {
+    width: 50%;
+    margin-left: auto;
+}
+
+/* Footer */
+
+footer {
+    background: hsl(240, 10%, 16%);
+    border-top-right-radius: 6rem;    
+    padding: 4.5rem 20rem 4.5rem 10rem;    
+}
+
+.footer-nav {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    gap: 11rem;
+
+}
+
+.footer-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-links > .main-nav-link > ul > li {
+    color: hsl(240, 2%, 79%);
+    margin: 1rem 0;
+}
+
+.footer-links > .main-nav-link > ul > li > a:hover {
+    text-decoration: underline;
+}
+
+.footer-links > .main-nav-link > div {
+    margin-bottom: 2.25rem;
+}
+

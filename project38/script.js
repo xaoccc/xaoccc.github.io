@@ -1,5 +1,7 @@
 const dropDownButtons = document.querySelectorAll('.header-links .main-nav-link > div');
 const dropDownMenus = document.querySelectorAll('.header-links .main-nav-link ul');
+const bars = document.querySelector('.hamburger img');
+const mobileMenu = document.querySelector('.header-links.mobile-nav');
 
 
 document.addEventListener('click', (e) => {
@@ -18,8 +20,17 @@ document.addEventListener('click', (e) => {
             dropDownMenu.classList.remove('dropdown-visible');
             dropDownMenu.classList.add('dropdown-hidden');
         });
-
     }
+});
 
+
+bars.addEventListener('click', () => {
+    if (mobileMenu.style.display === 'none') {
+        mobileMenu.style.display = 'flex';
+        bars.src = './images/icon-close.svg';
+    } else {
+        mobileMenu.style.display = 'none';
+        bars.src = './images/icon-hamburger.svg';
+    }
 });
     

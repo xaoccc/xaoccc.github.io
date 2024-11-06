@@ -8,6 +8,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
 
@@ -23,7 +24,8 @@
                     <div class="logo">
                         <img src="./images/logo.svg" alt="Blogr Logo">
                     </div>
-                    <ul class="header-links">
+                    
+                    <ul class="header-links desktop">
                         <li class="main-nav-link">
                             <div class="action">Product</div>
                             <ul class="dropdown-hidden">
@@ -52,6 +54,46 @@
                             </ul>
                         </li>
                     </ul>
+                </div>
+
+                <div class="hamburger">
+                    <img src="./images/icon-hamburger.svg" alt="bars">
+                    <ul class="header-links mobile-nav">
+                        <li class="main-nav-link">
+                            <div class="action">Product</div>
+                            <ul class="dropdown-hidden">
+                                <li><a class="dropdown" href="#">Overview</a></li>
+                                <li><a class="dropdown" href="#">Pricing</a></li>
+                                <li><a class="dropdown" href="#">Marketplace</a></li>
+                                <li><a class="dropdown" href="#">Features</a></li>
+                                <li><a class="dropdown" href="#">Integrations</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-link">
+                            <div class="action">Company</div>
+                            <ul class="dropdown-hidden">
+                                <li><a class="dropdown" href="#">About</a></li>
+                                <li><a class="dropdown" href="#">Team</a></li>
+                                <li><a class="dropdown" href="#">Blog</a></li>
+                                <li><a class="dropdown" href="#">Careers</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-nav-link">
+                            <div class="action">Connect</div>
+                            <ul class="dropdown-hidden">
+                                <li><a class="dropdown" href="#">Contact</a></li>
+                                <li><a class="dropdown" href="#">Newsletter</a></li>
+                                <li><a class="dropdown" href="#">LinkedIn</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button class="login">Login</button>
+                        </li>
+                        <li>
+                            <button class="signup white-btn">Sign Up</button>
+                        </li>
+                    </ul>                   
+                    
                 </div>
 
                 <div class="header-buttons">

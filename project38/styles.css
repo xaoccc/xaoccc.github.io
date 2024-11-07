@@ -20,7 +20,7 @@ header .overlay {
     background: url('./images/bg-pattern-intro-desktop.svg');
     background-position-x: 25%;
     background-position-y: -83.5rem;
-    padding: 3.75rem 10rem 9.75rem 10rem;
+    padding: 3.75rem 10rem 6.75rem 10rem;
     color: #fff;    
     display: flex;
     flex-direction: column;
@@ -30,8 +30,6 @@ header .overlay {
 .dropdown-hidden {
     display: none;
 }
-
-
 
 .dropdown-visible {
     display: flex;
@@ -273,10 +271,10 @@ h3 {
 
 .laptop {
     background-image: url('./images/illustration-laptop-desktop.svg');
-    background-position: -51% 4.375rem;
+    background-position: -51% 7rem;
     background-repeat: no-repeat;
     background-size: 64%;
-    padding: 10.25rem 10rem 17rem 10.25rem;
+    padding: 14rem 10rem 17rem 10.25rem;
     gap: 1.5rem;
 }
 
@@ -323,6 +321,10 @@ footer {
 
 /* Mobile */
 @media (max-width: 768px) {
+    header {
+        overflow: hidden;
+    }
+
     .header-links.desktop, .header-buttons {
         display: none;
     }
@@ -388,23 +390,36 @@ footer {
         font-size: 2.15rem;
     }
 
+    h2 {
+        font-size: 1.7rem;
+    }
 
     .editor {
         background-image: url('./images/illustration-editor-mobile.svg');
-        background-position: 50% 4.375rem;
+        background-position: 50% 12rem;
         background-size: 100%;
-        padding: 10.25rem 5rem 17rem 5rem;
+        padding: 7rem 2rem 17rem;
+        width: 100%;
+        margin: 0;
     }
 
-    .editor article {
+    .editor article{
         width: 100%;
+        margin: 18rem auto 0;
+        text-align: center;
+    }
+
+    .laptop article {
+        width: 100%;
+        margin: 10rem auto 0;
+        text-align: center;
     }
 
     .laptop {
         background-image: url('./images/illustration-laptop-mobile.svg');
         background-position: 50% 4.375rem;
         background-size: 100%;
-        padding: 10.25rem 5rem 17rem 5rem;
+        padding: 10.25rem 2rem 7rem;
     }
 
     .laptop article {

@@ -319,11 +319,18 @@ footer {
     margin-bottom: 2.25rem;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
+/* Tablet */
+@media (max-width: 1000px) {
+    header .overlay {
+        padding: 3.75rem 3rem 6.75rem;
+    }
     header {
         overflow: hidden;
     }
+}
+
+/* Mobile */
+@media (max-width: 768px) {   
 
     .header-links.desktop, .header-buttons {
         display: none;
@@ -405,7 +412,7 @@ footer {
 
     .editor article{
         width: 100%;
-        margin: 18rem auto 0;
+        margin: 30rem auto 0;
         text-align: center;
     }
 
@@ -437,7 +444,7 @@ footer {
     }
 
     .sotai .overlay {
-        padding: 7.5rem 0 7rem 0;
+        padding: 27.5rem 0 7rem 0;
         border-top-right-radius: 6rem;
         background-size: cover;
         background-position: 50% -16rem;
@@ -462,4 +469,21 @@ footer {
     }
 
     
+}
+
+@media (max-width: 500px) {
+    .editor article{
+        margin: 18rem auto 0;
+    }
+
+    .sotai .overlay {
+        padding: 17.5rem 0 7rem 0;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .sotai .overlay {
+        padding: 7.5rem 0 7rem 0;
+    }
 }

@@ -7,10 +7,13 @@
 
 ![](./printscreen.jpg)
 
-### Built with 
+### Used tools in my pojects
 
 - HTML5 
 - CSS3
+- JavaScript
+- Tailwind
+For my React projects, I have Additional repos.
 
 ### What I learned
 
@@ -33,6 +36,12 @@ Proper use of elements:
 - The img must not have a width or height. A standard part of most CSS resets is setting img elements to display: block; max-width: 100%. width: 100% is also an option.
 - Use of px/em/rem: Use rem for font size, line-height, letter-spacing and width/height, em or px for small margin, padding in the elements.
 - Load local fonts in the HTML head than from 3 rd parties in CSS or via CSS imports.
+
+#### JavaScript
+- Dynamic form validation on client side is essential for better user experience, but it can be very tricky. Combined with HTML attributes, validation could be done very good.
+
+#### Tailwind
+- Learned the basic idea of using classes instead of pure CSS, learned about customizin the class names for specific custom styles. 
 
 
 ### Useful resources

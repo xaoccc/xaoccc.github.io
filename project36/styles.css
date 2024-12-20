@@ -1,0 +1,67 @@
+body {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    margin: 0 auto;
+    padding: 3rem 3rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 33.75rem;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 1rem;
+}
+
+h1 {
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    color: hsl(150, 100%, 66%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #CEE3E8;
+    margin: 2rem 0;
+}
+
+img {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    background-image: url('./images/icon-dice.svg');
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    position: relative;
+    top: 2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px hsl(150, 100%, 66%);
+}
+
+@media screen and (max-width: 540px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        width: 100%;
+    }
+    
+}

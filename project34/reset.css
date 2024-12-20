@@ -1,0 +1,42 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+}
+
+img, button, label, input {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, a {
+  font: inherit;
+  color: inherit;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+
+/* Balance text wrapping on headings */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}

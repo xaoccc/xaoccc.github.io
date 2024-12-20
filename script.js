@@ -32,6 +32,12 @@ let projectsTitles = [
     'Notifications Page',
     'Bento Grid',
     'Interactive Card Details Form',
+    'Expenses Chart Component',
+    'Time Tracking Dashboard',
+    'Check Splitter',
+    'Advice generator',
+    'Sunnyside Agency Landing Page',
+    '[Blogr]',
 ];
 
 function addProjects() {
@@ -45,7 +51,7 @@ function addProjects() {
         source['href'] = `./project${index + 1}/index.html`;
         source['target'] = '_blank';
         let preview = document.createElement('img');
-        preview['src'] = `./project${index + 1}/challenge/design/desktop-design.jpg`;
+        preview['src'] = `./project${index + 1}/challenge/design/desktop-preview.jpg`;
         preview['alt'] = `Project ${index + 1} - ${projectsTitles[index]}`;
 
         // Append elements to the DOM

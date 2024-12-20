@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Tip calculator app</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="logo">
+            <img src="./images/logo.svg" alt="">
+        </div>
+
+        <section class="wrapper">
+            <form action="">
+                <div class="field">
+                    <label for="bill">
+                        <span>Bill</span>
+                        <span class="error"></span>
+                    </label>
+                    <input type="number" name="bill" id="bill" placeholder="0" />
+                </div>
+                <div class="field">
+                    <label for="tip">Select Tip %</label>
+                    <div class="tip-fields">
+                        <input type="button" name="tip" class="tip" value="5%" />
+                        <input type="button" name="tip" class="tip" value="10%" />
+                        <input type="button" name="tip" class="tip" value="15%" />
+                        <input type="button" name="tip" class="tip" value="25%" />
+                        <input type="button" name="tip" class="tip" value="50%" />
+                        <input type="text" name="tip" class="tip custom-tip" placeholder="Custom" />
+                    </div>
+
+                </div>
+                <div class="field">
+                    <label for="people">
+                        <span>Number of People</span>
+                        <span class="error"></span>
+                    </label>
+                    <input type="number" name="people" id="people" placeholder="0" />
+                </div>
+
+            </form>
+            <div class="result-wrapper">
+                <div class="result">
+                    <div class="result-left">
+                        <p>Tip Amount</p>
+                        <small>/ person</small>
+                    </div>
+                    <div class="result-right result-tip">
+                        <span>$</span>
+                        <span class="result-value">0.00</span>
+                    </div>
+                </div>
+                <div class="result">
+                    <div class="result-left">
+                        <p>Total</p>
+                        <small>/ person</small>
+                    </div>
+                    <div class="result-right result-total">
+                        <span>$</span>
+                        <span class="result-value">0.00</span>
+                    </div>
+                </div>
+                <button class="reset" disabled>Reset</button>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

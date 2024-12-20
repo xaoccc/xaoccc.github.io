@@ -15,7 +15,7 @@ main {
     background-image: url('./images/bg-main-desktop.png');
     background-size: cover;
     position: relative;
-    grid-area: 1 / 1 / 50 / 30;
+    grid-area: 1 / 1 / 51 / 30;
     z-index: -1;   
 }
 
@@ -23,7 +23,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: 1 / 31 / 50 / 80;
+    grid-area: 1 / 31 / 51 / 80;
     padding-left: 7.5rem;
 }
 
@@ -260,6 +260,8 @@ form label {
     .form-container {
         padding: 0;
         width: 100%;
+        position: relative;
+        top: 6rem;
     }
 
     form {
@@ -279,10 +281,14 @@ form label {
     .success-message {
         width: 100%;
         margin: 20rem auto 0;
-    }
+    }    
+    
+}
 
-    
-    
+@media screen and (max-width: 600px) {
+    .form-container {
+        top: 3rem;
+    }
 }
 
 @media screen and (max-width: 470px) {
@@ -300,6 +306,10 @@ form label {
 
     .success-message {
         margin: 10rem auto 0;
+    }
+
+    .form-container {
+        position: static;
     }
 }
 

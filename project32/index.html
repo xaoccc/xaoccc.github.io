@@ -52,7 +52,7 @@
           <div class="date-field">
             <label for="date">Exp. Date (MM/YY)</label>
             <div class="field">
-              <input type="text" name="date" id="mm" placeholder="MM" oninvalid="this.setCustomValidity(' ')" maxlength="2" required />
+              <input type="text" name="date" id="mm" placeholder="MM" oninvalid="this.setCustomValidity(' ')" maxlength="2" min="1" max="12" required />
               <input type="text" name="date" id="yy" placeholder="&#1198;&#1198;" oninvalid="this.setCustomValidity(' ')" maxlength="2" required />
             </div> 
             <div class="error-message" id="error-expiry"></div>

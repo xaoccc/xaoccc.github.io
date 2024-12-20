@@ -1,0 +1,210 @@
+html {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 61.7rem;
+    gap: 1.7rem;   
+    color: #fff; 
+}
+
+.profile{
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 46%;
+    overflow: hidden;
+}
+
+.section-wrapper {
+    width: 14.17rem;
+    border-radius: 1rem;
+}
+
+.section-wrapper:nth-child(4), .section-wrapper:nth-child(5), .section-wrapper:nth-child(6) {
+    margin-top: -0.8rem;
+}
+
+.section-logo {
+    height: 3.5rem;
+    border-radius: 1rem 1rem 0 0;    
+    background-repeat: no-repeat;
+    background-position-x: 90%;
+}
+
+.section-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header-text {
+    font-size: 1rem;
+}
+
+.section-header-link {
+    background-image: url(./images/icon-ellipsis.svg);
+    height: 5px;
+    width: 21px;
+
+}
+
+.profile-info {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(236, 100%, 87%);
+}
+
+.profile-info, .data-options, .section-data-wrapper {
+    padding: 1.5rem;
+}
+
+.data-options {
+    background-color: hsl(235, 46%, 20%);
+    color: hsl(235, 45%, 61%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3rem 1.5rem 2.5rem 1.5rem;
+    position: relative;
+    bottom: 1rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.section-data-wrapper {
+    position: relative;
+    bottom: 1rem;
+    border-radius: 1rem;
+    background-color: hsl(235, 46%, 20%);
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 4.8rem;
+    border: 2px solid #fff;
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 3.2rem;
+    margin: 1.3rem 0 1rem 0;
+}
+
+.data-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+}
+
+.data-wrapper .section-header {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
+
+button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+button:focus, button:active {
+    color: #fff;
+}
+
+.hovered:hover::after {
+    background-color: #34397B;
+}
+
+.section-data-wrapper:hover, .section-logo:hover  {
+    cursor: pointer;
+    background-color: #34397B;
+}
+
+.data-text {
+    display: flex;
+    flex-direction: column;
+}
+
+@media  (max-width: 1110px) {
+    main {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 80px 24px;
+    }
+
+    .section-wrapper:nth-child(4), .section-wrapper:nth-child(5), .section-wrapper:nth-child(6) {
+        margin-top: 0;
+    }
+
+    .profile {
+        width: 100%;
+    }
+
+    .data-wrapper {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-data-wrapper h2, .section-data-wrapper p {
+        display: inline-block;
+    }
+
+    .data-options {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .data-wrapper {
+        flex-direction: column;
+    }
+    .section-wrapper {
+        width: 100%;
+    }
+    .data-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+}

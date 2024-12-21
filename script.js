@@ -38,6 +38,7 @@ let projectsTitles = [
     'Advice generator',
     'Sunnyside Agency Landing Page',
     '[Blogr]',
+    'Conference Ticket Generator',
 ];
 
 function addProjects() {

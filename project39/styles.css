@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    background: url('./assets/images/pattern-lines.svg'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-circle.svg'),  url('./assets/images/background-desktop.png');
-    background-size: cover, auto, auto, cover;
+    background: url('./assets/images/pattern-lines.svg'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-squiggly-line-bottom.svg'),  url('./assets/images/background-desktop.png');
+    background-size: cover, auto, auto, auto, cover;
     background-repeat: no-repeat;
-    background-position: center, 5% -15%, 80% 80%, top left;
+    background-position: center, 5% -15%, 80% 80%, bottom left, top left;
     color: #fff;
     font-family: 'Inconsolata', sans-serif;
 }
@@ -88,6 +88,18 @@ button {
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: 800;
+}
+
+.info {
+    display: inline;
+}
+
+small {
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: hsl(245, 15%, 58%);
 }
 
 

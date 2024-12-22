@@ -19,58 +19,45 @@
         <div class="logo">
             <img src="./assets/images/logo-full.svg" alt="logo">
         </div>
-        <h1>Your Journey to Coding Conf <br />2025 Starts Here!</h1>
-        <h3>Secure your spot at next year's biggest coding conference.</h3>
-        <form action="">
-            <fieldset>
-                <label for="file-upload">Upload Avatar</label>
-                <input class="file-input" type="file" id="file-upload" accept="image/png, image/jpeg" />
-                <small>
-                    <img class="info" src="./assets/images/icon-info.svg" alt="info"> 
-                    Upload your photo (JPG or PNG, max size: 500KB).
-                </small>
-            </fieldset>
-            <fieldset>
-                <label for="name">Full Name</label>
-                <input type="text" id="name" required>
-            </fieldset>
-            <fieldset>
-                <label for="email">Email Address</label>
-                <input type="email" id="email" placeholder="example@email.com" required>
-            </fieldset>
-            <fieldset>
-                <label for="github">GitHub Username</label>
-                <input type="text" id="github" placeholder="@yourusername" required>
-            </fieldset>
-            <button type="submit">Generate My Ticket</button>
-        </form>
+        <div class="form">
+            <h1>Your Journey to Coding Conf <br />2025 Starts Here!</h1>
+            <h3>Secure your spot at next year's biggest coding conference.</h3>
+            <form action="" onsubmit="generateTicket(event)">
+                <fieldset>
+                    <label for="file-upload">Upload Avatar</label>
+                    <input class="file-input" type="file" id="file-upload" accept="image/png, image/jpeg"
+                        onchange="saveFile(event)" />
 
+                    <small class="file-upload">
+                        <img class="info" src="./assets/images/icon-info.svg" alt="info">
+                        Upload your photo (JPG or PNG, max size: 500KB).
+                    </small>
+                </fieldset>
+                <fieldset>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </fieldset>
+                <fieldset>
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="example@email.com" required>
+                </fieldset>
+                <fieldset>
+                    <label for="github">GitHub Username</label>
+                    <input type="text" id="github" placeholder="@yourusername" required>
+                </fieldset>
+                <button type="submit" >Generate My Ticket</button>
+            </form>
+        </div>
+        <div class="submitted">
+            <h1>Congrats, <span class="username"></span>! <br />Your ticket is ready.</h1>
+            <h3>We've emailed your ticket to <span class="email"></span> and will send updates in the run up to the event.</h3>
+            <div class="ticket">
+                Coding Conf
+                Jan 31, 2025 / Austin, TX
+            </div>
+        </div>
     </main>
-
-
-    <!-- Form starts -->
-
-    
-
-    
-
-    
-    
-    
-
-
-    <!-- Generated tickets starts -->
-
-    Congrats, <!-- Full Name -->! Your ticket is ready.
-
-    We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
-
-    Coding Conf
-    Jan 31, 2025 / Austin, TX
-
-    <!-- Generated tickets ends -->
-
-
+    <script src="script.js"></script>
 </body>
 
 </html>

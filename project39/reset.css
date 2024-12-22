@@ -8,17 +8,10 @@
   text-align: inherit;
 }
 
-button, a {
+button, a, img {
   display: block;
 }
 
-img {
-  display: inline-block;
-}
-
-li {
-    list-style: none;
-}
 
 button, a, li {
   text-decoration: none;

@@ -1,0 +1,93 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background: url('./assets/images/pattern-lines.svg'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-circle.svg'),  url('./assets/images/background-desktop.png');
+    background-size: cover, auto, auto, cover;
+    background-repeat: no-repeat;
+    background-position: center, 5% -15%, 80% 80%, top left;
+    color: #fff;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+main {
+    max-width: 40rem;
+    margin: 0 auto
+}
+
+.logo > img {
+    margin: 2rem auto 4rem;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.9rem;
+}
+
+h3 {
+    text-align: center;
+}
+
+form {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1rem;
+    border: 1px solid hsl(252, 6%, 83%);
+    border-radius: 0.5rem;    
+    color: hsl(252, 6%, 83%);
+}
+
+
+
+input[type="file"]::file-selector-button {
+    background: url('./assets/images/icon-upload.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    margin: 0 auto;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    border: 1px solid hsl(245, 15%, 58%);
+    color: transparent;    
+}
+
+input[type="file"] {
+    color: transparent; 
+    border: 1px dashed hsl(252, 6%, 83%);
+}
+
+input[type="file"]::after {
+    color: hsl(252, 6%, 83%);
+    content: "Drag and drop or click to upload";
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 1rem;
+}
+
+button {
+    background-color: hsl(7, 71%, 60%);
+    color: rgb(34, 0, 16);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 800;
+}
+
+

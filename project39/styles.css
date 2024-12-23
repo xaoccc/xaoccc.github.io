@@ -120,8 +120,17 @@ small {
     color: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
 }
 
-.email {
+.email, .error {
     color: hsl(7, 71%, 60%);
+}
+
+/* .error.info {
+    margin-right: 0.25rem;
+    display: none;
+} */
+
+.info.error {
+    filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(-30deg) brightness(90%) contrast(85%);
 }
 
 

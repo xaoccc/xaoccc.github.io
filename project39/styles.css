@@ -7,7 +7,7 @@ body {
     background: url('./assets/images/pattern-lines.svg'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-circle.svg'), url('./assets/images/pattern-squiggly-line-bottom.svg'), url('./assets/images/pattern-squiggly-line-top.svg'),  url('./assets/images/background-desktop.png');
     background-size: cover, auto, auto, auto, auto, cover;
     background-repeat: no-repeat;
-    background-position: center, 5% -15%, 80% 80%, bottom left, 100% 10%, top left;
+    background-position: center, 5% -15%, 80% 80%, bottom left, 100% 10%, top center;
     color: #fff;
     font-family: 'Inconsolata', sans-serif;
 }
@@ -197,6 +197,37 @@ div.profile-info > div > p.username {
     flex-direction: row;
     align-content: center;
     gap: 0.25rem;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        background-size: cover, auto, auto, 50%, 40%, cover;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ticket {
+        width: 90%;
+        background-size: contain;
+        margin: 0 auto;
+    }
+
+    
 }
 
 

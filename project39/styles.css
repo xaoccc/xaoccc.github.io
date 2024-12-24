@@ -116,18 +116,15 @@ small {
     display: none;
 }
 
-.username {
-    color: hsl(7, 86%, 67%) to hsl(0, 0%, 100%);
+h1 > .username {
+    background: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .email, .error {
     color: hsl(7, 71%, 60%);
 }
-
-/* .error.info {
-    margin-right: 0.25rem;
-    display: none;
-} */
 
 .info.error {
     filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(-30deg) brightness(90%) contrast(85%);
@@ -138,5 +135,69 @@ small {
     background: url('./assets/images/pattern-ticket.svg');
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30rem;
+    margin: 0 auto;
 }
+
+.ticket-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+h2  {
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-content: center;
+    margin: 4rem 0 1rem 1rem;
+    color: hsl(252, 6%, 83%);
+}
+
+.profile-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+div.profile-info > div > p.username {
+    font-size: 1.5rem;
+}
+
+.ticket-id {
+    transform: rotate(90deg);
+    display: block;
+    font-size: 1.35rem;
+    height: 1.35rem;
+    width: 7ch;
+    color: hsl(245, 15%, 58%);
+}
+
+.avatar {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 0.5rem;
+}
+
+.gh {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    gap: 0.25rem;
+}
+
+
 

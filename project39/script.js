@@ -39,17 +39,21 @@ fileInput.addEventListener('change', function () {
 
 // Function to generate the ticket
 function generateTicket(event) {  
-    const avatar = savedFile;
+    event.preventDefault();
     
     const userName = document.querySelector('#name').value;
     const email = document.querySelector('#email').value;
     const github = document.querySelector('#github').value;
-    document.querySelector('.username').textContent = userName;
+    const userNameTicket = document.querySelectorAll('.username');
+    const ticketId = document.querySelector('.ticket-id');
+    userNameTicket.forEach(name => name.textContent = userName);
+    ticketId.textContent = `#${Math.floor(Math.random() * 1000000)}`;
+
     document.querySelector('.email').textContent = email;
     document.querySelector('.github').textContent = github;
-    event.preventDefault();
-    formContainer.style.display = "none"
-    submittedContainer.style.display = "block"
+ 
+    formContainer.style.display = "none";
+    submittedContainer.style.display = "block";
 
 }
 

@@ -29,24 +29,24 @@
                     oninvalid="this.setCustomValidity(' ')" onchange="saveFile(event)" required />
 
                     <small class="file-upload">
-                        <img class="info" src="./assets/images/icon-info.svg" alt="info">
+                        <img class="info" src="./assets/images/icon-info.svg" alt="info" />
                         <span class="info-text">Upload your photo (JPG or PNG, max size: 500KB).</span>                        
                     </small>
                 </fieldset>
                 <fieldset>
                     <label for="name">Full Name</label>
                     <input type="text" id="name" oninvalid="this.setCustomValidity(' ')" required>
-                    <small class="error-name error"><img class="info" src="./assets/images/icon-info.svg" alt="info"></small>
+                    <small class="error-name"></small>
                 </fieldset>
                 <fieldset>
                     <label for="email">Email Address</label>
                     <input type="email" id="email" placeholder="example@email.com" oninvalid="this.setCustomValidity(' ')" required>
-                    <small class="error-email error"><img class="info" src="./assets/images/icon-info.svg" alt="info"></small>
+                    <small class="error-email"></small>
                 </fieldset>
                 <fieldset>
                     <label for="github">GitHub Username</label>
                     <input type="text" id="github" placeholder="@yourusername" oninvalid="this.setCustomValidity(' ')" required>
-                    <small class="error-github error"><img class="info" src="./assets/images/icon-info.svg" alt="info"></small>
+                    <small class="error-github"></small>
                 </fieldset>
                 <button type="submit" >Generate My Ticket</button>
             </form>

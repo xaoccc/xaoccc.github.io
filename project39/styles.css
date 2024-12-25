@@ -118,8 +118,8 @@ small {
 
 h1 > .username {
     background: linear-gradient(90deg, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .email, .error {
@@ -210,24 +210,51 @@ div.profile-info > div > p.username {
 
     .form {
         width: 90%;
+        margin: 0 auto;
     }
 
     form {
         width: 80%;
-    }
-
-    main {
-        width: 100%;
-        margin: 0;
-    }
-
-    .ticket {
-        width: 90%;
-        background-size: contain;
         margin: 0 auto;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .submitted {
+        max-width: 30rem;
+        margin: 0 5%;
+    }
+
+    .ticket {
+        width: 100%;
+        background-size: contain;
+        margin: 0 auto;
+    }    
+}
+
+@media screen and (max-width: 460px) and  (min-width: 400px) {
+    .ticket-main {
+        margin-left: 2rem;
+    }
+
+    .ticket-id {
+        margin-right: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+    h2 {
+        margin-bottom: 0.25rem;
+    }
     
+    .profile-info {
+        margin: 2rem 0 1rem 1rem;
+    }
 }
 
 

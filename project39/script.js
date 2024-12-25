@@ -54,7 +54,6 @@ function generateTicket(event) {
  
     formContainer.style.display = "none";
     submittedContainer.style.display = "block";
-
 }
 
 inputs.forEach(input => {
@@ -65,53 +64,31 @@ inputs.forEach(input => {
     infoIcon.classList.add('info', 'error');   
     errorText.classList.add('error'); 
 
-    if (input.value === '') {    
- 
-        errorText.textContent = 'Cannot be empty';
-
+    function generateErrorMsg(errorMsg) {
+        errorText.textContent = errorMsg;
         errorElement.appendChild(infoIcon);
         errorElement.appendChild(errorText);
-    } else {
+    }
+
+    function removeErrorMsg() {
+        errorText.textContent = '';
         errorElement.removeChild(infoIcon);
         errorElement.removeChild(errorText);
     }
+
+    (input.value === '') ? generateErrorMsg('Cannot be empty') : removeErrorMsg();
+
     input.addEventListener('input', function () {
         this.setCustomValidity('');        
 
         if (input.id === 'name') {
-            if (!input.value.match(/^[a-zA-Z ]+$/)) {
-                errorText.textContent = 'Please enter a valid name';
-                errorElement.appendChild(infoIcon);
-                errorElement.appendChild(errorText);
-            } else {
-                errorText.textContent = '';
-                errorElement.removeChild(infoIcon);
-                errorElement.removeChild(errorText);
-            }              
+            (!input.value.match(/^[a-zA-Z ]+$/)) ? generateErrorMsg('Please enter a valid name') : removeErrorMsg();             
         }
         if (input.id === 'email') {
-
-            if (!input.value.match(/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
-                errorText.textContent = 'Please enter a valid email';
-                errorElement.appendChild(infoIcon);
-                errorElement.appendChild(errorText);
-            } else {
-                errorText.textContent = '';
-                errorElement.removeChild(infoIcon);
-                errorElement.removeChild(errorText);
-            } 
+            (!input.value.match(/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) ? generateErrorMsg('Please enter a valid email') : removeErrorMsg();
         }
         if (input.id === 'github') {
-            if (!input.value.match(/^@[a-zA-Z]+$/)) {
-                errorText.textContent = 'Please enter a valid githib username';
-                errorElement.appendChild(infoIcon);
-                errorElement.appendChild(errorText);
-            } else {
-                errorText.textContent = '';
-                errorElement.removeChild(infoIcon);
-                errorElement.removeChild(errorText);
-            } 
+            (!input.value.match(/^@[a-zA-Z]+$/)) ? generateErrorMsg('Please enter a valid githib username') : removeErrorMsg(); 
         }
-
     })
 });

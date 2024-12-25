@@ -30,6 +30,8 @@ h1{
 h3 {
     text-align: center;
     margin: 2rem 0 2.5rem;
+    color: hsl(252, 6%, 83%);
+    font-weight: 400;
 }
 
 /* Form */
@@ -122,12 +124,21 @@ h1 > .username {
     -webkit-text-fill-color: transparent;
 }
 
-.email, .error {
+.email {
+    color: hsl(7, 88%, 67%);
+}
+
+.error {
     color: hsl(7, 71%, 60%);
 }
 
 .info.error {
     filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(-30deg) brightness(90%) contrast(85%);
+}
+
+.ticket-date {
+    color:hsl(245, 15%, 58%);
+    font-size: 0.85rem;
 }
 
 

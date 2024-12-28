@@ -12,6 +12,10 @@ button, a, img {
   display: block;
 }
 
+li {
+  list-style-type: none;
+}
+
 
 button, a, li {
   text-decoration: none;

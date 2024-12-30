@@ -25,6 +25,14 @@ header {
     align-items: center;
 }
 
+.green {
+    color: hsl(176, 50%, 47%);
+}
+
+.inactive {
+    background-color: hsl(0, 0%, 48%);
+}
+
 nav {
     justify-content: space-between;
 }
@@ -68,6 +76,13 @@ h3 {
     font-weight: 700;
 }
 
+button {
+    background-color: hsl(176, 50%, 47%);
+    color: #fff;
+    border-radius: 2rem;
+    padding: 1.15rem 2.7rem;
+}
+
 /* First section */
 
 section:nth-child(1) {
@@ -95,12 +110,7 @@ section:nth-child(1) p {
     font-weight: 500;
 }
 
-button {
-    background-color: hsl(176, 50%, 47%);
-    color: #fff;
-    border-radius: 2rem;
-    padding: 1.15rem 2.7rem;
-}
+
 
 button:hover {
     background-color: hsl(176, 72%, 28%);
@@ -171,14 +181,6 @@ section:nth-child(3) > div {
     gap: 0.25rem;
 }
 
-.green {
-    color: hsl(176, 50%, 47%);
-}
-
-.inactive {
-    background-color: hsl(0, 0%, 48%);
-}
-
 .inactive:hover {
     background-color: hsl(0, 0%, 48%);
     cursor: auto;
@@ -198,8 +200,8 @@ section:nth-child(3) > div {
 /* Pledge Form */
 .pledge-form {
     display: none;
-    position: fixed;
-    margin: auto;
+    position: absolute;
+    top: 5rem;
     z-index: 1;
     background-color: #fff;
     border-radius: 0.5rem;
@@ -212,6 +214,57 @@ fieldset {
     border: 1px solid #eee;
     padding: 1.75rem;
     margin: 1.75rem 0;
+}
+
+hr {
+    display: none;
+    width: calc(100% + 3.5rem);
+    margin: 2.5rem 0 1.5rem -1.75rem;
+}
+
+.pledge {
+    display: none;
+}
+
+.pledge button, .pledge input[type="number"] {
+    font-size: 0.85rem;
+}
+
+.pledge button {
+    padding: 1rem 1.75rem;
+}
+
+.pledge input[type="number"] {
+    padding: 1rem 1rem 1rem 2.5rem;
+}
+
+.inputs {
+    gap: 1rem;
+}
+
+input[type="number"] {
+    border-radius: 2rem;    
+    width:6rem;
+    background-image: url('./images/dollar-sign-solid.svg');
+    background-position-x: 1.5rem;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 0.6rem;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover {
+    cursor: pointer;
 }
 
 

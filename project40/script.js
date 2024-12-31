@@ -15,7 +15,11 @@ const fieldsets = document.querySelectorAll('fieldset');
 const rewardBtns = document.querySelectorAll('.reward');
 const submitBtns = document.querySelectorAll('button[type="submit"]');
 const success = document.querySelector('.success');
-
+const successBtn = document.querySelector('.success > button');
+const radioButtons = document.querySelectorAll('input[type="radio"]');
+const pledgeInputs = document.querySelectorAll('.pledge input[type="number"]');
+const [leftBamboo, leftBlack, leftMahogany, leftBambooForm, leftBlackForm, leftMahoganyForm] = document.querySelectorAll('.remaining-number');
+const left = {'25': [leftBamboo, leftBambooForm], '75': [leftBlack, leftBlackForm], '200': [leftMahogany, leftMahoganyForm]}
 
 backedCurrent.textContent = `$${backedValue.toLocaleString('en-US')}`;
 backedTotal.textContent = `of $${totalValue.toLocaleString('en-US')} backed`;
@@ -23,11 +27,34 @@ backersTotal.textContent = backers.toLocaleString('en-US');
 daysLeft.textContent = days;
 barCurrent.style.width = `${(backedValue/totalValue)*100}%`;
 
-function resetRadioButtons() {
-    let radios = document.querySelectorAll('input[type="radio"]');
-    radios.forEach(radio => {
-        radio.checked = false;
+function resetRadioButtons(fieldsets) {
+    fieldsets.forEach(fieldset => {
+        fieldset.querySelector('input[type="radio"]').checked = false;
+        fieldset.style.border = '1px solid #eee';
+        let hr = fieldset.querySelector('hr');
+        let pledge = fieldset.querySelector('.pledge');
+        (hr) ? hr.style.display = 'none' : null;
+        (pledge) ? pledge.style.display = 'none' : null;
+    });    
+}
+
+radioButtons.forEach(radio => {
+    radio.addEventListener('change', () => {
+        pledgeInputs.forEach(input => input.removeAttribute('required')); // Remove required from all
+        const selectedPledge = radio.closest('fieldset').querySelector('input[type="number"]');
+        if (selectedPledge) {
+            selectedPledge.setAttribute('required', 'true'); // Add required to the selected pledge input
+        }
     });
+});
+
+function radioChecked(fieldset) {
+    fieldset.querySelector('button[type="submit"]').required = true;
+    fieldset.style.border = '2px solid hsl(176, 50%, 47%)';
+    let hr = fieldset.querySelector('hr');
+    let pledge = fieldset.querySelector('.pledge');
+    (hr) ? hr.style.display = 'block' : null;
+    (pledge) ? pledge.style.display = 'flex' : null;
 }
 
 pledgeContainers.forEach(pledgeContainer => {
@@ -51,51 +78,74 @@ rewardBtns.forEach(rewardBtn => {
         pledgeForm.style.display = 'block';
         if (rewardBtn.classList.contains('bamboo')) {
             pledgeForm.querySelector('#bamboo-stand').checked = true;
+            radioChecked(fieldsets[1]);
         } else if (rewardBtn.classList.contains('black')) {
             pledgeForm.querySelector('#black-edition').checked = true;
+            radioChecked(fieldsets[2]);
         } else if (rewardBtn.classList.contains('mahogany')) {
             pledgeForm.querySelector('#mahogany').checked = true;
+            radioChecked(fieldsets[3]);
         }
     });
 });
 
+// Reset page if clicked outside of the form or the success section.
 overlay.addEventListener('click', () => {
     overlay.style.display = 'none';
     pledgeForm.style.display = 'none';
-    resetRadioButtons();
+    success.style.display = 'none';
+    resetRadioButtons(fieldsets);
 });
 
 fieldsets.forEach(fieldset => {
     let radio = fieldset.querySelector('input[type="radio"]');
     radio.addEventListener('change', () => {
-        fieldsets.forEach(fieldset => {
-            fieldset.querySelector('input[type="radio"]').checked = false;
-            fieldset.style.border = '1px solid #eee';
-            let hr = fieldset.querySelector('hr');
-            let pledge = fieldset.querySelector('.pledge');
-            (hr) ? hr.style.display = 'none' : null;
-            (pledge) ? pledge.style.display = 'none' : null;
-            
-        });
+        resetRadioButtons(fieldsets);
         radio.checked = true;
         if (fieldset.querySelector('input[type="radio"]').checked) {
-            fieldset.style.border = '2px solid hsl(176, 50%, 47%)';
-            let hr = fieldset.querySelector('hr');
-            let pledge = fieldset.querySelector('.pledge');
-            (hr) ? hr.style.display = 'block' : null;
-            (pledge) ? pledge.style.display = 'flex' : null;
-
+            radioChecked(fieldset);
         } 
     });
 });
 
+// Submit the form
+function submitForm(event) {
+    event.preventDefault();
+    pledgeForm.style.display = 'none';
+    success.style.display = 'block';
+    resetRadioButtons(fieldsets);
+}
 
+function updateLeft(id) {
+    left[id][0].textContent = parseInt(left[id][0].textContent, 10) - 1;
+    console.log(left[id][0]);
+    left[id][1].textContent = left[id][0].textContent;
+}
+
+// Get the data from the selected field and update global info!
 submitBtns.forEach(submitBtn => {
-    submitBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        pledgeForm.style.display = 'none';
-        success.style.display = 'block';
+    submitBtn.addEventListener('click', () => {        
+        if (submitBtn.previousElementSibling) {            
+            const input = submitBtn.previousElementSibling;
+            valueToCheck = parseInt(input.value, 10);
+            treshholdValue = parseInt(input.id, 10);
+            if (valueToCheck < treshholdValue) {
+                return;
+            }
+            backedValue += valueToCheck;
+            backers += 1;
+            backedCurrent.textContent = `$${backedValue.toLocaleString('en-US')}`;            
+            backersTotal.textContent = backers.toLocaleString('en-US');
+            barCurrent.style.width = `${(backedValue/totalValue)*100}%`;
+            updateLeft(input.id);
+        }
+        
     });
+});
+
+successBtn.addEventListener('click', () =>  {
+    overlay.style.display = 'none';
+    success.style.display = 'none';
 });
 
 

@@ -10,9 +10,11 @@ const daysLeft = document.querySelector('.days-left');
 const barCurrent = document.querySelector('.bar-current');
 const overlay = document.querySelector('.overlay');
 const pledgeContainers = document.querySelectorAll('section:nth-child(3) > div');
+const pledgeForm = document.querySelector('.pledge-form');
 const fieldsets = document.querySelectorAll('fieldset');
 const rewardBtns = document.querySelectorAll('.reward');
 const submitBtns = document.querySelectorAll('button[type="submit"]');
+const success = document.querySelector('.success');
 
 
 backedCurrent.textContent = `$${backedValue.toLocaleString('en-US')}`;
@@ -45,7 +47,6 @@ pledgeContainers.forEach(pledgeContainer => {
 rewardBtns.forEach(rewardBtn => {    
     rewardBtn.addEventListener('click', () => {        
         if (rewardBtn.classList.contains('inactive')) return;
-        let pledgeForm = document.querySelector('.pledge-form');
         overlay.style.display = 'block';
         pledgeForm.style.display = 'block';
         if (rewardBtn.classList.contains('bamboo')) {
@@ -60,7 +61,7 @@ rewardBtns.forEach(rewardBtn => {
 
 overlay.addEventListener('click', () => {
     overlay.style.display = 'none';
-    document.querySelector('.pledge-form').style.display = 'none';
+    pledgeForm.style.display = 'none';
     resetRadioButtons();
 });
 
@@ -87,5 +88,15 @@ fieldsets.forEach(fieldset => {
         } 
     });
 });
+
+
+submitBtns.forEach(submitBtn => {
+    submitBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        pledgeForm.style.display = 'none';
+        success.style.display = 'block';
+    });
+});
+
 
 

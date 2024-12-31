@@ -48,6 +48,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    align-items: center;
 }
 
 section {
@@ -55,7 +56,7 @@ section {
     border-radius: 0.5rem;
     background-color: #fff;
     border: 1px solid #eee;
-
+    width: 100%;
 }
 
 p {
@@ -242,6 +243,10 @@ hr {
     gap: 1rem;
 }
 
+.pledge-form label {
+    color: hsl(0, 0%, 48%);
+}
+
 input[type="number"] {
     border-radius: 2rem;    
     width:6rem;
@@ -265,6 +270,39 @@ input[type="number"] {
 
 input[type="number"]:hover {
     cursor: pointer;
+}
+
+/* Thank you section */
+.success {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    max-width: 33.75rem;
+}
+
+.success > img {
+    margin: 0 auto;
+    width: 5.5rem;
+}
+
+.success h2{
+    text-align: center;
+    margin-top: 3.5rem;
+    font-weight: 700;
+}
+
+.success p {
+    text-align: center;
+    line-height: 1.85;
+    margin: 2rem 0;
+}
+
+.success > button {
+    margin: 0 auto;
 }
 
 

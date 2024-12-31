@@ -121,7 +121,7 @@
             </div>
         </section>
 
-        <form action="" class="pledge-form">
+        <form action="#" class="pledge-form">
             <div class="form-header row">
                 <h2>Back this project</h2>
                 <img src="./images/icon-close-menu.svg" alt="close">
@@ -131,7 +131,7 @@
             <fieldset class="field">
                 <div class="row center">
 
-                    <input type="radio" id="no-reward">
+                    <input type="radio" name="no-reward" id="no-reward">
                     <label for="no-reward">Pledge with no reward</label>
                 </div>
                 <p>Choose to support us without a reward if you simply believe in our project. As a backer,
@@ -140,7 +140,7 @@
             <fieldset class="field">
                 <div class="row space-between center">
                     <div class="row center">
-                        <input type="radio" id="bamboo-stand">
+                        <input type="radio" name="bamboo-stand" id="bamboo-stand">
                         <label for="bamboo-stand">Bamboo Stand</label>
                         <span class="green">Pledge $25 or more</span>
                     </div>
@@ -153,9 +153,9 @@
                     you’ll be added to a special Backer member list.</p>
                 <hr/>
                 <div class="pledge row space-between center">
-                    <p>Enter your pledge</p>
+                    <label for="25">Enter your pledge</label>
                     <div class="inputs row">
-                        <input type="number" placeholder="25"  min="25" required>
+                        <input type="number" placeholder="25" name="25" id="25" min="25" required>
                         <button type="submit" class="continue">Continue</button>
                     </div>
                 </div>
@@ -164,7 +164,7 @@
             <fieldset class="field">
                 <div class="row space-between center">
                     <div class="row center">
-                        <input type="radio" id="black-edition">
+                        <input type="radio" name="black-edition" id="black-edition">
                         <label for="black-edition">Black Edition Stand</label>
                         <span class="green">Pledge $75 or more</span>
                     </div>
@@ -177,9 +177,9 @@
                     member list. Shipping is included.</p>
                 <hr/>
                 <div class="pledge row space-between center">
-                    <p>Enter your pledge</p>
+                    <label for="75">Enter your pledge</label>
                     <div class="inputs row">
-                        <input type="number" placeholder="75"  min="75" required>
+                        <input type="number" placeholder="75" name="75" id="75"  min="75" required>
                         <button type="submit" class="continue">Continue</button>
                     </div>
                 </div>
@@ -188,7 +188,7 @@
             <fieldset class="field">
                 <div class="row space-between center">
                     <div class="row center">
-                        <input type="radio" id="mahogany">
+                        <input type="radio" name="mahogany" id="mahogany">
                         <label for="mahogany">Mahogany Special Edition</label>
                         <span class="green">Pledge $200 or more</span>
                     </div>
@@ -201,27 +201,26 @@
                     to our Backer member list. Shipping is included.</p>
                 <hr/>
                 <div class="pledge row space-between center">
-                    <p>Enter your pledge</p>
+                    <label for="200">Enter your pledge</label>
                     <div class="inputs row">
-                        <input type="number" placeholder="200"  min="200" required>
+                        <input type="number" placeholder="200" name="200" id="200"  min="200" required>
                         <button type="submit" class="continue">Continue</button>
                     </div>
                 </div>
             </fieldset>
         </form>
 
+        <section class="success">
+            <img src="./images/icon-check.svg" alt="check">
+            <h2>Thanks for your support!</h2>
+            <p>Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
+                an email once our campaign is completed.</p>
+            <button>Got it!</button>
+
+        </section>
+
     </main>
 
-
-
-    <!-- Success modal start -->
-
-    Thanks for your support!
-    Your pledge brings us one step closer to sharing Mastercraft Bamboo Monitor Riser worldwide. You will get
-    an email once our campaign is completed.
-    Got it!
-
-    <!-- Success modal end -->
     <script src="script.js"></script>
 </body>
 

@@ -8,6 +8,7 @@ const backedTotal = document.querySelector('.backed-total');
 const backersTotal = document.querySelector('.backers-total');
 const daysLeft = document.querySelector('.days-left');
 const barCurrent = document.querySelector('.bar-current');
+const bookmarkBtn = document.querySelector('.bookmark');
 const overlay = document.querySelector('.overlay');
 const pledgeContainers = document.querySelectorAll('section:nth-child(3) > div');
 const pledgeForm = document.querySelector('.pledge-form');
@@ -21,6 +22,11 @@ const pledgeInputs = document.querySelectorAll('.pledge input[type="number"]');
 const [leftBamboo, leftBlack, leftMahogany, leftBambooForm, leftBlackForm, leftMahoganyForm] = document.querySelectorAll('.remaining-number');
 const left = {'25': [leftBamboo, leftBambooForm], '75': [leftBlack, leftBlackForm], '200': [leftMahogany, leftMahoganyForm]}
 
+// Mobile
+const bars = document.querySelector('.bars');
+const closeBtn = document.querySelector('.close');
+const navbar = document.querySelector('.navbar');
+
 
 
 backedCurrent.textContent = `$${backedValue.toLocaleString('en-US')}`;
@@ -28,6 +34,24 @@ backedTotal.textContent = `of $${totalValue.toLocaleString('en-US')} backed`;
 backersTotal.textContent = backers.toLocaleString('en-US');
 daysLeft.textContent = days;
 barCurrent.style.width = `${(backedValue/totalValue)*100}%`;
+
+bookmarkBtn.addEventListener('click', () => {
+    let text = bookmarkBtn.querySelector('.bookmark-text');
+    let circle = bookmarkBtn.querySelector('circle');
+    let path = bookmarkBtn.querySelector('path');
+    console.log(circle.fill);
+    if (bookmarkBtn.classList.contains('bookmarked')) {
+        bookmarkBtn.classList.remove('bookmarked');        
+        text.textContent = 'Bookmark';
+        circle.setAttribute('fill', '#2F2F2F');
+        path.setAttribute('fill', '#B1B1B1');
+    } else {
+        bookmarkBtn.classList.add('bookmarked');
+        text.textContent = 'Bookmarked';
+        circle.setAttribute('fill', 'hsl(176, 72%, 28%)');
+        path.setAttribute('fill', '#fff');
+    };
+})
 
 function resetRadioButtons(fieldsets) {
     fieldsets.forEach(fieldset => {
@@ -53,7 +77,6 @@ radioButtons.forEach(radio => {
 });
 
 function radioChecked(fieldset) {
-    // fieldset.querySelector('button[type="submit"]').required = true;
     fieldset.style.border = '2px solid hsl(176, 50%, 47%)';
     let hr = fieldset.querySelector('hr');
     let pledge = fieldset.querySelector('.pledge');
@@ -74,15 +97,28 @@ function checkIfNoLeft() {
             pledgeContainer.style.opacity = '1';
         }
     });
+
+    fieldsets.forEach(fieldset => {
+        let radioSelect = fieldset.querySelector('input[type="radio"]');
+        let remaining = fieldset.querySelector('.remaining-number');
+        if (remaining && remaining.textContent === '0') {
+            radioSelect.disabled = true;
+            fieldset.style.opacity = '0.5';
+        } else if (remaining && remaining.textContent !== '0') {
+            radioSelect.disabled = false;
+            fieldset.style.opacity = '1';
+        }
+    })
 }
 checkIfNoLeft();
 
 
 rewardBtns.forEach(rewardBtn => {    
-    rewardBtn.addEventListener('click', () => {        
+    rewardBtn.addEventListener('click', () => {  
         if (rewardBtn.classList.contains('inactive')) return;
         overlay.style.display = 'block';
         pledgeForm.style.display = 'block';
+        checkIfNoLeft();  
         if (rewardBtn.classList.contains('back')) {
             pledgeForm.querySelector('#no-reward').checked = true;
             radioChecked(fieldsets[0]);
@@ -128,7 +164,6 @@ function submitForm(event) {
 
 function updateLeft(id) {
     left[id][0].textContent = parseInt(left[id][0].textContent, 10) - 1;
-    console.log(left[id][0]);
     left[id][1].textContent = left[id][0].textContent;
     checkIfNoLeft();
 }
@@ -162,6 +197,21 @@ successBtn.addEventListener('click', () =>  {
     overlay.style.display = 'none';
     success.style.display = 'none';
 });
+
+// Mobile 
+bars.addEventListener('click', () => {
+    if (navbar.style.display === 'flex') {
+        navbar.style.display = 'none';
+        bars.classList.remove('close');
+        bars.classList.add('bars');
+    } else {
+        navbar.style.display = 'flex';
+        overlay.style.display = 'block';
+        bars.classList.add('close');
+        bars.classList.remove('bars');
+    }
+
+})
 
 
 

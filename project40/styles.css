@@ -42,9 +42,22 @@ nav {
     font-size: 0.85rem;
 }
 
+.bars {
+    display: none;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('./images/icon-hamburger.svg');
+}
+
+.close {
+    width: 1rem;
+    height: 1rem;
+    background-image: url('./images/icon-close-menu.svg');
+}
+
 main {
     max-width: 45.75rem;
-    margin: -5rem auto 0;
+    margin: -5rem auto 9rem;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -97,7 +110,7 @@ section:nth-child(1)::before {
     height: 3.5rem;
     width: 3.5rem;
     display: block;
-    margin: -5.5rem auto 3rem;
+    margin: -5rem auto 3rem;
 }
 
 section:nth-child(1) p {
@@ -111,22 +124,30 @@ section:nth-child(1) p {
     font-weight: 500;
 }
 
-
-
 button:hover {
     background-color: hsl(176, 72%, 28%);
 }
 
 button.bookmark {
-    background: url('./images/icon-bookmark.svg'), rgb(244, 244, 244);
-    background-repeat: no-repeat;
+    background: rgb(244, 244, 244);
     color: rgb(115, 115, 115);
-    padding: 1.15rem 1.5rem 1.15rem 4.5rem;
+    padding: 0 1.5rem 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
 }
+
+button.bookmarked {
+    color: hsl(176, 72%, 28%);
+    font-weight: 700;
+}
+
+
 
 /* Second section */
 
-.data > div {
+.data>div {
     width: 33%;
     padding: 0 3rem;
 }
@@ -135,7 +156,7 @@ button.bookmark {
     margin-top: 0.35rem;
 }
 
-.data > .backed-values {
+.data>.backed-values {
     padding: 0 3rem 0 0;
 }
 
@@ -165,14 +186,15 @@ section:nth-child(3) p {
     margin: 2rem 0;
 }
 
-section:nth-child(3) > div {
+section:nth-child(3)>div {
     padding: 2rem;
     border-radius: 0.5rem;
     border: 1px solid #eee;
     margin-top: 1.6rem;
 }
 
-.header.row, .remaining.row {
+.header.row,
+.remaining.row {
     justify-content: space-between;
     align-items: center;
 }
@@ -217,6 +239,7 @@ fieldset {
     margin: 1.75rem 0;
 }
 
+
 fieldset p {
     margin: 1rem 0 0 2.25rem;
     line-height: 1.75rem;
@@ -232,7 +255,8 @@ hr {
     display: none;
 }
 
-.pledge button, .pledge input[type="number"] {
+.pledge button,
+.pledge input[type="number"] {
     font-size: 0.85rem;
 }
 
@@ -248,15 +272,16 @@ hr {
     gap: 1rem;
 }
 
-form > .field > .row.space-between.center >  div.row.center, .no-reward {
+form>.field>.row.space-between.center>div.row.center,
+.no-reward {
     color: #000;
     font-weight: 700;
     gap: 1rem;
 }
 
 input[type="number"] {
-    border-radius: 2rem;    
-    width:6rem;
+    border-radius: 2rem;
+    width: 6rem;
     background-image: url('./images/dollar-sign-solid.svg');
     background-position-x: 1.5rem;
     background-position-y: center;
@@ -264,7 +289,7 @@ input[type="number"] {
     background-size: 0.6rem;
 }
 
-input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
@@ -279,13 +304,17 @@ input[type="number"]:hover {
     cursor: pointer;
 }
 
-form > .field > .row.space-between.center >  div.row.center:hover, form > .field > .row.space-between.center >  div.row.center > label:hover, .no-reward label:hover {
+form>.field>.row.space-between.center>div.row.center:hover,
+form>.field>.row.space-between.center>div.row.center>label:hover,
+.no-reward label:hover {
     color: hsl(176, 50%, 47%);
     font-weight: 700;
     cursor: pointer;
 }
+
 /* Customize radio selet type */
-input[type="radio"]:checked, [type="radio"]:not(:checked) {
+input[type="radio"]:checked,
+[type="radio"]:not(:checked) {
     position: absolute;
     left: -9999px;
 }
@@ -356,12 +385,12 @@ input[type="radio"]:checked, [type="radio"]:not(:checked) {
     max-width: 33.75rem;
 }
 
-.success > img {
+.success>img {
     margin: 0 auto;
     width: 5.5rem;
 }
 
-.success h2{
+.success h2 {
     text-align: center;
     margin-top: 3.5rem;
     font-weight: 700;
@@ -373,8 +402,34 @@ input[type="radio"]:checked, [type="radio"]:not(:checked) {
     margin: 2rem 0;
 }
 
-.success > button {
+.success>button {
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        padding: 3rem 2rem 20rem;
+    }
+}
+
+.bars {
+    display: block;
+}
+
+.navbar {
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    left: 7%;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    z-index: 1;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 85%;
 }
 
 

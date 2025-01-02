@@ -411,25 +411,79 @@ input[type="radio"]:checked,
     header {
         padding: 3rem 2rem 20rem;
     }
-}
 
-.bars {
-    display: block;
-}
+    .bars {
+        display: block;
+    }
+    
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 5.5rem;
+        left: 7%;
+        background-color: #fff;
+        color: #000;
+        border-radius: 0.5rem;
+        padding: 1.5rem 2rem;
+        z-index: 1;
+        flex-direction: column;
+        font-size: 1.5rem;
+        width: 85%;
+    }
+    
+    button.bookmark {
+        padding: 0;
+    }
+    
+    .bookmark-text {
+        display: none;
+    }
 
-.navbar {
-    display: none;
-    position: absolute;
-    top: 5.5rem;
-    left: 7%;
-    background-color: #fff;
-    color: #000;
-    border-radius: 0.5rem;
-    padding: 1.5rem 2rem;
-    z-index: 1;
-    flex-direction: column;
-    font-size: 1.5rem;
-    width: 85%;
-}
+    main {
+        width: 90%;
+    }
 
+    section {
+        padding: 1.5rem;
+    }
+
+    .data.row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .data > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .data>.backed-values, .data>.backers, .data>.days {
+        padding: 0;
+    }
+
+    .backers {
+        border-left-width: 0;
+        border-right-width: 0;
+    }
+
+    .backers::before, .backers::after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 5rem;
+        background-color: #ccc;
+        margin: 1.5rem auto;
+    }
+
+    .reward > div {
+        flex-direction: column;      
+        
+    }
+
+    .header.row, .remaining.row {
+        align-items: start;
+        flex-direction: column;
+    }
+
+}
 

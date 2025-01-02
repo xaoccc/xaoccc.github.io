@@ -202,6 +202,7 @@ successBtn.addEventListener('click', () =>  {
 bars.addEventListener('click', () => {
     if (navbar.style.display === 'flex') {
         navbar.style.display = 'none';
+        overlay.style.display = 'none';
         bars.classList.remove('close');
         bars.classList.add('bars');
     } else {

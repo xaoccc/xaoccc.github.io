@@ -24,7 +24,6 @@ const left = {'25': [leftBamboo, leftBambooForm], '75': [leftBlack, leftBlackFor
 
 // Mobile
 const bars = document.querySelector('.bars');
-const closeBtn = document.querySelector('.close');
 const navbar = document.querySelector('.navbar');
 
 
@@ -143,6 +142,15 @@ overlay.addEventListener('click', () => {
     resetRadioButtons(fieldsets);
 });
 
+if (window.innerWidth < 768) {
+    overlay.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        navbar.style.display = 'none';
+        bars.classList.remove('close');
+        bars.classList.add('bars');
+    });
+}
+
 fieldsets.forEach(fieldset => {
     let radio = fieldset.querySelector('input[type="radio"]');
     radio.addEventListener('change', () => {
@@ -152,6 +160,22 @@ fieldsets.forEach(fieldset => {
             radioChecked(fieldset);
         } 
     });
+
+    if (window.innerWidth < 768) {
+        const rewardNumber = fieldset.querySelector('.reward-number.row');
+        const centeredDiv = fieldset.firstElementChild.firstElementChild;         
+        
+        if (rewardNumber) {
+            fieldset.insertBefore(rewardNumber, fieldset.querySelector('hr'));
+        }
+        if (centeredDiv) {
+            centeredDiv.classList.remove('center');
+            centeredDiv.classList.remove('row');
+            centeredDiv.classList.add('column');
+
+        }       
+
+    }
 });
 
 // Submit the form
@@ -208,8 +232,9 @@ bars.addEventListener('click', () => {
     } else {
         navbar.style.display = 'flex';
         overlay.style.display = 'block';
-        bars.classList.add('close');
         bars.classList.remove('bars');
+        bars.classList.add('close');
+        
     }
 
 })

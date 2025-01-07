@@ -86,13 +86,15 @@ function radioChecked(fieldset) {
 function checkIfNoLeft() {
     pledgeContainers.forEach(pledgeContainer => {
         let pledgeButton = pledgeContainer.querySelector('button');
-        if (pledgeContainer.querySelector('.remaining-number').textContent === '0') {        
+        if (pledgeContainer.querySelector('.remaining-number').textContent === '0') {       
             pledgeButton.textContent = 'Out of stock';
             pledgeButton.classList.add('inactive');
+            pledgeButton.disabled = true;
             pledgeContainer.style.opacity = '0.5';
         } else {
             pledgeButton.textContent = 'Select Reward';
             pledgeButton.classList.remove('inactive');
+            pledgeButton.disabled = false;
             pledgeContainer.style.opacity = '1';
         }
     });
@@ -184,6 +186,7 @@ function submitForm(event) {
     pledgeForm.style.display = 'none';
     success.style.display = 'block';
     resetRadioButtons(fieldsets);
+    checkIfNoLeft();
 }
 
 function updateLeft(id) {

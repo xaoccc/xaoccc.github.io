@@ -13,17 +13,6 @@ The designs were created to the following widths:
 
 ### Primary
 
-<<<<<<< HEAD
-- Linear gradient (active input border): hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
-- Red (input errors): hsl(0, 100%, 66%)
-
-### Neutral
-
-- White: hsl(0, 0%, 100%)
-- Light grayish violet: hsl(270, 3%, 87%)
-- Dark grayish violet: hsl(279, 6%, 55%)
-- Very dark violet: hsl(278, 68%, 11%)
-=======
 - Soft red: hsl(10, 79%, 65%)
 - Cyan: hsl(186, 34%, 60%)
 
@@ -33,7 +22,6 @@ The designs were created to the following widths:
 - Medium brown: hsl(28, 10%, 53%)
 - Cream: hsl(27, 66%, 92%)
 - Very pale orange: hsl(33, 100%, 98%)
->>>>>>> 25e44cb4e0919172a41074893efe3080f972a5a9
 
 ## Typography
 
@@ -43,12 +31,7 @@ The designs were created to the following widths:
 
 ### Font
 
-<<<<<<< HEAD
-- Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk)
-- Weights: 500
-=======
 - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
 - Weights: 400, 700
->>>>>>> 25e44cb4e0919172a41074893efe3080f972a5a9
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.

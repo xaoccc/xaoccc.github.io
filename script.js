@@ -40,6 +40,7 @@ let projectsTitles = [
     '[Blogr]',
     'Conference Ticket Generator',
     'Crowdfunding Product Page',
+    'Interactive Pricing Component',
 ];
 
 function addProjects() {

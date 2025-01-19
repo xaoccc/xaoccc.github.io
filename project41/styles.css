@@ -2,6 +2,7 @@ body {
     font-family: Manrope, sans-serif;
     background: url('./images/bg-pattern.svg') no-repeat;
     background-size: cover;
+    background-position-y: -9rem;
 }
 
 header, main {
@@ -11,10 +12,44 @@ header, main {
 }
 
 header {
-    margin: 4rem auto 3rem;
+    margin: 7rem auto 5.5rem;
+    text-align: center;
 }
 
 main {
     margin: 0 auto;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 3rem 3rem 2rem 3rem;
+    box-shadow: 0 15px 1.25rem 0.25rem hsla(225, 20%, 60%, 0.25);
+    color: hsl(225, 20%, 60%);
+}
+
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: hsl(227, 35%, 25%);
+}
+
+header > p {
+    color: hsl(225, 20%, 60%)
+}
+
+.pageviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageviews > h2 {
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: hsl(227, 35%, 25%);
 }
 

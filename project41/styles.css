@@ -1,3 +1,4 @@
+
 body {
     font-family: Manrope, sans-serif;
     background: url('./images/bg-pattern.svg') no-repeat;
@@ -36,6 +37,12 @@ header > p {
     color: hsl(225, 20%, 60%)
 }
 
+input[type="range"] {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+}
+
 .pageviews {
     display: flex;
     flex-direction: row;
@@ -45,11 +52,39 @@ header > p {
 
 .pageviews > h2 {
     text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+}
+
+.pageviews > p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .price {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 800;
     color: hsl(227, 35%, 25%);
+}
+
+.billing {
+    display: flex  ;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features ul li {
+    list-style-image: url('./images/icon-check.svg');
 }
 

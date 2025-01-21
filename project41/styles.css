@@ -69,13 +69,7 @@ input[type="range"] {
     color: hsl(227, 35%, 25%);
 }
 
-.billing {
-    display: flex  ;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 0.5rem;
-    font-size: 0.8rem;
-}
+
 
 .features {
     display: flex;
@@ -88,3 +82,61 @@ input[type="range"] {
     list-style-image: url('./images/icon-check.svg');
 }
 
+/* Checkbox */
+
+.billing {
+    display: flex  ;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    appearance: none;
+    /* Not removed via appearance */
+    margin: 0 0 0 -1rem;
+  }
+
+
+[type="checkbox"]::after {
+    content: '';
+    width: 2.5rem;
+    height: 1.25rem;
+    display: inline-block;
+    background: hsl(223, 50%, 87%);
+    border-radius: 1rem;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+[type="checkbox"]:hover::after {
+    background: hsl(174, 86%, 45%);
+}
+
+[type="checkbox"]::before {
+    content: '';
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    position: relative;
+    top: -0.125rem;    
+    background: #fff;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.not-checked::before {
+    left: 1.25rem;
+}
+
+.checked::before {
+    left: 2.25rem;
+}

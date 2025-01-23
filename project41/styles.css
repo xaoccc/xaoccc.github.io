@@ -1,8 +1,9 @@
 body {
     font-family: Manrope, sans-serif;
-    background: url('./images/bg-pattern.svg') no-repeat;
+    font-weight: 600;
+    background: url('./images/bg-pattern.svg') hsl(230, 100%, 99%) no-repeat;
     background-size: cover;
-    background-position-y: -9rem;
+    background-position-y: -14.5rem;
 }
 
 header,
@@ -13,22 +14,24 @@ main {
 }
 
 header {
-    margin: 7rem auto 5.5rem;
+    margin: 0 auto;
+    padding: 6.75rem 0 5.5rem;
     text-align: center;
+    background: url('./images/pattern-circles.svg') center no-repeat;
+    overflow: visible;
 }
 
 main {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 0.5rem;
-    padding: 3rem 3rem 2rem 3rem;
     box-shadow: 0 15px 1.25rem 0.25rem hsla(225, 20%, 60%, 0.25);
     color: hsl(225, 20%, 60%);
 }
 
 h1 {
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 0.75rem;
     color: hsl(227, 35%, 25%);
 }
@@ -37,8 +40,11 @@ header>p {
     color: hsl(225, 20%, 60%)
 }
 
-
-
+hr {
+    height: 1px;
+    border: none;
+    background-color: #ddd;
+}
 
 .pageviews {
     display: flex;
@@ -66,17 +72,49 @@ header>p {
     color: hsl(227, 35%, 25%);
 }
 
+.pricing {
+    margin: 3rem 3rem 0 3rem;
+}
 
+.discount {
+    display: inline-block;
+    padding: 0.15rem 0.4rem;
+    margin-left: 0.5em;
+    font-size: 0.65rem;
+    color: hsl(15, 100%, 70%);
+    background-color: hsla(15, 100%, 70%, 0.2);
+    border-radius: 1rem;
+}
 
 .features {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 2rem 3rem 3rem 3rem;
+    font-size: 0.8rem;
+
+}
+
+.features ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
 .features ul li {
     list-style-image: url('./images/icon-check.svg');
+}
+
+.features button {
+    background: hsl(227, 35%, 25%);
+    color: hsl(226, 100%, 87%);
+    padding: 0.75rem 2.75rem;
+    border-radius: 3rem;
+}
+
+.features button:hover {
+    color: #fff;
 }
 
 /* Slider */
@@ -145,11 +183,14 @@ input[type="range"]:focus::-webkit-slider-thumb {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: 0.5rem;
+    gap: 1rem;
     font-size: 0.8rem;
     position: relative;
     z-index: 1;
+    margin: 1.5rem 0 2.5rem;
 }
+
+
 
 input[type="checkbox"] {
     /* Add if not using autoprefixer */

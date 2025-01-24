@@ -1,6 +1,11 @@
 const slider = document.querySelector('.slider');
 const price = document.querySelector('.price');
+const billing = document.querySelector('.billing');
+const pageviews = document.querySelector('.pageviews p');
 const MAXVALUE = 3200;
+
+console.log(pageviews);
+
 slider.addEventListener('input', function (e) {
     const value = Number(e.target.value);
     price.textContent = `$${parseFloat(value/100).toFixed(2)}`;
@@ -16,4 +21,10 @@ checkbox.addEventListener('click', function (e) {
         e.target.classList.remove('checked');
         e.target.classList.add('not-checked');
     }
+});
+
+window.addEventListener('load', function () {
+    if (window.innerWidth < 768) {
+        document.querySelector('.pricing').insertBefore(pageviews, billing);
+    } 
 });

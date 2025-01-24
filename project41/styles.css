@@ -238,3 +238,23 @@ input[type="checkbox"] {
 .checked::before {
     left: 2.25rem;
 }
+
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    .pageviews {
+        justify-content: center;
+    }
+    .pricing > p {
+        text-align: center;
+    }
+    .features {
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+    }
+    .features ul li {
+        margin: 0 3rem;
+    }
+}

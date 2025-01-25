@@ -41,6 +41,7 @@ let projectsTitles = [
     'Conference Ticket Generator',
     'Crowdfunding Product Page',
     'Interactive Pricing Component',
+    'Loopstudios Landing Page',
 ];
 
 function addProjects() {

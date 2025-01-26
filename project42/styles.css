@@ -1,0 +1,46 @@
+body {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background: url("./images/desktop/image-hero.jpg") no-repeat center center/cover;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: overlay;
+    color: #fff;
+    padding: 3.5rem 10rem 9rem 10rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 4.5rem;
+    margin-top: 8rem;
+    border: 2px solid #fff;
+    width: 60%;
+    padding: 2.5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}

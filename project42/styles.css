@@ -4,8 +4,8 @@ body {
 }
 
 header {
-    background: url("./images/desktop/image-hero.jpg") no-repeat center center/cover;
-    background-color: rgba(0,0,0,0.3);
+    background: url("./images/desktop/image-hero.jpg") no-repeat center/cover;
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
     color: #fff;
     padding: 3.5rem 10rem 9rem 10rem;
@@ -18,7 +18,12 @@ nav {
     align-items: center;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
     font-weight: 300;
@@ -32,12 +37,104 @@ h1 {
     padding: 2.5rem;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0  2rem 2rem 2.5rem;
+}
+
 ul {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 2rem;
     color: #fff;
+}
+
+main {
+    margin: 10rem auto;
+    max-width: 70rem;
+}
+
+main>section {
+    display: flex;
+    flex-direction: row;
+}
+
+main>section:first-child {
+    align-items: flex-end;
+}
+
+
+main>section:first-child>article:nth-child(2) {
+    background-color: #fff;
+    padding: 7.25rem 0 0 7.5rem;
+    margin-left: -10rem;
+}
+
+main>section:first-child h2 {
+    margin-bottom: 2rem;
+}
+
+main>section p {
+    color: hsl(0, 0%, 55%);
+    font-size: 0.94rem;
+    line-height: 1.75;
+}
+
+main>section:nth-child(2) {
+    justify-content: space-between;
+    margin: 11.5rem 0 6rem;
+}
+
+main>section:nth-child(2) button {
+    padding: 0.25rem 2.25rem;
+    border: 2px solid hsl(0, 0%, 41%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.85rem;
+}
+
+main>section:nth-child(3) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 28.125rem 28.125rem;
+    gap: 2rem;
+}
+
+main>section:nth-child(3) article {
+    display: flex;
+    align-items: flex-end;
+    background-blend-mode: overlay;
+}
+
+main>section:nth-child(3)>article:nth-child(1) {
+    background:  url("./images/desktop/image-deep-earth.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+main>section:nth-child(3)>article:nth-child(2) {
+    background: url("./images/desktop/image-night-arcade.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+main>section:nth-child(3)>article:nth-child(3) {
+    background: url("./images/desktop/image-soccer-team.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+main>section:nth-child(3)>article:nth-child(4) {
+    background: url("./images/desktop/image-grid.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+main>section:nth-child(3)>article:nth-child(5) {
+    background: url("./images/desktop/image-from-above.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+main>section:nth-child(3)>article:nth-child(6) {
+    background: url("./images/desktop/image-pocket-borealis.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+main>section:nth-child(3)>article:nth-child(7) {
+    background: url("./images/desktop/image-curiosity.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+main>section:nth-child(3)>article:nth-child(8) {
+    background: url("./images/desktop/image-fisheye.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 
 footer {

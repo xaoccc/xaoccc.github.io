@@ -44,7 +44,7 @@ h2 {
 h3 {
     font-size: 2rem;
     color: #fff;
-    margin: 0  2rem 2rem 2.5rem;
+    margin: 0 2rem 2rem 2.5rem;
 }
 
 ul {
@@ -54,6 +54,23 @@ ul {
     gap: 2rem;
     color: #fff;
 }
+
+ul li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li a::after {
+    content: "";
+    display: block;
+    width: 1.5rem;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 0.5rem;
+    visibility: hidden;
+}
+
 
 main {
     margin: 10rem auto;
@@ -80,7 +97,7 @@ main>section:first-child h2 {
     margin-bottom: 2rem;
 }
 
-main>section p {
+p {
     color: hsl(0, 0%, 55%);
     font-size: 0.94rem;
     line-height: 1.75;
@@ -91,7 +108,7 @@ main>section:nth-child(2) {
     margin: 11.5rem 0 6rem;
 }
 
-main>section:nth-child(2) button {
+button {
     padding: 0.25rem 2.25rem;
     border: 2px solid hsl(0, 0%, 41%);
     text-transform: uppercase;
@@ -113,31 +130,69 @@ main>section:nth-child(3) article {
 }
 
 main>section:nth-child(3)>article:nth-child(1) {
-    background:  url("./images/desktop/image-deep-earth.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    background: url("./images/desktop/image-deep-earth.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
+
 main>section:nth-child(3)>article:nth-child(2) {
     background: url("./images/desktop/image-night-arcade.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
+
 main>section:nth-child(3)>article:nth-child(3) {
     background: url("./images/desktop/image-soccer-team.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
+
 main>section:nth-child(3)>article:nth-child(4) {
     background: url("./images/desktop/image-grid.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
+
 main>section:nth-child(3)>article:nth-child(5) {
     background: url("./images/desktop/image-from-above.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
+
 main>section:nth-child(3)>article:nth-child(6) {
     background: url("./images/desktop/image-pocket-borealis.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
+
 main>section:nth-child(3)>article:nth-child(7) {
     background: url("./images/desktop/image-curiosity.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
+
 main>section:nth-child(3)>article:nth-child(8) {
     background: url("./images/desktop/image-fisheye.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+
+.social,
+.nav {
+    max-width: 70rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social {
+    margin-bottom: 2rem;
 }
 
 footer {
     background-color: #000;
     color: #fff;
+    padding: 3rem;
 }
+
+/* Active States */
+button:hover {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #000;
+}
+
+main>section:nth-child(3)>article:hover {
+    background-color: rgba(256, 256, 256, 0.7);
+    cursor: pointer;
+}
+
+ul li a:hover::after {
+    visibility: visible;
+}
+

@@ -165,23 +165,33 @@ main>section:nth-child(3)>article:nth-child(8) {
     background: url("./images/desktop/image-fisheye.jpg") no-repeat center/cover, linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
 }
 
-.social,
-.nav {
-    max-width: 70rem;
-    margin: 0 auto;
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.social {
-    margin-bottom: 2rem;
+.social,
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-footer {
-    background-color: #000;
-    color: #fff;
-    padding: 3rem;
+.nav img {
+    width: 8rem;
+}
+
+
+.social {
+    align-items: flex-end;
+}
+
+.social ul {
+    gap: 1rem;
 }
 
 /* Active States */
@@ -233,7 +243,7 @@ ul li a:hover::after {
     h2 {
         font-size: 4rem;
     }
-    p {
+    p, a {
         font-size: 1.5rem;
     }
     main>section:first-child img {
@@ -245,10 +255,63 @@ ul li a:hover::after {
         flex-direction: column;
     }
     h3 {
-        margin: 4rem 2rem 2rem 2.5rem;
+        margin: 6rem 2rem 2rem 2.5rem;
+        font-size: 3rem;
     }
+
     button {
         display: none;
+    }
+
+    main>section:nth-child(3)>article:nth-child(1) {
+        background: url("./images/mobile/image-deep-earth.jpg") no-repeat center/cover, linear-gradient(to left,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    
+    main>section:nth-child(3)>article:nth-child(2) {
+        background: url("./images/mobile/image-night-arcade.jpg") no-repeat center/cover, linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    
+    main>section:nth-child(3)>article:nth-child(3) {
+        background: url("./images/mobile/image-soccer-team.jpg") no-repeat center/cover, linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    
+    main>section:nth-child(3)>article:nth-child(4) {
+        background: url("./images/mobile/image-grid.jpg") no-repeat center/cover, linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    
+    main>section:nth-child(3)>article:nth-child(5) {
+        background: url("./images/mobile/image-from-above.jpg") no-repeat center/cover, linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    
+    main>section:nth-child(3)>article:nth-child(6) {
+        background: url("./images/mobile/image-pocket-borealis.jpg") no-repeat center/cover, linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    
+    main>section:nth-child(3)>article:nth-child(7) {
+        background: url("./images/mobile/image-curiosity.jpg") no-repeat center/cover, linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    
+    main>section:nth-child(3)>article:nth-child(8) {
+        background: url("./images/mobile/image-fisheye.jpg") no-repeat center/cover, linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav img {
+        width: 18rem;
+    }
+    .social img {
+        width: 3rem;
+    }
+    .social {
+        align-items: center;
+        gap: 1rem;
+        margin-top: 5rem;
     }
 }
 

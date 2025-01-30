@@ -74,6 +74,31 @@ ul li a::after {
 .bars {
     display: none;
 }
+.mob-menu {
+    display: none;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    color:#fff;
+}
+
+.mob-menu-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mob-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    margin: 10rem 0;
+    font-size: 2rem;
+}
 
 
 main {
@@ -208,6 +233,9 @@ main>section:nth-child(3)>article:hover {
 
 ul li a:hover::after {
     visibility: visible;
+}
+.mob-menu-top img:hover {
+    cursor: pointer;
 }
 
 /* Mobile */

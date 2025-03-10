@@ -1,12 +1,20 @@
 body {
     font-family: sans-serif;
     background-color: #000000;
+    margin: 0;
 }
+ul {
+    padding: 0;
+    margin: 0;
+}
+
 footer {
     color: white;
 }
+
 main {
-    margin: 6em auto;
+    margin: 0 auto;
+    padding-top: 5rem;
     max-width: 75rem;
     color: #778899;
     background-image: url("media/bg-img-1.jpg");
@@ -15,7 +23,12 @@ main {
     background-position: top center;
 }
 
-h1, h2{
+h1 {
+    margin-top: 0;
+}
+
+h1,
+h2 {
     font-size: 2rem;
     text-align: center;
 }
@@ -30,6 +43,8 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 0.5rem;
+    padding: 1.5rem;
 }
 
 .main-projects li p {
@@ -41,7 +56,7 @@ li {
     white-space: nowrap;
     color: white;
     font-size: 1rem;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 1rem 0;
 }
 
@@ -57,7 +72,7 @@ ul li img {
     max-width: 21rem;
     justify-content: center;
     border-radius: 12px;
-    border: rgba(0,0,0,0) 1px solid;
+    border: rgba(0, 0, 0, 0) 1px solid;
 }
 
 .other-projects a {
@@ -73,35 +88,41 @@ ul li img {
 }
 
 img:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 .main-projects a:hover {
-    border: rgba(256,256,256,0.5) 1px solid;
+    border: rgba(256, 256, 256, 0.5) 1px solid;
 }
 
 .other-projects a:hover {
-    background-color: rgb(21,25,47);
+    background-color: rgb(21, 25, 47);
 }
 
-          
+
 @media only screen and (max-width: 800px) {
-  body {
-    max-width: 50rem;
-  }
+    a {
+        color: #f0f4fb;
+    }
 
+    .other-projects {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
 
-  a {
-    color: #f0f4fb;
-  }
-  .other-projects {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  li {
-    width: 45%;
+    li {
+        width: 45%;
+    }
+    .main-projects {
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .main-projects li p {
+        white-space: unset;
+        max-height: unset;
+        overflow: visible;
+        text-align: center;
     }
 }
 
@@ -111,8 +132,7 @@ img:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        }
-        .main-projects {
-            padding: 0;
-        }
-  }
+    }
+
+
+}

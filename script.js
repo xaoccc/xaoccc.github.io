@@ -42,6 +42,7 @@ let projectsTitles = [
     'Crowdfunding Product Page',
     'Interactive Pricing Component',
     'Loopstudios Landing Page',
+    'Testimonials Grid Section',
 ];
 
 function addProjects() {

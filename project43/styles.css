@@ -1,0 +1,95 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    display: flex  ;
+    font-family: "Barlow Semi Condensed" , sans-serif;
+}
+main {
+    max-width: 69.5rem;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Two equal columns */
+    grid-template-rows: repeat(2, 1fr); /* Three equal rows */
+    grid-template-areas:
+    "area1 area1 area2 area5"
+    "area3 area4 area4 area5";
+    gap: 1.5rem;
+}
+article {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+
+}
+h2 {
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+p {
+    color: rgb(138, 151, 170);
+    font-size: 0.7rem;
+}
+blockquote {
+    color: rgb(138, 151, 170);
+    font-size: 0.82rem;
+    line-height: 1.35;
+    margin-top: 1rem;
+}
+.white {
+    color: white;
+}
+.gray {
+    color: hsl(217, 19%, 35%);
+}
+.opaque {
+    color: white;
+    opacity: 0.5;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+article:nth-child(1) {
+    grid-area: area1;
+    background: hsl(263, 55%, 52%) url("images/bg-pattern-quotation.svg") no-repeat;
+    background-position: top 0 right 5rem;
+}
+article:nth-child(2) {
+    grid-area: area2;
+    background-color: hsl(217, 19%, 35%);
+}
+article:nth-child(3) {
+    grid-area: area3;
+}
+article:nth-child(4) {
+    grid-area: area4;
+    background-color: hsl(219, 29%, 14%);
+}
+article:nth-child(5) {
+    grid-area: area5;
+}
+
+.header img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem;
+    }    
+}

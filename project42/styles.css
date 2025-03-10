@@ -109,17 +109,21 @@ main {
 main>section {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 main>section:first-child {
     align-items: flex-end;
 }
 
+main>section:first-child>article {
+    width: 50%;
+}
+
 
 main>section:first-child>article:nth-child(2) {
     background-color: #fff;
     padding: 7.25rem 0 0 7.5rem;
-    margin-left: -10rem;
 }
 
 main>section:first-child h2 {
@@ -156,6 +160,16 @@ main>section:nth-child(3) article {
     display: flex;
     align-items: flex-end;
     background-blend-mode: overlay;
+}
+
+main>section:nth-child(4) {
+    display: none;   
+}
+
+main>section:nth-child(4) button {
+    font-size: 2rem;
+    margin: 4rem auto 11rem;
+    padding: 1rem 4rem;
 }
 
 main>section:nth-child(3)>article:nth-child(1) {
@@ -244,6 +258,42 @@ ul li a:hover::after {
     h1 {
         width: 100%;
     }
+    main>section:first-child>article:nth-child(2) {
+        padding: 6.25rem 0 0 5.5rem;
+    }
+    main>section:nth-child(2) {
+        margin: 8rem 5rem 5rem;
+    }
+
+    main>section:first-child img {
+        width: 140%;
+    }
+    
+    main>section {
+        margin: 0 5rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    header {
+        padding: 3.5rem 7rem 9rem 7rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    main>section:first-child>article:nth-child(2) {
+        padding: 3.5rem 0 0 3.5rem;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -274,6 +324,12 @@ ul li a:hover::after {
     p, a {
         font-size: 1.5rem;
     }
+    main>section {
+        margin: 0;
+    }
+    main>section:first-child>article {
+        width: 100%;
+    }
     main>section:first-child img {
         width: 100%;
     }
@@ -287,8 +343,11 @@ ul li a:hover::after {
         font-size: 3rem;
     }
 
-    button {
+    main>section:nth-child(2) button {
         display: none;
+    }
+    main>section:nth-child(4) {
+        display: block;
     }
 
     main>section:nth-child(3)>article:nth-child(1) {

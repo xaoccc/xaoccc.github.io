@@ -400,5 +400,36 @@ ul li a:hover::after {
         gap: 1rem;
         margin-top: 5rem;
     }
+    main>section:nth-child(2) {
+        margin: 8rem 0 5rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 460px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    p, a {
+        font-size: 1rem;
+    }
 }
 

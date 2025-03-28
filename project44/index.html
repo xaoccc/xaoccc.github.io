@@ -26,8 +26,16 @@
                 </div>
             </section>
             <section>
-                <p>You’ve used 815 GB of your storage</p>
-                <input type="range" min="0" max="1000"></input>
+                <div class="storage">
+                    <p>You’ve used 815 GB of your storage</p>
+                    <div class="progress">
+                        <span class="gbLeft">0</span>
+                        <span class="gbUsed">GB</span>
+                    </div>               
+                </div>
+
+
+                <input type="range" min="0" max="1000" value="0" class="slider" id="slider"></input>
                 <div class="legend">
                     <span>0 GB</span>
                     <span>1000 GB</span>

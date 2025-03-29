@@ -43,6 +43,7 @@ let projectsTitles = [
     'Interactive Pricing Component',
     'Loopstudios Landing Page',
     'Testimonials Grid Section',
+    'Fylo Data Storage Component'
 ];
 
 function addProjects() {

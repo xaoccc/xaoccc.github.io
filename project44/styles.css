@@ -41,6 +41,7 @@ section:first-child {
 section:last-child {
     border-radius: 0.5rem;
     width: 33.5rem;
+    padding-top: 0;
 }
 
 
@@ -48,7 +49,7 @@ section:last-child {
     background-color: hsl(229, 57%, 11%);
     border-radius: 0.5rem;
     padding: 1rem;
-
+    object-fit: contain;
 }
 
 .legend {
@@ -63,28 +64,59 @@ section:last-child {
     gap: 1rem;
 }
 
+
 .storage {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
 }
 
+.opaque {
+    opacity: 0.7;
+}
+
+
+
 .progress {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    align-items: center;
     padding: 1.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.5rem 0.5rem 0 0.5rem;
     background-color: #fff;
-    color:hsl(229, 57%, 11%)
+    color:hsl(229, 57%, 11%);
+    position: relative;
+    top: -1.5rem;
+    font-weight: 700;
+    width: 11.5rem;
+}
+
+.progress-text {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.gbLeft {
+    font-size: 2.25rem;
+    
+}
+.gbText {
+    font-size: 0.75rem;
+    color:hsl(229, 7%, 55%);
+}
+
+.triangle {
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: -1.5rem;
+    right: 0;
+    border-left: 1.5rem solid transparent;
+    border-top: 1.5rem solid #fff;
 }
 
 /* Slider */
 .slider {
     display: inline-block;
     width: 100%;
-    margin: 2rem 0;
+    margin: 1rem 0;
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
@@ -100,9 +132,6 @@ input[type="range" i]::-webkit-slider-thumb {
     width: 12px;
     appearance: none;
     border-radius: 50%;
-    /* box-shadow: 1px 0px 0px 1px hsl(335, 100%, 65%);
-    margin: 1px 0 0 -4px; */
-
 }
 
 

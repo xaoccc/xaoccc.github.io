@@ -1,5 +1,6 @@
 const slider = document.querySelector('.slider');
 const gbLeft = document.querySelector('.gbLeft');
+const gbUsed = document.querySelector('.gbUsed');
 const styleSheet = document.styleSheets[1];
 let ruleIndex = null;
 MAXVALUE = 1000;
@@ -8,6 +9,7 @@ console.log(slider.children);
 slider.addEventListener('input', function (e) {
     const value = Number(e.target.value);
     gbLeft.textContent = MAXVALUE - value;
+    gbUsed.textContent = value;
     const percentage = (value / MAXVALUE) * 100;
     slider.style.background = `linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) ${percentage}%, rgb(21,30,73) ${percentage}%)`;
 

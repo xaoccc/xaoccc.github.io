@@ -100,6 +100,8 @@ section:last-child {
 .gbText {
     font-size: 0.75rem;
     color:hsl(229, 7%, 55%);
+    position: relative;
+    bottom: 0.5rem;
 }
 
 .triangle {
@@ -138,4 +140,41 @@ input[type="range" i]::-webkit-slider-thumb {
 input[type="range"]::-webkit-slider-runnable-track {
     height: 12px;
     border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+    body {
+        background: url(./images/bg-mobile.png);
+        background-size: cover;
+    }
+
+    main {
+        justify-content: flex-start;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    section:first-child, section:last-child {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .triangle {
+        display: none;
+    }
+
+    .storage {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress {
+        border-radius: 0.5rem ;
+        top: 8rem;
+    }
+    
 }

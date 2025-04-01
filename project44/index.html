@@ -25,8 +25,8 @@
                     <img class="icon" src="./images/icon-upload.svg" alt="upload icon">
                 </div>
             </section>
-            <section>
-                <div class="storage">
+            <section class="storage">
+              
                     <p>
                         <span class="opaque">You’ve used </span>
                         <span class="storage-gb"><span class="gbUsed">0</span> GB</span> 
@@ -39,14 +39,16 @@
                         </div>
                         <div class="triangle"></div>
                     </div>               
+                
+
+                <div class="slider-container">
+                    <input type="range" min="0" max="1000" value="0" class="slider" id="slider"></input>
+                    <div class="legend">
+                        <span>0 GB</span>
+                        <span>1000 GB</span>
+                    </div>
                 </div>
 
-
-                <input type="range" min="0" max="1000" value="0" class="slider" id="slider"></input>
-                <div class="legend">
-                    <span>0 GB</span>
-                    <span>1000 GB</span>
-                </div>
             </section>
         </div>
     </main>

@@ -1,0 +1,15 @@
+body {
+    font-family: "Inter", sans-serif;
+    background: 
+        url('./images/pattern-quotes.svg') no-repeat left 10rem top 10rem,
+        url('./images/pattern-bg.svg') no-repeat right center,
+        url('./images/pattern-curve.svg') no-repeat left bottom;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    max-width: 69.375rem;
+    margin: 0 auto;
+}

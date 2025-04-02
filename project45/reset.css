@@ -1,0 +1,33 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+}
+
+button, a, input {
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+button, a, li, label {
+  text-decoration: none;
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+

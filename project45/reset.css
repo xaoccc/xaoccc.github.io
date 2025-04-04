@@ -8,6 +8,11 @@
   text-align: inherit;
 }
 
+body {
+  margin: 0;
+  overflow: visible;
+}
+
 button, a, input {
   display: block;
 }

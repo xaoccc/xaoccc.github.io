@@ -1,8 +1,6 @@
 body {
     font-family: "Inter", sans-serif;
     background: 
-        url('./images/pattern-quotes.svg') no-repeat left 10rem top 10rem,
-        url('./images/pattern-bg.svg') no-repeat right center,
         url('./images/pattern-curve.svg') no-repeat left bottom;
     height: 100vh;
     display: flex;
@@ -12,4 +10,49 @@ body {
 main {
     max-width: 69.375rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: url('./images/pattern-quotes.svg') no-repeat left 6rem top 6rem,
+    url('./images/pattern-bg.svg') no-repeat right center;
+    padding: 4rem 4rem 4rem 0;
 }
+
+blockquote {
+    margin: 0 -7rem 1rem 0;
+    overflow: visible;
+    z-index: 1;
+    position: relative;
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+
+.button {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 19%;
+    margin: -2rem 0 0 2rem;
+    position: relative;
+}
+
+.button a {
+    height: 1.2rem;
+    width: 0.7rem;
+}
+
+.prev {
+    background: url('./images/icon-prev.svg');
+}
+.next {
+    background: url('./images/icon-next.svg');
+}
+
+img {
+    border-radius: 0.5rem;
+    box-shadow: 0 3rem 2rem rgba(0, 0, 0, 0.2);
+}
+

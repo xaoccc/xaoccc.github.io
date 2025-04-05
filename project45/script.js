@@ -6,11 +6,30 @@ The depth the instructors go into is incredible. I now feel so confident about \
 starting up as a professional developer. ”'],
     'author': ['Tanya Sinclair', 'John Tarkpor'],
     'title': ['UX Engineer', 'Junior Front-end Developer'],
-    'imgSrc': ['./images/image-tanya.jpg']
+    'imgSrc': ['./images/image-tanya.jpg', './images/image-john.jpg'],
+}
+let n = 0;
+const totalEntries = data.author.length;
+const [text, author, title, img] = document.querySelectorAll('blockquote, .author-container a, .author-title, img');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
+
+function updateView(n) {
+    text.textContent = data.text[n];
+    author.textContent = data.author[n];
+    title.textContent = data.title[n];
+    img.src = data.imgSrc[n];
+    img.alt = data.author[n];
 }
 
-const [text, author, title] = document.querySelectorAll('blockquote, .author-container a, .author-title')
-console.log([text, author, title])
-text.textContent = data.text[0]
-author.textContent = data.author[0]
-title.textContent = data.title[0]
+prevBtn.addEventListener('click', function() {
+    (n == 0) ? null : n -=1;
+    updateView(n);
+})
+
+nextBtn.addEventListener('click', function() {
+    (n == totalEntries - 1) ? null : n +=1;
+    updateView(n);
+})
+
+updateView(n);

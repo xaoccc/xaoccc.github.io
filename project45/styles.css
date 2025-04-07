@@ -87,12 +87,13 @@ img {
         align-items: center;
         padding: 0 0 5rem 0;
         margin: 0 1.5rem;
-    }
-    .image-container {
-        order: 1;
+        background: none;
     }
     .text-container {
         order: 2;
+        background: url('./images/pattern-quotes.svg') no-repeat top center;
+        padding-top: 2rem;
+        background-size: 20%;
     }
     .author-container {
         flex-direction: column;
@@ -100,12 +101,14 @@ img {
     }
     body {        
         width: 100%;
+        height: unset;
         display: block;
         background-size: 80%;
     }
     .image-container {
+        order: 1;
         left: 0;
-        padding: 4rem;
+        padding: 13%;
         display: flex;      
         flex-direction: column;
         align-items: center;
@@ -142,4 +145,10 @@ img {
     }
     
     
+}
+
+@media (max-width: 500px) {
+    body {        
+        height: 100vh;
+    }
 }

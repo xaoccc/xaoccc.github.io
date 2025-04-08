@@ -69,10 +69,10 @@ blockquote {
 }
 
 .prev {
-    background: url('./images/icon-prev.svg');
+    background: url('./images/icon-prev.svg') center no-repeat;
 }
 .next {
-    background: url('./images/icon-next.svg');
+    background: url('./images/icon-next.svg') center no-repeat;
 }
 
 img {

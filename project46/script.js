@@ -1,14 +1,11 @@
 toggleButton = document.querySelector(".bauble_input");
-let theme = "dark";
 const today = document.querySelectorAll(".today");
 const percentage = document.querySelectorAll(".percentage");
 // The abstraction may be extended so data can be fetched from an API or a database
 let todayData = [12, 99, 1099, -144];
 let percentageData = [3, -2, 2257, 1375, 303, 553, -19, -12];
-
-toggleButton.addEventListener("click", function () {
-    (toggleButton.checked) ? theme = "light" : theme = "dark";
-})
+const themeElements = document.querySelectorAll("body, p, h1, h2, h3, h4, .dashboard-item, .overview-item");
+const mode = document.querySelector(".mode");
 
 function createArrow(direction, el) {
     const arrow = document.createElement("img");
@@ -33,5 +30,24 @@ function addStyle(data, el) {
 
 addStyle(todayData, today);
 addStyle(percentageData, percentage);
+
+toggleButton.addEventListener("click", function () {
+    if (toggleButton.checked) {
+        themeElements.forEach((el) => {
+            el.classList.add("light-theme");
+        })
+        mode.textContent = "Light Mode";
+    } else {
+        themeElements.forEach((el) => {
+            el.classList.remove("light-theme");
+        })
+        mode.textContent = "Dark Mode";
+    }
+})
+
+
+
+
+
 
 

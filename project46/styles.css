@@ -43,8 +43,11 @@ h4 {
 
 p {
 	color: hsl(228, 34%, 66%);
-	font-size: 14px;
 	font-weight: 700;
+}
+
+header p {
+	font-size: 0.875rem;
 }
 
 /* Input Toggle */
@@ -90,7 +93,6 @@ p {
 	top: 3px;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
-
 	z-index: 2;
 }
 
@@ -119,11 +121,17 @@ p {
 	display: flex;
 	flex-direction: column;	
 	border-radius: 0.5rem;
-	padding: 1rem;
+	padding: 1.5rem;
 	width: 23%;
 }
+
 .dashboard-item {
+	font-size: 0.75rem;
 	align-items: center;
+}
+.overview-item:hover, .dashboard-item:hover {
+	cursor: pointer;
+	background-color: hsl(228, 26%, 27%);
 }
 .dashboard-item:nth-child(1) {
 	background: linear-gradient(to bottom, hsl(208, 92%, 53%) 0%,  hsl(208, 92%, 53%) 4px, hsl(228, 28%, 20%) 4px, hsl(228, 28%, 20%) 100%);
@@ -138,25 +146,83 @@ p {
 	background: linear-gradient(to bottom, hsl(348, 97%, 39%) 0%,  hsl(348, 97%, 39%) 4px, hsl(228, 28%, 20%) 4px, hsl(228, 28%, 20%) 100%);
 }
 
+.dashboard-item:nth-child(1):hover {
+	background: linear-gradient(to bottom, hsl(208, 92%, 53%) 0%,  hsl(208, 92%, 53%) 4px, hsl(228, 26%, 27%) 4px, hsl(228, 26%, 27%) 100%);
+}
+.dashboard-item:nth-child(2):hover {
+	background: linear-gradient(to bottom, hsl(203, 89%, 53%) 0%,  hsl(203, 89%, 53%) 4px, hsl(228, 26%, 27%) 4px, hsl(228, 26%, 27%) 100%);
+}
+.dashboard-item:nth-child(3):hover {
+	background: linear-gradient(to bottom, hsl(329, 70%, 58%) 0%,  hsl(329, 70%, 58%) 4px, hsl(228, 26%, 27%) 4px, hsl(228, 26%, 27%) 100%);
+}
+.dashboard-item:nth-child(4):hover {
+	background: linear-gradient(to bottom, hsl(348, 97%, 39%) 0%,  hsl(348, 97%, 39%) 4px, hsl(228, 26%, 27%) 4px, hsl(228, 26%, 27%) 100%);
+}
+
 .dashboard-item > p:nth-child(1) {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	gap: 1ch;
+	gap: 1ch;	
+}
+
+
+.dashboard-item > p:nth-child(3) {
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 5px;
+	margin-bottom: 1.5rem;
+}
+
+.dashboard-item > .positive, .dashboard-item > .negative {
+	gap: 0.25rem
 }
 
 h3 {
-	font-size: 2.5rem;
+	font-size: 3.6rem;
+	margin-top: 1.25rem;
+}
+h2 {
+	font-size: 1.6rem;
+	margin: 3rem 0 1.5rem;
+}
+
+h4 {
+	font-size: 1.75rem;
 }
 
 .overview-item {
 	gap: 1.5rem;
 	background-color: hsl(228, 28%, 20%);
+	font-size: 0.75rem;
+	font-weight: 700;
 }
 
 .upper, .lower {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-between;	
+}
+.upper {
 	align-items: center;
+}
+.lower {
+	align-items: flex-end;
+}
+.percentage {
+	margin-left: 4px;
+}
+
+.positive {
+	color: hsl(163, 72%, 41%);
+}
+.negative {
+	color: hsl(356, 69%, 56%);
+}
+
+.negative, .positive {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	font-weight: 700;
 }

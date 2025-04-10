@@ -27,7 +27,7 @@ li {
 }
 
 
-button, a, li, label {
+button, a, li, label, p {
   text-decoration: none;
   font: inherit;
   color: inherit;

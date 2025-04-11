@@ -44,7 +44,8 @@ let projectsTitles = [
     'Loopstudios Landing Page',
     'Testimonials Grid Section',
     'Fylo Data Storage Component',
-    'Coding Bootcamp Testimonials Slider'
+    'Coding Bootcamp Testimonials Slider',
+    'Social Media Dashboard With Theme Switcher'
 ];
 
 function addProjects() {

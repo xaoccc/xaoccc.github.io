@@ -291,3 +291,35 @@ h4 {
     align-items: center;
 	font-weight: 700;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+	body {
+		height: auto;
+	}
+	main {
+		margin-bottom: 3rem;
+	}
+	h1 {
+		font-size: 1.5rem;
+	}
+	header, .dashboard-wrapper, .overview-wrapper {
+		flex-direction: column;
+	}
+	.dashboard-item, .overview-item, .header-right, .header-left {
+		width: 100%;
+	}
+	.header-left {
+		border-bottom: 1px solid hsl(228, 34%, 66%);
+	}
+	.header-left {
+		margin-bottom: 1rem;
+		padding-bottom: 1.5rem;
+	}
+	header, main {
+		padding: 0 1.5rem;
+	}
+	.header-right {
+		justify-content: space-between;
+	}
+}

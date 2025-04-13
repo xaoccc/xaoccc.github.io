@@ -1,0 +1,48 @@
+body {
+    font-family: 'DM Serif Display', serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav, main, footer {
+    margin: 0 calc((100vw - 69.5rem)/2);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 2rem 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;    
+}
+
+.hero {
+    padding-left: calc((100vw - 69.5rem)/2);
+    padding-right: calc((100vw - 69.5rem)/2);
+    background: hsl(256, 26%, 20%) url('./images/bg-pattern-intro-right-desktop.svg') no-repeat top right;
+    color: #fff;
+    height: 37rem;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 6.5rem;
+}
+
+main, footer {
+    position: relative;
+    top: 10rem;
+}

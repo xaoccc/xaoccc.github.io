@@ -8,12 +8,7 @@
   text-align: inherit;
 }
 
-body {
-  margin: 0;
-  overflow: visible;
-}
-
-h1, h2, h3, h4 {
+body, h1, h2, h3, h4 {
   margin: 0;
   padding: 0;
 }

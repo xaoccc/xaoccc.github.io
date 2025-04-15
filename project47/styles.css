@@ -2,6 +2,7 @@ body {
     font-family: 'Karla';
 }
 
+/* Common */
 nav,
 main,
 .footer-logos,
@@ -14,6 +15,14 @@ h2,
 h3,
 h4 {
     font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    line-height: 0.9;
+}
+
+p {
+    font-weight: 400;
+    color: hsl(0, 0%, 98%);
+    line-height: 1.6;
 }
 
 header {
@@ -31,6 +40,13 @@ nav {
     z-index: 4;
 }
 
+button {
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Header */
 nav ul {
     display: flex;
     flex-direction: row;
@@ -93,16 +109,10 @@ nav ul {
     padding-right: 2rem;
 }
 
-.hero-text p {
-    font-weight: 400;
-    color: hsl(0, 0%, 98%);
-    line-height: 1.6;
-}
-
 main,
 footer {
     position: relative;
-    top: 18rem;
+    top: 19.5rem;
 }
 
 .line {
@@ -117,27 +127,36 @@ header hr {
 
 main hr {
     width: 14%;
-    background: hsl(270, 9%, 17%);
+    background: #B0A4B2;
 }
 
 h1 {
     font-size: 4.5rem;
-    margin: 4rem 0 1.75rem;
-    font-weight: 400;
-    line-height: 0.9;
+    margin: 4rem 0 1.75rem;    
 }
 
 .hero button {
-    text-transform: uppercase;
     margin-top: 2rem;
-    border: 2px solid #fff;
-    padding: 0.5rem 1.5rem;
 }
 
 /* Main */
 .articles {
     display: flex;
     flex-direction: row;
+    margin-top: 6rem;
+    gap: 1.5rem;
+}
+article{
+    flex: 1;
+}
+
+h3 {
+    font-size: 1.75rem;    
+    margin: 1.75rem 0 1.25rem;
+}
+
+.articles p {
+    color:hsl(273, 4%, 51%);
 }
 
 main section:last-child {
@@ -145,15 +164,26 @@ main section:last-child {
     flex-direction: row;
     justify-content: space-between;
     color: #fff;
-    background: hsl(256, 26%, 20%);
+    background: url('./images/bg-pattern-how-we-work-desktop.svg') right top no-repeat, linear-gradient(hsl(256, 26%, 20%), hsl(256, 26%, 20%));
     padding: 4.5rem;
     align-items: center;
-    margin: 9rem 0;
+    margin: 9.5rem 0;
+}
+
+
+h2 {
+    font-size: 3.4rem;  
+    width: 50%;
 }
 
 /* Footer */
 footer {
-    background: hsl(0, 0%, 98%);
+    background: url('./images/bg-pattern-footer-desktop.svg') left top no-repeat, linear-gradient(hsl(0, 0%, 98%), hsl(0, 0%, 98%));
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding-bottom: 4rem;
 }
 
 .footer-logos {
@@ -163,12 +193,48 @@ footer {
     padding-top: 4rem;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid hsl(273, 4%, 51%);
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.footer-logos a{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.footer-logos .icon-facebook {
+    background: url('./images/icon-facebook.svg') center no-repeat;
+}
+.footer-logos .icon-twitter {
+    background: url('./images/icon-twitter.svg') center no-repeat;
+}
+.footer-logos .icon-pinterest {
+    background: url('./images/icon-pinterest.svg') center no-repeat;
+}
+.footer-logos .icon-instagram {
+    background: url('./images/icon-instagram.svg') center no-repeat;
+}
+
+footer p {
+    color:hsl(273, 4%, 51%);    
+}
+
+footer ul {
+    color: hsl(256, 26%, 20%);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 .footer-nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-right: 10rem;
+    width: 64%;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }

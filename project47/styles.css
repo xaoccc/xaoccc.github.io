@@ -47,26 +47,51 @@ button {
 }
 
 /* Header */
-nav ul {
+
+nav  ul {
     display: flex;
-    flex-direction: row;
     gap: 1.5rem;
-    text-transform: uppercase;
-    font-size: 0.85rem;
+    text-transform: uppercase;    
     font-weight: 700;
-    color: hsl(273, 4%, 51%);
     letter-spacing: 1px;
     align-items: center;
 }
+nav > ul {
+    font-size: 0.85rem;
+    flex-direction: row;
+    color: hsl(273, 4%, 51%);   
+}
 
-nav li button {
+.dropdown-menu ul {
+    flex-direction: column;
+    color: hsl(0, 0%, 98%);
+    padding-top: 3rem;
+}
+
+nav > ul li button {
     border: 2px solid hsl(270, 9%, 17%);
     color: hsl(270, 9%, 17%);
 }
 
-.hamburger,
-.dropdown {
+.display-none {
     display: none;
+}
+
+.display-block {
+    display: block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 5.5rem;
+    left: 0;
+    width: 100%;
+    height: 36rem;
+    font-size: 1.5rem;
+    background: 
+        url('./images/bg-pattern-mobile-nav.svg') center bottom no-repeat, 
+        linear-gradient(#2B282F, #2B282F);
+    background-size: contain;
 }
 
 .hamburger {
@@ -182,7 +207,9 @@ main section:last-child {
     flex-direction: row;
     justify-content: space-between;
     color: #fff;
-    background: url('./images/bg-pattern-how-we-work-desktop.svg') right top no-repeat, linear-gradient(hsl(256, 26%, 20%), hsl(256, 26%, 20%));
+    background: 
+        url('./images/bg-pattern-how-we-work-desktop.svg') right top no-repeat, 
+        linear-gradient(hsl(256, 26%, 20%), hsl(256, 26%, 20%));
     padding: 4.5rem;
     align-items: center;
     margin: 9.5rem 0;
@@ -284,6 +311,14 @@ footer li a:hover {
     filter: brightness(2) invert(1);
 }
 
+.dropdown-menu ul li a:hover,  .dropdown-menu ul li button:hover{
+    color: hsl(216, 30%, 68%);
+}
+
+.dropdown-menu ul li button:hover {
+    border: 2px solid hsl(216, 30%, 68%);
+}
+
 /* Mobile */
 @media (max-width: 768px) {
 
@@ -312,7 +347,7 @@ footer li a:hover {
         linear-gradient(hsl(256, 26%, 20%), hsl(256, 26%, 20%)) ;
     }
 
-    nav ul,
+    nav > ul,
     .hero-bg-clip,
     .hero-pattern-left,
     .hero-pattern-right,
@@ -320,7 +355,7 @@ footer li a:hover {
         display: none;
     }
 
-    .hamburger {
+    .hamburger.display-none {
         display: block;
     }
 

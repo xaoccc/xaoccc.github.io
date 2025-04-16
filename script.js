@@ -45,30 +45,29 @@ let projectsTitles = [
     'Testimonials Grid Section',
     'Fylo Data Storage Component',
     'Coding Bootcamp Testimonials Slider',
-    'Social Media Dashboard With Theme Switcher'
+    'Social Media Dashboard With Theme Switcher',
+    'Insure Landing Page'
 ];
 
-function addProjects() {
-    projectsTitles.forEach((item) => {
-        // Create necessary elements and set their attributes
-        index = projectsTitles.indexOf(item);
-        let project = document.createElement('li');
-        let title = document.createElement('p');
-        title.textContent = `Project ${index + 1} - ${projectsTitles[index]}`;
-        let source = document.createElement('a');
-        source['href'] = `./project${index + 1}/index.html`;
-        source['target'] = '_blank';
-        let preview = document.createElement('img');
-        preview['src'] = `./project${index + 1}/challenge/design/desktop-preview.jpg`;
-        preview['alt'] = `Project ${index + 1} - ${projectsTitles[index]}`;
 
-        // Append elements to the DOM
-        projectsList.appendChild(project);
-        project.appendChild(title);        
-        project.appendChild(source);
-        source.appendChild(preview);
-    });
-}
+projectsTitles.forEach((item) => {
+    // Create necessary elements and set their attributes
+    index = projectsTitles.indexOf(item);
+    let project = document.createElement('li');
+    let title = document.createElement('p');
+    title.textContent = `Project ${index + 1} - ${projectsTitles[index]}`;
+    let source = document.createElement('a');
+    source['href'] = `./project${index + 1}/index.html`;
+    source['target'] = '_blank';
+    let preview = document.createElement('img');
+    preview['src'] = `./project${index + 1}/challenge/design/desktop-preview.jpg`;
+    preview['alt'] = `Project ${index + 1} - ${projectsTitles[index]}`;
 
-addProjects();
+    // Append elements to the DOM
+    projectsList.appendChild(project);
+    project.appendChild(title);        
+    project.appendChild(source);
+    source.appendChild(preview);
+});
+
 

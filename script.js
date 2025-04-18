@@ -46,7 +46,8 @@ let projectsTitles = [
     'Fylo Data Storage Component',
     'Coding Bootcamp Testimonials Slider',
     'Social Media Dashboard With Theme Switcher',
-    'Insure Landing Page'
+    'Insure Landing Page',
+    'Fitness Club Hercules'
 ];
 
 

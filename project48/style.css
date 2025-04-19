@@ -5,7 +5,7 @@ body {
     font-family: 'Helvetica', sans-serif;
 }
 nav, main, footer {
-    width: 1440px;
+    max-width: 90rem;
     margin: 0 auto;
 }
 
@@ -68,7 +68,7 @@ h1 > span {
 }
 
 button{
-    padding: 10px;
+    padding: 1rem 2rem;
     border: none;
     background-color: #f9690e;
     font-weight: bold;
@@ -80,17 +80,17 @@ button:hover {
     cursor: pointer;
 }
 
-#info > article {
+.info > article {
     background-color: #f9690e;
     display: inline-block;
     padding: 40px;
 }
 
-#info {
+.info {
     display: flex;
 }
 
-#main {
+.heading {
     background-image: url(background.jpg);
     height: 816px;
     display: flex;
@@ -107,8 +107,10 @@ footer {
     justify-content: space-between;
     padding: 40px 0 10px 0;
 }
-.social svg {
-    margin: 0 10px;
+.social {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
 }
 
 a:hover{

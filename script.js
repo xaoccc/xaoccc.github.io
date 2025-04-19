@@ -47,7 +47,8 @@ let projectsTitles = [
     'Coding Bootcamp Testimonials Slider',
     'Social Media Dashboard With Theme Switcher',
     'Insure Landing Page',
-    'Fitness Club Hercules'
+    'Fitness Club Hercules',
+    'Portfolio'
 ];
 
 

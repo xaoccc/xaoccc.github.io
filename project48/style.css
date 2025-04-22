@@ -16,6 +16,9 @@ nav {
     align-items: center;
     padding: 15px 0;
 }
+.dropdown-btn {
+    display: none;
+}
 ul {
     margin: 0;
     padding: 10px 0;
@@ -88,10 +91,11 @@ button:hover {
 
 .info {
     display: flex;
+    flex-direction: row;
 }
 
 .heading {
-    background-image: url(background.jpg);
+    background: url(background.jpg) center no-repeat;
     height: 816px;
     display: flex;
     flex-direction: column;
@@ -117,4 +121,27 @@ a:hover{
     background-color: #f9690e;
     cursor: pointer;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .info {
+        flex-direction: column;
+    }
+    nav {
+        padding: 2rem;
+    }
+    nav > ul {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 4rem;
+        left: 0;
+        width: 100%;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+        gap: 0.5rem;
+    }
+    .dropdown-btn {
+        display: block;
+    }
 }

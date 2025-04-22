@@ -3,6 +3,7 @@ body {
     padding: 0;
     background-color: #d3d3d3;
     font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
 }
 nav, main, footer {
     max-width: 90rem;
@@ -36,16 +37,17 @@ h3, h1 {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.25rem;
     width: 60%;
 }
 
 a, h3 {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 a {
-    padding: 18px;
+    padding: 1rem;
+    display: block;
 }
 
 .logo{
@@ -92,24 +94,22 @@ button:hover {
 .info {
     display: flex;
     flex-direction: row;
+    gap: 5px
 }
 
 .heading {
     background: url(background.jpg) center no-repeat;
-    height: 816px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-#middle-article {
-    margin: 0 5px;
+    padding: 18rem 0;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 40px 0 10px 0;
+    padding: 2.25rem 0 0.5rem 0;
 }
 .social {
     display: flex;
@@ -134,14 +134,24 @@ a:hover{
         display: none;
         flex-direction: column;
         position: fixed;
-        top: 4rem;
+        top: 6rem;
         left: 0;
         width: 100%;
         align-items: center;
         background: rgba(0, 0, 0, 0.5);
-        gap: 0.5rem;
+    }
+    nav a {
+        padding: 0.5rem 1rem;
     }
     .dropdown-btn {
         display: block;
+    }
+    article p {
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 }

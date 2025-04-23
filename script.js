@@ -48,7 +48,8 @@ let projectsTitles = [
     'Social Media Dashboard With Theme Switcher',
     'Insure Landing Page',
     'Fitness Club Hercules',
-    'Portfolio'
+    'Portfolio',
+    'Pricing Component With Toggle'
 ];
 
 

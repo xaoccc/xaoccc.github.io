@@ -19,11 +19,19 @@ header > div {
     display: flex;
     flex-direction: row;
     align-items: center;
+    color: hsl(234, 14%, 74%);
+    margin: 3rem 0 4rem;
+}
+
+h1 {
+    color: hsl(233, 13%, 49%);
+    text-align: center;
 }
 
 /* Input Toggle */
 .toggle_box {
 	display: flex;
+    margin-right: 1rem;
 }
 
 .toggle_box .toggle_label {
@@ -35,19 +43,23 @@ header > div {
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0;
-	height: 1.5rem;
+	height: 1.75rem;
 	position: relative;
 	-webkit-transition: all 500ms ease;
 	transition: all 500ms ease;
-	width: 3rem;
+	width: 3.25rem;
 }
 
 .toggle_box input.toggle_input+.toggle_label {
-	background: linear-gradient(to right, hsl(210, 78%, 56%) 0%, hsl(146, 68%, 55%) 100%);
+	background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.toggle_box input.toggle_input+.toggle_label:hover {
+    opacity: 0.5;
 }
 
 .toggle_label:before {
-	background-color: hsl(230, 17%, 14%);
+	background-color: #fff;
 }
 
 .toggle_box .toggle_label:before {
@@ -57,8 +69,8 @@ header > div {
 	border-radius: 50%;
 	content: '';
 	display: block;
-	height: 1.1rem;
-	width: 1.1rem;
+	height: 1.35rem;
+	width: 1.35rem;
 	left: 5px;
 	position: absolute;
 	top: 3px;
@@ -77,36 +89,108 @@ header > div {
 .toggle_box input.toggle_input:checked+.toggle_label:before {
 	background-position: 150% 0;
 	box-shadow: inset 0 -5px 25px #fff, 0 10px 20px rgba(0, 0, 0, .4);
-	left: calc(100% - 22px);
+	left: calc(100% - 25px);
 }
+
+/* Main */
 
 main {
     display: flex;
     flex-direction: row;
     margin: 0 auto;
+    width: 70rem;
 }
 
 main section {
-    padding: 2rem;
+    padding: 2.75rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex: 1;
 }
 
 main section p {
     padding: 1rem 0;
+    width: 100%;
+    text-align: center;
 }
 main > section:first-child, main > section:last-child {
     background-color: #fff;
     margin: 2rem 0;
+    color: hsl(233, 13%, 49%);
+}
+h3 {
+    font-size: 4.5rem; 
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;   
+    margin: 1.5rem 0;
+}
+h3 .dollar {
+    font-size: 2.5rem; 
+}
+
+main > section:first-child h3, main > section:last-child h3 {
+    color: hsl(232, 13%, 33%);
+}
+
+main > section:first-child p, main > section:last-child p {
+    border-bottom: 1px solid #DADADA;
+}
+
+main > section:first-child > p:nth-child(3), main > section:last-child > p:nth-child(3) {
+    border-top: 1px solid #DADADA;
+}
+
+main > section:nth-child(2) > p:nth-child(3) {
+    border-top: 1px solid hsl(236, 72%, 79%);
+}
+
+main > section:nth-child(2) p {
+    border-bottom: 1px solid hsl(236, 72%, 79%);
 }
 main > section:nth-child(2) {
     background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-    border-radius: 1rem;
+    border-radius: 0.75rem;
     color: #fff;
 }
 main > section:first-child {
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 0.75rem 0 0 0.75rem;
 }
 main > section:last-child {
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 0.75rem 0.75rem 0;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.85rem;
+}
+
+main > section:first-child button, main > section:last-child button {
+    background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: 1px solid transparent;
+    color: #fff;
+}
+
+main > section:nth-child(2) button {
+    background: #fff;
+    border: 1px solid #fff;
+    color: hsl(237, 63%, 64%);
+}
+
+main > section:first-child button:hover, main > section:last-child button:hover {
+    background: none;
+    border: 1px solid hsl(233, 13%, 49%);
+    color: hsl(237, 63%, 64%);
+}
+main > section:nth-child(2) button:hover {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
 }

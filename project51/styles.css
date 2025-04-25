@@ -1,0 +1,38 @@
+html {
+    font-size: 18px;
+}
+body {
+    font-family: 'Barlow';
+    background: #fff;
+}
+.bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+    background: hsl(207, 33%, 95%);
+    border-bottom-left-radius: 2rem;
+    z-index: -1;
+}
+nav, h1, h2, h3 {
+    font-family: 'Barlow Condensed';
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header, main {
+    max-width: 62rem;
+    margin: 3.5rem auto;
+}
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}

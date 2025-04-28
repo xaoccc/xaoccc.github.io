@@ -50,13 +50,26 @@ ul {
     gap: 2rem;
 }
 
+section > p {
+    margin: 1.5rem 0 3.5rem;
+    width: 25%;
+}
+
 .h2, h1, .button {
     text-transform: uppercase;
 }
 
-h2 {
+h1 {
+    color: hsl(230, 29%, 20%);
+    font-size: 3.6rem;
+    width: 50%;
+    line-height: 1;
+}
+
+h2, .button span {
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    letter-spacing: 5px;
 }
 
 .h2 {
@@ -64,8 +77,19 @@ h2 {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-    
+    font-size: 0.8rem;
+    margin-bottom: 0.75rem;
 }
+
+.h2 span {
+    color: hsl(207, 33%, 95%);
+    background: hsl(230, 29%, 20%);
+    border-radius: 1rem;
+    padding: 0.25rem 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
 .button {
     display: flex;
     flex-direction: row;
@@ -80,8 +104,9 @@ h2 {
 button {
     background: hsl(0, 100%, 68%);
     color: white;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     font-weight: 700;
+    letter-spacing: 2px;
 }
 
 .gray-1 {
@@ -90,4 +115,8 @@ button {
 
 .gray-2 {
     color: hsl(231, 7%, 65%);
+}
+
+.gray-3 {
+    color: hsl(230, 11%, 40%);
 }

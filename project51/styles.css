@@ -49,6 +49,11 @@ ul {
     flex-direction: row;
     gap: 2rem;
 }
+li.gray-1.mobile {
+    border-top: 1px solid hsl(231, 7%, 65%);
+    width: 100%;
+
+}
 .hamburger {
     display: none;
     height: 1rem;

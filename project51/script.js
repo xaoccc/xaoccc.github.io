@@ -3,13 +3,42 @@ const docWidth = document.documentElement.scrollWidth;
 const dropDownBtn = document.querySelector('.hamburger')
 const dropDownNav = document.querySelector('nav');
 const dropDownUl = document.querySelector('nav ul');
+const li = document.querySelector('li.gray-1')
 let showDropDown = false;
-(docWidth > 768) ? preview.textContent = "to see a live preview" : preview.textContent = "to see a preview";
+
+function bigSize() {
+    preview.textContent = "to see a live preview";
+    li.innerHTML = "&#8226;";
+    li.classList.remove("mobile");
+    dropDownNav.style.display = 'flex';
+    dropDownUl.style.display = 'flex';
+}
+
+function smallSize() {
+    preview.textContent = "to see a preview";
+    li.innerHTML = "";
+    li.classList.add("mobile");
+} 
+
+// Check what device do we use
+if (docWidth > 768) {
+    bigSize()
+} else {
+    smallSize()
+}
+// Check if we resize the window on our device (especiallly on desktop)
 window.addEventListener('resize', function() {
     const docWidth = document.documentElement.scrollWidth;
-    (docWidth > 768) ? preview.textContent = "to see a live preview" : preview.textContent = "to see a preview";
+    if (docWidth > 768) {
+        bigSize()
+    } else {
+        smallSize()
+        dropDownNav.style.display = 'none';
+        dropDownUl.style.display = 'none';
+    }
 })
 
+// Toggle the display of the dropdown navigation
 dropDownBtn.addEventListener('click', function (){
     if (showDropDown) {
         dropDownNav.style.display = 'none';

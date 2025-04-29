@@ -49,7 +49,8 @@ let projectsTitles = [
     'Insure Landing Page',
     'Fitness Club Hercules',
     'Portfolio',
-    'Pricing Component With Toggle'
+    'Pricing Component With Toggle',
+    'Project Tracking Intro Component'
 ];
 
 

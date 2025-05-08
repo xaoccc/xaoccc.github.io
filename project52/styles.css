@@ -224,8 +224,12 @@ footer a:hover, footer i:hover {
         align-items: center;
     }
 
-    footer ul, footer section {
+    footer ul {
         gap: 1rem;
+    }
+
+    footer .right, footer section {
+        gap: 2rem;
     }
 
     footer nav {
@@ -236,8 +240,14 @@ footer a:hover, footer i:hover {
         margin: 0;
     }
 
-    footer .right, footer ul li {
+    footer ul li {
         align-items: center;
+    }
+
+    footer .right {
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
     }
 
     main > section:nth-child(7) > img {

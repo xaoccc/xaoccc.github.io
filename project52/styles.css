@@ -198,4 +198,55 @@ footer a:hover, footer i:hover {
     color: hsl(171, 66%, 44%);
 }
 
+/* Mobile */ 
+
+@media (max-width: 768px) {
+    header, main {
+        padding: 0 5%;
+    }
+
+    main > section:nth-child(2) article {
+        width: 100%;
+        text-align: center;
+        margin: 1rem auto;
+    }
+
+    main > section:nth-child(4) img {
+        width: 100%;
+    }
+
+    .btns, main > section:nth-child(2), main > section:nth-child(6), main > section:nth-child(7) {
+        flex-direction: column;
+    }
+
+    footer section, footer .left, footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer ul, footer section {
+        gap: 1rem;
+    }
+
+    footer nav {
+        display: flex;
+    }
+
+    footer ul {
+        margin: 0;
+    }
+
+    footer .right, footer ul li {
+        align-items: center;
+    }
+
+    main > section:nth-child(7) > img {
+        object-fit: none;
+    }
+
+    main > section:nth-child(7) {
+        gap: 0;
+    }
+}
+
 

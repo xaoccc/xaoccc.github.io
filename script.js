@@ -50,7 +50,8 @@ let projectsTitles = [
     'Fitness Club Hercules',
     'Portfolio',
     'Pricing Component With Toggle',
-    'Project Tracking Intro Component'
+    'Project Tracking Intro Component', 
+    'Clipboard Landing Page'
 ];
 
 

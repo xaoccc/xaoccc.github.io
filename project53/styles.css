@@ -1,0 +1,56 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;    
+}
+
+/* Header */
+
+header {
+    padding: 2.5rem calc((100vw - 71rem)/2) 3.5rem;
+    background: url('./images/bg-hero-desktop.svg') no-repeat, linear-gradient(hsl(193, 100%, 96%), hsl(193, 100%, 96%));
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1, h2, h3,h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bottom {
+    gap: 4rem;
+    padding-right: 0.5rem;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+.bottom article, .bottom img, section article, section img {
+    width: 50%;
+}
+button {
+    padding: 1rem 3.3rem;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+    text-align: center;
+    font-weight: 700;
+}
+.top button {
+    background-color: #fff;
+}
+.bottom button {
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+}
+
+/* Main */
+main {
+    max-width: 68.5rem;
+    margin: 9rem auto;
+}

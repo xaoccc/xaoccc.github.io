@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;    
+    font-size: 18px;
 }
 
 /* Header */
@@ -12,12 +12,17 @@ header {
     flex-direction: column;
     gap: 3.75rem;
 }
+
 .flex-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-h1, h2, h3,h4 {
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -25,15 +30,21 @@ h1, h2, h3,h4 {
     gap: 4rem;
     padding-right: 0.5rem;
 }
+
 article {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
 }
-.bottom article, .bottom img, section article, section img {
+
+.bottom article,
+.bottom img,
+section article,
+section img {
     width: 50%;
 }
+
 button {
     padding: 1rem 3.3rem;
     border-radius: 2rem;
@@ -41,16 +52,159 @@ button {
     text-align: center;
     font-weight: 700;
 }
+
 .top button {
     background-color: #fff;
+    box-shadow: 0 5px 5px 3px hsl(208deg 3.21% 72.49% / 15%);
 }
-.bottom button {
+
+.bottom button,
+main>section:last-child button {
     background-color: hsl(322, 100%, 66%);
     color: #fff;
+}
+
+.bottom button {
+    box-shadow: 0 5px 10px 3px hsl(322deg 100% 66% / 12%);
 }
 
 /* Main */
 main {
     max-width: 68.5rem;
-    margin: 9rem auto;
+    margin: 9rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
 }
+
+main>section {
+    padding: 2.5rem 2rem 2.5rem 6.5rem;
+    gap: 2rem;
+    box-shadow: 0 0 10px 5px hsl(208deg 3.21% 72.49% / 27%);
+    border-radius: 1rem;
+}
+
+main>section>img {
+    width: 41%;
+}
+
+main>section p {
+    color: hsl(208, 11%, 55%);
+    line-height: 1.6;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: hsl(192, 100%, 9%);
+}
+
+main>section:nth-child(2) img {
+    order: 1;
+}
+
+main>section:nth-child(2) article {
+    order: 2;
+}
+
+main>section:last-child {
+    padding: 4rem 8rem 2.5rem;
+    margin: 4.5rem auto 0;
+    position: relative;
+    top: 4.5rem;
+    background: #fff;
+}
+
+main>section:last-child button {
+    margin: 2rem auto 0;
+    padding: 1rem 5.5rem;
+    font-size: 1.25rem;
+    box-shadow: 0 5px 5px 3px hsl(208deg 3.21% 72.49% / 15%);
+}
+
+h3 {
+    font-size: 2rem;
+    color: hsl(192, 100%, 9%);
+}
+
+/* Footer */
+footer {
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+    padding: 10rem 4.5rem 3rem calc((100vw - 68.5rem)/2);
+
+}
+footer > section {
+    gap: 8rem;
+    margin: 2rem 0;
+}
+
+
+footer>small {
+    margin-left: auto;
+    width: fit-content;
+    display: block;
+}
+
+.contact>div {
+    justify-content: flex-start;
+
+}
+
+.contact {
+    flex: 1;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact i {
+    line-height: 1.6;
+    margin-right: 1rem;
+}
+
+.contact p {
+    font-size: 1rem;
+}
+
+footer nav {
+    flex: 1;
+}
+
+section > .social-media {
+    flex: 1;    
+    display: flex;
+    flex-direction: column;
+}
+.social-media.flex-row {
+    flex: 1;  
+    justify-content: flex-start;
+    gap: 0.75rem;
+}
+.social-media i {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 0.25rem;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-media i::before {
+    margin-top: 2px;
+}
+
+footer ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    width: 100%;
+}
+
+footer small {
+    font-size: 0.8rem;
+}
+

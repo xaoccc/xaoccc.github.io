@@ -11,6 +11,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 3.75rem;
+    color: hsl(192, 100%, 9%);
 }
 
 .flex-row {
@@ -21,10 +22,11 @@ header {
 
 h1,
 h2,
-h3,
-h4 {
+h3 {
     font-family: 'Poppins', sans-serif;
+    color: hsl(192, 100%, 9%);
 }
+
 
 .bottom {
     gap: 4rem;
@@ -94,8 +96,7 @@ main>section p {
 }
 
 h2 {
-    font-size: 1.75rem;
-    color: hsl(192, 100%, 9%);
+    font-size: 1.75rem;    
 }
 
 main>section:nth-child(2) img {
@@ -123,7 +124,6 @@ main>section:last-child button {
 
 h3 {
     font-size: 2rem;
-    color: hsl(192, 100%, 9%);
 }
 
 /* Footer */
@@ -180,7 +180,7 @@ section > .social-media {
     justify-content: flex-start;
     gap: 0.75rem;
 }
-.social-media i {
+.social-media a {
     border: 1px solid #fff;
     border-radius: 50%;
     padding: 0.25rem;
@@ -189,10 +189,9 @@ section > .social-media {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
-.social-media i::before {
+.social-media i {
     margin-top: 2px;
 }
 
@@ -207,4 +206,21 @@ footer ul {
 footer small {
     font-size: 0.8rem;
 }
+
+/* Active */
+
+.top button:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.bottom button:hover, section>button:hover {
+    opacity: 0.7;
+}
+
+.social-media a:hover {
+    border: 1px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+}
+
+
 

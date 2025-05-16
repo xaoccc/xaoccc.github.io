@@ -222,6 +222,22 @@ footer small {
     color: hsl(322, 100%, 66%);
 }
 
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+.social-media.flex-row {
+    margin: 1.5rem auto;
+}
+
+footer small {
+    text-align: center;
+}
+
+footer > section {
+    gap: 3rem;
+}
+
 /* Mobile */
 @media (max-width: 768px) {
     body, footer ul {
@@ -231,6 +247,10 @@ footer small {
 
     h1, h2, h3, article p, .bottom p {
         text-align: center;
+    }
+
+    h3 {
+        font-size: 2.2rem;
     }
 
     .bottom.flex-row, main>section.flex-row, footer>section.flex-row {
@@ -259,12 +279,20 @@ footer small {
     }
 
     main>section:last-child {
-        padding: 4rem 4rem 2.5rem;
-        margin: 4.5rem 5% 0;
+        padding: 5rem 2rem;
+        margin: 4.5rem 0 0;
+    }
+
+    main>section:last-child button {
+        padding: 1.75rem 5rem;
+        border-radius: 3rem;
     }
 }
 
 @media (max-width: 450px) {
+    h3 {
+        font-size: 1.4rem;
+    }
     .top.flex-row {
         gap: 2rem;
         flex-direction: column;

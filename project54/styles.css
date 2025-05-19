@@ -1,0 +1,86 @@
+body {
+    font-family: 'League Spartan', sans-serif;  
+    height: 100vh;
+    justify-content: center;
+}
+
+.body-theme-1 {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.flex-row, .flex-col {
+    display: flex;
+}
+
+.flex-row {    
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+main {
+    width: 33.75rem;
+    margin: 0 auto;
+    color: #fff;
+}
+
+/* Header */
+.header.flex-row {
+    justify-content: space-between;
+}
+
+.calc, .themes {
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.themes {
+    text-transform: uppercase;
+    gap: 2rem;
+}
+
+.themes p {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+}
+
+.themes label {
+    justify-content: space-around;
+}
+
+input[type="range"] {
+    width: 4.5rem;
+}
+
+.value {
+    font-size: 1.2em;
+}
+
+/* Input */
+
+main > input {
+    margin: 2rem 0 1.5rem;
+    padding: 2.5rem 2rem;
+    font-size: 3.5rem;
+    text-align: right;
+    border-radius: 0.75rem;
+}
+
+.input-theme-1 {
+    background-color: hsl(224, 36%, 15%);
+    color: #fff;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

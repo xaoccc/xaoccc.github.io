@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="body-theme-1 flex-col">
+    <main class="flex-col">
+        <section class="header header-theme-1 flex-row">
+            <div class="calc flex-col">calc</div>
+            <div class="themes flex-row">
+                <p>theme</p>
+                <div>
+                    <label for="slider" class="flex-row">
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </label>
+                    <input type="range" id="slider" min="0" max="100" step="1" value="0">
+                </div>
+            </div>
+        </section>
+        <input type="number" class="input-theme-1">
+        <section class="main main-theme-1"></section>
+    </main>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -52,7 +52,8 @@ let projectsTitles = [
     'Pricing Component With Toggle',
     'Project Tracking Intro Component', 
     'Clipboard Landing Page',
-    'Huddle Landing Page'
+    'Huddle Landing Page', 
+    'Calculator App'
 ];
 
 

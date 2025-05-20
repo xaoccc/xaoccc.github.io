@@ -7,10 +7,15 @@ let actions = [];
 let nums = [];
 let lastAction = "";
 
+
+
+// Slider with three options for each theme
 slider.addEventListener('input', () => {
     const val = parseInt(slider.value);
     const closest = steps.reduce((a, b) => Math.abs(b - val) < Math.abs(a - val) ? b : a);
     slider.value = closest;
+    changeTheme(slider.value)
+
 });
 
 function mathOp(sign, numOne, numTwo) {
@@ -20,12 +25,13 @@ function mathOp(sign, numOne, numTwo) {
         case "-":
             return Number(numOne) - Number(numTwo);
         case "/":
-            return Number(numOne) / Number(numTwo);
+            return Number(numTwo) !== 0 ? Number(numOne) / Number(numTwo) : "Error: Division by zero";
         case "x":
             return Number(numOne) * Number(numTwo);
     }
 }
 
+//  Buttons functionality
 buttons.forEach((button) => button.addEventListener('click', function () {
     let btnText = button.textContent;
 
@@ -70,4 +76,27 @@ buttons.forEach((button) => button.addEventListener('click', function () {
     lastAction = btnText;
 
 }))
+
+// Themes
+function changeTheme(sliderValue) {
+
+    document.querySelectorAll('body, .slider, input[type="text"], main > section').forEach(element => {
+        let cls = element.classList[0];
+        let themeNum = cls[cls.length - 1];
+
+        if (sliderValue == "0") {
+            const newClass = cls.replace(themeNum, '1');
+            element.classList.replace(cls, newClass);
+        } else if (sliderValue == "50") {
+            const newClass = cls.replace(themeNum, '2');
+            element.classList.replace(cls, newClass);
+        } else if (sliderValue == "100") {
+            const newClass = cls.replace(themeNum, '3');
+            element.classList.replace(cls, newClass);
+        }
+
+
+    });
+
+}
 

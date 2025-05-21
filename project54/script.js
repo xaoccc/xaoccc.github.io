@@ -1,6 +1,26 @@
 const slider = document.getElementById('slider');
 const output = document.getElementById('output');
 const buttons = document.querySelectorAll('.buttons button');
+const buttonsDict = {
+    "7": 0,
+    "8": 1,
+    "9": 2,
+    "Backspace": 3,
+    "4": 4,
+    "5": 5,
+    "6": 6,
+    "+": 7,
+    "1": 8,
+    "2": 9,
+    "3": 10,
+    "-": 11,
+    ".": 12,
+    "0": 13,
+    "/": 14,
+    "*": 15,
+    "Delete": 16,
+    "=": 17,
+}
 const input = document.querySelector('input[type="text"]')
 const steps = [0, 50, 100];
 let actions = [];
@@ -31,6 +51,13 @@ function mathOp(sign, numOne, numTwo) {
             return Number(numOne) * Number(numTwo);
     }
 }
+// Keyboard
+addEventListener("keyup", (e) => {
+    if (buttons[buttonsDict[e.key]]) {
+        buttons[buttonsDict[e.key]].click();
+        buttons[buttonsDict[e.key]].focus();
+    }
+})
 
 //  Buttons functionality
 buttons.forEach((button) => button.addEventListener('click', function () {
@@ -76,6 +103,8 @@ buttons.forEach((button) => button.addEventListener('click', function () {
     lastAction = btnText;
 
 }))
+
+
 
 // Themes
 function changeTheme(sliderValue) {

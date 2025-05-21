@@ -15,6 +15,10 @@ slider.addEventListener('input', () => {
     changeTheme(slider.value)
 });
 
+input.addEventListener('input', function () {
+    this.value = this.value.replace(/[^0-9.]/g, '');
+});
+
 function mathOp(sign, numOne, numTwo) {
     switch (sign) {
         case "+":

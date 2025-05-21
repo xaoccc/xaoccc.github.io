@@ -4,10 +4,6 @@ body {
     justify-content: center;
 }
 
-.body-theme-1 {
-    background-color: hsl(222, 26%, 31%);
-}
-
 .flex-row, .flex-col {
     display: flex;
 }
@@ -22,13 +18,16 @@ body {
 
 main {
     width: 33.75rem;
-    margin: 0 auto;
-    color: #fff;
+    margin: 0 auto;    
 }
 
 /* Header */
 .header.flex-row {
     justify-content: space-between;
+}
+
+.calc {
+    font-size: 1.75rem;
 }
 
 .calc, .themes {
@@ -66,11 +65,6 @@ main > input {
     border-radius: 0.75rem;
 }
 
-.input-theme-1 {
-    background-color: hsl(224, 36%, 15%);
-    color: #fff;
-}
-
 /* Chrome, Safari, Edge, Opera */
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
@@ -86,28 +80,34 @@ input[type=number] {
 /* Buttons */
 .buttons {
     padding: 2.5rem 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     border-radius: 0.75rem;
     display: flex;
     flex-wrap: wrap;
     gap: 1.25rem;    
 }
 
-.main-theme-1 {
-    background-color: hsl(223, 31%, 20%);
-}
-
 .buttons button {
-    padding: 1rem;
+    padding: 1rem 0 0.5rem;
     border-radius: 0.75rem;
     flex: 1 1 6.25rem;
     text-align: center;
 }
 
-.main-theme-1 button {
+.buttons button:hover {
     background-color: #fff;
-    color: hsl(223, 31%, 20%);
 }
+
+.buttons .reset-btn, .buttons .del-btn, .buttons .result-btn {
+    font-size: 1.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.buttons .reset-btn:hover, .buttons .del-btn:hover, .buttons .result-btn:hover {
+    filter: brightness(1.5);
+}
+
+
 
 .buttons button:last-child {
     align-self: stretch;
@@ -133,6 +133,25 @@ input[type="range" i]::-webkit-slider-thumb {
     border-radius: 50%;
 }
 
+/* Themes (default is Theme 1) */
+/* Theme 1 */
+.body-theme-1 {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.header-theme-1 {
+    color: #fff;
+}
+
+.input-theme-1 {
+    background-color: hsl(224, 36%, 15%);
+    color: #fff;
+}
+
+.main-theme-1 {
+    background-color: hsl(223, 31%, 20%);
+}
+
 .slider-theme-1 {
     background: hsl(223, 31%, 20%);
     border: 4px solid hsl(223, 31%, 20%);
@@ -142,7 +161,26 @@ input[type="range" i]::-webkit-slider-thumb {
     background-color: hsl(6, 63%, 50%);
 }
 
-/* Themes (default is Theme 1) */
+.main-theme-1 button {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0 4px 0 0 hsl(28, 16%, 65%);
+}
+
+.main-theme-1 .reset-btn, .main-theme-1 .del-btn {
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0 4px 0 0 hsl(224, 28%, 35%);
+}
+
+.main-theme-1 .result-btn {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 4px 0 0 hsl(6, 70%, 34%);
+}
+
+.main-theme-1 .reset-btn, .main-theme-1 .del-btn, .main-theme-1 .result-btn {
+    color: #fff;
+}
+
 /* Theme 2 */
 .body-theme-2 {
     background-color: hsl(0, 0%, 90%);
@@ -163,7 +201,8 @@ input[type="range" i]::-webkit-slider-thumb {
 
 .main-theme-2 button {
     background-color: hsl(45, 7%, 89%);
-    color: hsl(60, 10%, 19%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0 4px 0 0 hsl(35, 11%, 61%);
 }
 
 .slider-theme-2 {
@@ -175,9 +214,46 @@ input[type="range" i]::-webkit-slider-thumb {
     background-color: hsl(25, 98%, 40%);
 }
 
+.main-theme-2 .reset-btn, .main-theme-2 .del-btn {
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 4px 0 0 hsl(185, 58%, 25%);
+}
+
+.main-theme-2 .result-btn {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 4px 0 0 hsl(25, 99%, 27%);
+}
+
+.main-theme-2 .reset-btn, .main-theme-2 .del-btn, .main-theme-2 .result-btn {
+    color: #fff;
+}
+
 /* Theme 3 */
 .body-theme-3 {
     background-color: hsl(268, 75%, 9%);
+} 
+
+.header-theme-3 {
+    color: hsl(52, 100%, 62%);
+}
+
+.input-theme-3 {
+    background-color: hsl(268, 71%, 12%);
+    color: hsl(52, 100%, 62%);
+}
+
+.main-theme-3 {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.main-theme-3 button {
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0 4px 0 0 hsl(290, 70%, 36%);
+}
+
+.main-theme-3 button:hover {
+    background-color: #6B34AC;
 }
 
 .slider-theme-3 {
@@ -187,4 +263,27 @@ input[type="range" i]::-webkit-slider-thumb {
 
 .slider-theme-3::-webkit-slider-thumb {
     background-color: hsl(176, 100%, 44%);
+}
+
+.main-theme-3 .reset-btn, .main-theme-3 .del-btn {
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 4px 0 0 hsl(285, 91%, 52%);
+}
+
+.main-theme-3 .reset-btn:hover, .main-theme-3 .del-btn:hover {
+    background-color: #8631B0;
+}
+
+.main-theme-3 .result-btn {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 4px 0 0 hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+.main-theme-3 .result-btn:hover {
+    background-color: #94FFF9;
+}
+
+.main-theme-3 .reset-btn, .main-theme-3 .del-btn {
+    color: #fff;
 }

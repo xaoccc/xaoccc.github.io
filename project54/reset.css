@@ -2,42 +2,28 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
 }
 
 body {
-  margin: 0;
-  overflow: visible;
+    margin: 0;
+    overflow: visible;
 }
 
-h1, h2, h3, h4 {
-  margin: 0;
-  padding: 0;
-}
-
-button, a, input {
-  display: block;
-}
-
-li {
-  list-style-type: none;
-}
-
-
-button, a, li, label, p, input {
-  text-decoration: none;
-  font: inherit;
-  color: inherit;
-  border: none;
-  background: none;
+button,
+p,
+input {
+    display: block;
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    border: none;
+    background: none;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
-
-
-

@@ -9,27 +9,82 @@ body {
 
 main {
     max-width: 45.75rem;
+    width: 100%;
     margin: 0 auto;
-    
 }
 
-.new-comment {
+.flex-row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 1rem;
+}
+
+.comment-wrapper, .new-comment {
     background-color: #fff;
     border-radius: 0.5rem;
     padding: 1.5rem;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
-.new-comment img {
+.new-comment img, .profile-pic {
     width: 2.5rem;
 }
+
+/* Posted Comments */
+.comments .comment-wrapper:first-child {
+    display: none;
+}
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.rating-wrapper {
+    background-color: hsl(223, 19%, 93%);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+}
+.rating {
+    margin: 0.75rem 0;
+}
+.comment-header {
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.comment-header-left, .comment-header-right {
+    align-items: center;
+    gap: 1rem;
+}
+.comment-body, .date {
+    color: hsl(211, 10%, 45%);
+    line-height: 1.5;
+}
+.profile-name {
+    color: hsl(212, 24%, 26%);
+}
+.reply-txt, .score {
+    color: hsl(238, 40%, 52%);
+    font-weight: 700;
+}
+.reply-txt, .comment-header-right img {
+    cursor: pointer;
+}
+
+
+/* New Comments */
+.new-comment {
+    justify-content: space-between;   
+    margin-top: 1rem;
+}
+
 .new-comment textarea {
     resize: none;
-    width: 31.625rem;
+    max-width: 31.625rem;
+    width: 100%;
     padding: 1rem 1.5rem;
     border: 1px solid hsl(223, 19%, 93%);
     border-radius: 0.5rem;

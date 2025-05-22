@@ -53,7 +53,8 @@ let projectsTitles = [
     'Project Tracking Intro Component', 
     'Clipboard Landing Page',
     'Huddle Landing Page', 
-    'Calculator App'
+    'Calculator App',
+    'Interactive Comments Section'
 ];
 
 

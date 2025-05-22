@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(228, 33%, 97%);
+    min-height: 100vh;
+    justify-content: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    max-width: 45.75rem;
+    margin: 0 auto;
+    
+}
+
+.new-comment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.new-comment img {
+    width: 2.5rem;
+}
+.new-comment textarea {
+    resize: none;
+    width: 31.625rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid hsl(223, 19%, 93%);
+    border-radius: 0.5rem;
+}
+.new-comment button {
+    padding: 1rem 2rem;
+    background-color: hsl(238, 40%, 52%);
+    color:#fff;
+    border-radius: 0.5rem;
+}
+

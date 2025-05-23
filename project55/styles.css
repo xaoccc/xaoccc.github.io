@@ -25,6 +25,11 @@ main {
     align-items: flex-start;
     gap: 1rem;
 }
+.comment-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
 
 .new-comment img, .profile-pic {
     width: 2.5rem;
@@ -38,6 +43,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    position: relative;
 }
 .rating-wrapper {
     background-color: hsl(223, 19%, 93%);
@@ -55,7 +61,7 @@ main {
     justify-content: space-between;
     margin-bottom: 1rem;
 }
-.comment-header-left, .comment-header-right {
+.comment-header-left, .comment-header-right > .flex-row, .comment-header-right.flex-row {
     align-items: center;
     gap: 1rem;
 }
@@ -66,7 +72,7 @@ main {
 .profile-name {
     color: hsl(212, 24%, 26%);
 }
-.reply-txt, .score {
+.reply-txt, .score, .reply-to {
     color: hsl(238, 40%, 52%);
     font-weight: 700;
 }
@@ -74,6 +80,30 @@ main {
     cursor: pointer;
 }
 
+/* Posted Replies */
+.comment-wrapper.reply {
+    width: 90%;
+    margin-left: auto;
+}
+.delete .reply-txt {
+    color: hsl(358, 79%, 66%);
+
+}
+.delete  {
+    order: 1;
+}
+.edit  {
+    order: 2;
+}
+.comments::before {
+    height: 100%;
+    width: 1px;
+    background: hsl(223, 19%, 93%);
+    position: absolute;
+    content: "";
+    left: 2.5rem;
+    z-index: 1;
+}
 
 /* New Comments */
 .new-comment {
@@ -95,4 +125,6 @@ main {
     color:#fff;
     border-radius: 0.5rem;
 }
+
+
 

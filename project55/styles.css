@@ -130,5 +130,10 @@ main {
     border-radius: 0.5rem;
 }
 
+small {
+    display: block;
+    margin: 3rem 0;
+    font-size: 0.75rem;
+}
 
 
